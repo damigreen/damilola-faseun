@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PortfolioWrap = styled.div`
-    border: 4px solid green;
+    /* border: 4px solid green; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -12,6 +12,8 @@ const PortfolioWrap = styled.div`
 `
 
 const TextWrap = styled.div`
+    border: 1px solid green;
+    
     
 `
 
