@@ -28,6 +28,7 @@ function App() {
         <Header />
         <Portfolio data={portfolioData.portfolio} />
       </header>
+      <Contact />
     </div>
   );
 
