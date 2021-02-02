@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-// import imageFrame from 'images/image-frame.png';
 
 const PortfolioWrap = styled.div`
     border: 4px solid green;
@@ -8,6 +7,7 @@ const PortfolioWrap = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
     /* background-color: red; */
 `
 
@@ -21,19 +21,33 @@ const ImageWrap = styled.div`
 `
 
 
-const Portfolio = (data) => {
-    console.log(data);
-
+const Portfolio = (portfolio) => {
+    
+    if (portfolio.data === undefined) {
+        return <div>Loading.....................</div>
+    }
+    
     const imageFrame = 'images/image-frame.png';
+    
+    const projects = portfolio.data.projects.map(p => {
 
-    return(
-        <PortfolioWrap>
+        return(
+            <div>
             <TextWrap>
-                <h1>Selected Works</h1>
+                <p>{p.title}</p>
+                <p>{p.categories}</p>
             </TextWrap>
             <ImageWrap>
                 <img src={imageFrame} />
             </ImageWrap>
+            </div>
+        )
+    })
+    
+    return(
+        <PortfolioWrap>
+            <h1>Selected Works</h1>
+            {projects}
         </PortfolioWrap>
     )
 }

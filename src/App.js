@@ -1,31 +1,36 @@
 import React, { useState, useEffect } from 'react';
-import Header from "./components/header/"
-import './App.scss';
-import Portfolio from "./components/portfolio";
 import axios from 'axios';
+import './App.scss';
+import Header from "./components/header/"
+import Portfolio from "./components/portfolio/";
+import Contact from './components/contact/'
 
 
 
 function App() {
-  const [ data, setData ] = useState({});
+  const [ portfolioData, setData ] = useState({});
   const dataUrl = './portfolioData.json'
 
 
   useEffect(() => {
-    axios.get(dataUrl).then(data => {
-      setData(data);
-    });
+    const loadData = () => {
+      axios.get(dataUrl).then(response => {
+        setData(response.data);
+      });
+    }
+    loadData();
   }, [dataUrl] );
+  
 
-  console.log(data);
   return (
     <div className="App">
       <header>
         <Header />
-        <Portfolio data={data.data.portfolio} />
+        <Portfolio data={portfolioData.portfolio} />
       </header>
     </div>
   );
+
 }
 
 export default App;
