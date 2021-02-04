@@ -9,12 +9,14 @@ const NavWrapper = styled.div`
 `
 
 const NavBar = styled.ul`
-  /* margin: 0 auto; */
-  /* background-color: yellow; */
+  background-color: yellow;
   height: 90px;
   border: 1px solid brown;
-  width: 700px;
-  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
 `
 
 const NavItem = styled.li`
@@ -22,6 +24,7 @@ const NavItem = styled.li`
   color: blue;
   width: 45px;
   padding-right: 10px;
+  float: right;
 `
 
 function Navigation() {
@@ -29,9 +32,9 @@ function Navigation() {
   return (
     <NavWrapper>
       <NavBar>
-        <NavItem><a>Work</a></NavItem>
-        <NavItem><a>About</a></NavItem>
         <NavItem><a>Contact</a></NavItem>
+        <NavItem><a>About</a></NavItem>
+        <NavItem><a>Work</a></NavItem>
       </NavBar>
     </NavWrapper>
   )
