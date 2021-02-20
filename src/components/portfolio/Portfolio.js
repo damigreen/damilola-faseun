@@ -2,13 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PortfolioWrap = styled.div`
-    /* border: 4px solid green; */
+    text-align: center;
+    border: 1px solid green;
+    padding: 5px;
+    /* background color: */
+`
+
+const ProjectWrap = styled.div`
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
     flex-wrap: wrap;
-    /* background-color: red; */
 `
 
 const TextWrap = styled.div`
@@ -34,15 +39,15 @@ const Portfolio = (portfolio) => {
     const projects = portfolio.data.projects.map(p => {
 
         return(
-            <div>
-            <TextWrap>
-                <p>{p.title}</p>
-                <p>{p.categories}</p>
-            </TextWrap>
-            <ImageWrap>
-                <img src={imageFrame} />
-            </ImageWrap>
-            </div>
+            <ProjectWrap>
+                <TextWrap>
+                    <p>{p.title}</p>
+                    <p>{p.categories}</p>
+                </TextWrap>
+                <ImageWrap>
+                    <img src={imageFrame} />
+                </ImageWrap>
+            </ProjectWrap>
         )
     })
     
