@@ -5,13 +5,10 @@ const NavWrapper = styled.div`
   /* background-color: brown; */
   height: 90px;
   padding: 5px;
-  border: 1px solid brown;
 `
 
 const NavBar = styled.ul`
-  background-color: yellow;
   height: 90px;
-  border: 1px solid brown;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -20,8 +17,7 @@ const NavBar = styled.ul`
 `
 
 const NavItem = styled.li`
-  border: 1px solid brown;
-  color: blue;
+  color: red;
   width: 45px;
   padding-right: 10px;
   float: right;
