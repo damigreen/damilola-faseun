@@ -3,7 +3,9 @@ import axios from 'axios';
 import './App.scss';
 import Header from "./components/header/"
 import Portfolio from "./components/portfolio/";
-import Contact from './components/contact/'
+import Contact from './components/contact/';
+import Services from './components/services/';
+
 
 
 
@@ -26,6 +28,7 @@ function App() {
     <div className="App">
       <header>
         <Header />
+        <Services />
         <Portfolio data={portfolioData.portfolio} />
       </header>
       <Contact />
