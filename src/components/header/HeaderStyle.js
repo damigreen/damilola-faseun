@@ -7,13 +7,15 @@ export const HeaderWrap = styled.div`
 `
 
 export const HeroWrap = styled.div`
-  position: absolute;
+  /* position: absolute; */
   left: 0%;
-  right: 0%;
+  /* right: 0%;
   top: 0%;
-  bottom: 0%;
+  bottom: 0%; */
   background-color: yellow;
+  width: 100%;
   height: auto;
+  height: 100%;
 
   background: conic-gradient(from 163.17deg at 50% 50%, rgba(72, 73, 86, 0.73) 0deg, rgba(47, 79, 79, 0.502145) 180.62deg, rgba(94, 215, 215, 0.456489) 232.5deg, rgba(47, 79, 79, 0.258928) 277.18deg, rgba(59, 67, 73, 0.158272) 309.38deg, rgba(180, 46, 110, 0) 360deg), #191A1D;
   background-blend-mode: soft-light, normal;
