@@ -10,3 +10,10 @@ export const flexColumnWrap = `
     justify-content: center;
     align-items: center;
 `
+
+export const flexRowWrap = `
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+`
