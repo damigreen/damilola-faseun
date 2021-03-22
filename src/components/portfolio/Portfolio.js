@@ -34,7 +34,8 @@ const Portfolio = (portfolio) => {
         return <div>Loading.....................</div>
     }
     
-    const imageFrame = 'images/image-frame.png';
+    // const imageFrame = 'images/image-frame.png';
+    const imageFrame = 'images/';
     
     const projects = portfolio.data.projects.map(p => {
 
