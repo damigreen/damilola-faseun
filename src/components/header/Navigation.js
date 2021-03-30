@@ -28,9 +28,11 @@ function Navigation() {
   return (
     <NavWrapper>
       <NavBar>
-        <NavItem><a>Contact</a></NavItem>
         <NavItem><a>About</a></NavItem>
+        <NavItem><a>Services</a></NavItem>
         <NavItem><a>Work</a></NavItem>
+        <NavItem><a>Contact</a></NavItem>
+        <NavItem><a>Blogs</a></NavItem>
       </NavBar>
     </NavWrapper>
   )
