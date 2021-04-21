@@ -22,9 +22,12 @@ const TextWrap = styled.div`
     
 `
 
+/* Edit */
 const ImageWrap = styled.div`
-    /* width: 300px;
-    height: 300px; */
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+    background: yellow;
 `
 
 
