@@ -11,3 +11,7 @@ export const BlogRow = styled.div`
   background-color: blue;
   color: #333;
 `
+
+export const BlogHeader = styled.h2`
+  color: red;
+`
