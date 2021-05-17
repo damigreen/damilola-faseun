@@ -17,3 +17,6 @@ export const flexRowWrap = `
     justify-content: center;
     align-items: center;
 `
+export const FlexDrip = styled.div`
+    /* align-items:  */
+`
