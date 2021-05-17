@@ -12,9 +12,7 @@ const Services = () => {
         <ServicesWrapper>
             <ServicesRow>
                 <div className="services-box">
-                    <div className="services-intro">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                    </div>
+                    <h5 className="service-intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h5>
                     <div>
                         <h4 className="my-services-header">Services</h4>
                     </div>
@@ -23,49 +21,55 @@ const Services = () => {
                         <div className="services-data">
                             <img className="service-img" src />
                             <h4>Responsive Web Design</h4>
-                            <div className="services-content">
+                            <span className="horizontal-line"></span>
+                            <p className="services-content">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </div>
+                            </p>
                         </div>
 
                         <div className="services-data">
                             <img className="service-img" src />
                             <h4>Search Engine Optimization</h4>
-                            <div>
+                            <span className="horizontal-line"></span>
+                            <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            </div>
+                            </p>
                         </div>
 
                         <div className="services-data">
                             <img className="service-img" src />
                             <h4>Mobile App Development</h4>
-                            <div>
+                            <span className="horizontal-line"></span>
+                            <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            </div>
+                            </p>
                         </div>
 
                         <div className="services-data">
                             <img className="service-img" src />
                             <h4>Database Management</h4>
-                            <div>
+                            <span className="horizontal-line"></span>
+                            <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            </div>
+                            </p>
                         </div>
 
                         <div className="services-data">
                             <img className="service-img" src />
                             <h4>Wordpress Theme Development</h4>
-                            <div>
+                            <span className="horizontal-line"></span>
+                            <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            </div>
+                            </p>
                         </div>
 
                         <div className="services-data">
                             <img className="service-img" src />
                             <h4>Wordpress Theme Development</h4>
-                            <div>
+                            <span className="horizontal-line"></span>
+                            <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            </div>
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -27,11 +27,6 @@ export const ServicesRow = styled.div`
         justify-content: center;
         align-items: center;
         text-align: center;
-        /* border: 1px solid green; */
-
-        /* @media only screen and (min-width : 480px) and (max-width : 595px) {
-            flex: 0 0 50%;
-        }  */
     }
 
     .services-intro {
@@ -54,7 +49,7 @@ export const ServicesRow = styled.div`
         flex-flow: row wrap;
         justify-content: center;
         width: 100%;
-        max-width: 90rem;
+        /* max-width: 90rem; */
         border: 1px solid red;
 
 
@@ -70,8 +65,19 @@ export const ServicesRow = styled.div`
         }  */
 
         padding: 40px;
+        /* margin: 7px 10px; */
         border-bottom: 1px solid rgba(49,49,49,0.1);
         border-right: 1px solid rgba(49,49,49,0.1);
+
+        @media only screen and (min-width : 500px) and (max-width : 800px) {
+            flex: 0 0 50%;
+            /* border: 1px solid blue; */
+        }
+
+        @media only screen and (min-width : 800px) {
+            flex: 0 0 33.333%;
+            /* border: 1px solid blue; */
+        }
 
         .service-img {
             max-width: 280px;
@@ -83,8 +89,18 @@ export const ServicesRow = styled.div`
             text-transform: uppercase;
             letter-spacing: 0.120rem;
             /* background: red; */
-            text-align: left;
-            padding: 0.4rem 0.7rem;
+            text-align: center;
+            /* padding: 0.4rem 0.7rem; */
+            /* align-self: flex-start; */
+        }
+
+        .horizontal-line {
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+            height: 1px;
+            /* border: 1px solid gray; */
+            opacity: 0.5;
         }
 
         div {
