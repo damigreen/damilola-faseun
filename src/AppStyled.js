@@ -7,7 +7,7 @@ export const borderStyle = `
 export const flexColumnWrap = `
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 `
 
