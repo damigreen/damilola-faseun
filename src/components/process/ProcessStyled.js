@@ -49,14 +49,14 @@ export const ProcessIntro = styled.div`
 `
 
 export const ProcessContent = styled.div`
-  background-color: #4A474E;
-  margin-left: 2.33rem;
 
 
   .process-content {
     ${flexColumnWrap};
+    background-color: #4A474E;
 
     @media only screen and (min-width: 991px) {
+      margin-left: 2.33rem;
       ${flexRowWrap};
     }
   }
