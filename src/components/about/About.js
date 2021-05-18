@@ -7,13 +7,14 @@ import {
 
 
 const About = () => {
+  const aboutImage = '../../images/profile-image.jpg';
 
   return (
     <AboutWrap>
       <AboutImage>
-        <img className="about-image" alt="Image for the about section" />
         <div className="frame-one"></div>
         <div className="frame-two"></div>
+        <img className="about-image" alt="Image for the about section" src={aboutImage} />
       </AboutImage>
       <AboutContent>
         <h1>About me</h1>
