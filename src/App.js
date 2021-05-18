@@ -5,6 +5,7 @@ import Header from "./components/header/"
 import Portfolio from "./components/portfolio/";
 import Contact from './components/contact/';
 import Services from './components/services/';
+import Process from './components/process';
 
 /*
 
@@ -91,6 +92,7 @@ function App() {
       <header>
         <Header />
         <Services />
+        <Process />
         <Portfolio data={portfolioData.portfolio} />
       </header>
       <Contact />
