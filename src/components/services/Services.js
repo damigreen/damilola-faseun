@@ -23,7 +23,7 @@ const Services = () => {
                             <h4>Responsive Web Design</h4>
                             <span className="horizontal-line"></span>
                             <p className="services-content">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. and typesetting industry and typesetting industry
                             </p>
                         </div>
 
@@ -32,7 +32,7 @@ const Services = () => {
                             <h4>Search Engine Optimization</h4>
                             <span className="horizontal-line"></span>
                             <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.  and typesetting industry and typesetting industry
                             </p>
                         </div>
 
@@ -41,7 +41,7 @@ const Services = () => {
                             <h4>Mobile App Development</h4>
                             <span className="horizontal-line"></span>
                             <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. and typesetting industry and typesetting industry 
                             </p>
                         </div>
 
@@ -50,7 +50,7 @@ const Services = () => {
                             <h4>Database Management</h4>
                             <span className="horizontal-line"></span>
                             <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.  and typesetting industry and typesetting industry
                             </p>
                         </div>
 
@@ -59,16 +59,16 @@ const Services = () => {
                             <h4>Wordpress Theme Development</h4>
                             <span className="horizontal-line"></span>
                             <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.  and typesetting industry and typesetting industry
                             </p>
                         </div>
 
                         <div className="services-data">
                             <img className="service-img" src />
-                            <h4>Wordpress Theme Development</h4>
+                            <h4>Wordpress Theme</h4>
                             <span className="horizontal-line"></span>
                             <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.  and typesetting industry and typesetting industry
                             </p>
                         </div>
                     </div>

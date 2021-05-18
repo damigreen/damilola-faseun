@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 import {
     borderStyle,
     flexColumnWrap,
+    textStyle,
 } from '../../AppStyled';
 
 
@@ -57,13 +58,6 @@ export const ServicesRow = styled.div`
 
     .services-data {
         ${flexColumnWrap};
-        /* margin: 0.9rem 1.2rem;
-        border: 1px solid gray; */
-
-        /* @media only screen and (min-width : 480px) and (max-width : 595px) {
-            flex: 0 0 33%;
-        }  */
-
         padding: 40px;
         /* margin: 7px 10px; */
         border-bottom: 1px solid rgba(49,49,49,0.1);
@@ -96,15 +90,17 @@ export const ServicesRow = styled.div`
 
         .horizontal-line {
             display: block;
-            width: 50%;
-            margin: 20px auto;
+            width: 50px;
             height: 1px;
-            /* border: 1px solid gray; */
+            margin: 20px auto;
+            color: #313131;
+            background: #313131;
             opacity: 0.5;
         }
 
-        div {
-            line-height: 22px;
+        p {
+            ${textStyle};
+            max-width: 800px;
             margin: 20px auto;
         }
     }
