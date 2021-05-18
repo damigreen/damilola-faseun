@@ -28,10 +28,10 @@ export const ProcessIntro = styled.div`
   padding: 0.4rem 0.3rem;
 
   h3 {
-    text-align: center;
+    text-align: left;
     padding: 0.5rem 0.456rem;
-    padding-left: 1rem;
-    margin-bottom: 1rem;
+    margin-left: 1.13rem;
+    margin-bottom: 0.9rem;
 
     @media only screen and (min-width: 991px) {
       text-align: left;
@@ -40,9 +40,9 @@ export const ProcessIntro = styled.div`
   }
 
   p {
-    padding: 0.3462rem;
-    padding-left: 1rem;
-    padding-right: 1.459rem;
+    padding: 0.3462rem 1.5rem;
+    /* padding-left: 1rem;
+    padding-right: 1.459rem; */
     font-size: 0.983rem;
     line-height: 30px;
   }
@@ -54,6 +54,9 @@ export const ProcessContent = styled.div`
   .process-content {
     ${flexColumnWrap};
     background-color: #4A474E;
+    padding: 0.8rem 1rem;
+    margin: 0 auto;
+    width: 96.7%;
 
     @media only screen and (min-width: 991px) {
       margin-left: 2.33rem;
@@ -67,14 +70,12 @@ export const ProcessContent = styled.div`
     flex-flow: row wrap;
     justify-content: space-between;
     width: 90%;
-    padding: 0.56rem 1.4rem;
+    padding: 0.56rem 0.1rem;
+    padding-top: 1.2rem;
     text-align: left;
 
 
     div {
-      padding-bottom: 0.23rem;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
       padding: 0.2rem 0.5rem;
       color: #fff;
       font-size: 0.9rem;
@@ -101,12 +102,12 @@ export const ProcessContent = styled.div`
 
   .process-text {
     color: #ffffff;
-    padding: 0.93rem 2.5rem;
+    padding: 0.93rem 1.5rem;
 
     p {
       /* margin-top: 1.5rem; */
       padding-top: 0.542rem;
-      padding-left: 1rem;
+      /* padding-left: 1rem; */
       padding-right: 0.459rem;
       text-align: left;
       font-size: 0.983rem;

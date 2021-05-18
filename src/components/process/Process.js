@@ -20,7 +20,7 @@ const Process = () => {
         <ProcessContent>
           <div className="process-content">
             <div className="process-title">
-              <div>Design</div>
+              {/* <div>Design</div> */}
               <div>Prototype</div>
               <div>Develop</div>
               <div>Testing</div>
