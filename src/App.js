@@ -6,6 +6,7 @@ import Portfolio from "./components/portfolio/";
 import Contact from './components/contact/';
 import Services from './components/services/';
 import Process from './components/process';
+import About from 'components/about';
 
 /*
 
@@ -93,6 +94,7 @@ function App() {
         <Header />
         <Services />
         <Process />
+        <About />
         <Portfolio data={portfolioData.portfolio} />
       </header>
       <Contact />
