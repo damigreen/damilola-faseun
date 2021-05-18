@@ -1,4 +1,8 @@
 import React from 'react';
+import {
+  AboutWrap
+} from './AboutStyled';
+
 
 const About = () => {
 
