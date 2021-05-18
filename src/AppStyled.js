@@ -1,5 +1,9 @@
 import styled, { css } from 'styled-components';
 
+export const FlexDrip = styled.div`
+    /* align-items:  */
+`
+
 export const borderStyle = `
     border: 2px solid red;
 `
@@ -17,6 +21,9 @@ export const flexRowWrap = `
     justify-content: center;
     align-items: center;
 `
-export const FlexDrip = styled.div`
-    /* align-items:  */
+
+export const textStyle = `
+    font-weight: 400;
+    color: #313131;
+    border: 1px solid red;
 `
