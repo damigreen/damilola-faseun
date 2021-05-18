@@ -52,7 +52,6 @@ export const ServicesRow = styled.div`
         justify-content: center;
         width: 100%;
         /* max-width: 90rem; */
-        border: 1px solid red;
 
 
     }

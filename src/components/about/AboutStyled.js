@@ -20,6 +20,14 @@ export const AboutImage = styled.div`
   height: auto;
   margin-bottom: 30rem;
 
+  @media only screen and (min-width: 991px) {
+    min-width: 450px;
+  }
+
+  @media only screen and (max-width: 468px) {
+      display: none;
+    }
+
   img {
     padding: 2rem;
     width: 100%;
@@ -38,6 +46,10 @@ export const AboutImage = styled.div`
     height: 350px;
     width:200px;
     background: #B51C1C;
+
+    @media only screen and (max-width: 468px) {
+      display: none;
+    }
   }
 
   .frame-two {
@@ -46,9 +58,42 @@ export const AboutImage = styled.div`
     height: 200px;
     width: 272px;
     background: #007F00;
+
+    @media only screen and (max-width: 468px) {
+      display: none;
+    }
   }
 `
 
 export const AboutContent = styled.div`
-  ${borderStyle}
+  padding: 40px;
+  width: 100%;
+  height: auto;
+
+  /* @media only screen and (max-width: 468px) {
+      background: url('../../images/profile-image1.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 90% 50%;
+      color: #fff;
+      /* opacity: 0.5; */
+    } */
+
+  h3 {
+    text-align: left;
+    margin-bottom: 1.672rem;
+    padding: 0.45rem 1.1rem;
+
+
+    @media only screen and (min-width: 991px) {
+      text-align: left;
+    } 
+  }
+
+  p {
+    line-height: 31px;
+    padding: 0.5rem 0.856rem;
+
+
+  }
 `
