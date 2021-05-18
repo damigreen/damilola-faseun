@@ -13,6 +13,7 @@ const servicesRow = `
 export const  ServicesWrapper = styled.div`
     /* margin-top: 300px; */
     box-sizing: border-box;
+    margin-bottom: 4rem;
 ` 
 
 export const ServicesRow = styled.div`
