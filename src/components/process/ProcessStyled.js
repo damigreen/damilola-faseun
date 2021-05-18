@@ -7,6 +7,8 @@ import {
 } from '../../AppStyled';
 
 export const ProcessWrap = styled.div`
+  margin-bottom: 4rem;
+
 
   .process-wrap {
     ${flexColumnWrap};

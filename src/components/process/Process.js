@@ -21,6 +21,7 @@ const Process = () => {
           <div className="process-content">
             <div className="process-title">
               <div>Design</div>
+              <div>Prototype</div>
               <div>Develop</div>
               <div>Testing</div>
               <div>Deploy</div>
