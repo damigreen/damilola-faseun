@@ -76,14 +76,13 @@ export const AboutContent = styled.div`
       background-size: cover;
       background-position: 90% 50%;
       color: #fff;
-      /* opacity: 0.5; */
-    } */
+    }
+  */ 
 
   h3 {
     text-align: left;
     margin-bottom: 1.672rem;
     padding: 0.45rem 1.1rem;
-
 
     @media only screen and (min-width: 991px) {
       text-align: left;
@@ -93,7 +92,5 @@ export const AboutContent = styled.div`
   p {
     line-height: 31px;
     padding: 0.5rem 0.856rem;
-
-
   }
 `
