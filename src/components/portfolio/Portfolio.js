@@ -18,8 +18,6 @@ const ProjectWrap = styled.div`
 
 const TextWrap = styled.div`
     border: 1px solid green;
-    
-    
 `
 
 /* Edit */
