@@ -71,10 +71,12 @@ const Portfolio = (portfolio) => {
     return(
         <PortfolioWrap>
             <div className="portfolio-wrap">
-                <div className="portfolio-heading">
-                    <h3>Selected Works</h3>
-                    <h4>Take a peek at some of my latest project</h4>
-                    {/* <p>From Web and mobile applications to websites for different sectors like hospitality, education e-commerce and business website, check out some of my projects</p> */}
+                <div className="portfolio-header-main">
+                    <div className="portfolio-heading">
+                        <h3>Selected Works</h3>
+                        <h4>Take a peek at some of my latest project</h4>
+                        {/* <p>From Web and mobile applications to websites for different sectors like hospitality, education e-commerce and business website, check out some of my projects</p> */}
+                    </div>
                 </div>
 
                 <div className="filter">
@@ -83,10 +85,10 @@ const Portfolio = (portfolio) => {
 
                     <div className="project-filter large">
                         <div><span className="filter-option"></span> <p className="filter-name">E-commerce</p></div>
-                        <div><span className="filter-option"></span> <p className="filter-name">Education</p></div>
-                        <div><span className="filter-option"></span> <p className="filter-name">Hospitality</p></div>
                         <div><span className="filter-option"></span> <p className="filter-name">Agency</p></div>
-                        <div><span className="filter-option"></span> <p className="filter-name">Business</p></div>
+                        <div><span className="filter-option"></span> <p className="filter-name">Business & Portfolio</p></div>
+                        <div><span className="filter-option"></span> <p className="filter-name">Hospitality</p></div>
+                        <div><span className="filter-option"></span> <p className="filter-name">Education</p></div>
                     </div>
                 </div>
                 <div className="project-div">

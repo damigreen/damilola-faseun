@@ -84,13 +84,22 @@ export const PortfolioWrap = styled.div`
 
   }
 
+  .portfolio-header-main {
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+  }
+
   .portfolio-heading {
     ${flexColumnWrap};
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 2rem;
-    width:80%;
+    width: 90%;
+    /* width: 100%; */
     margin-bottom: 1.07622rem;
+    padding: 0.34rem 1.989rem;
+
 
     h3, h4 {
       text-align: left;
@@ -114,13 +123,24 @@ export const PortfolioWrap = styled.div`
       padding-right: 1.06345rem;
     }
 
+    @media only screen and (min-width: 767px){
+      border: unset;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      max-width: 65rem;
+      padding: 0.34rem 0.78009rem;
+    }
   }
 
   .filter {
-    width: 80%;
+    width: 90%;
     position: relative;
     border: 2px solid rgb(242, 242, 242);
 
+    @media only screen and (min-width: 767px){
+      border: unset;
+    }
   }
 
   .filter-box {
@@ -171,24 +191,50 @@ export const PortfolioWrap = styled.div`
 
     @media only screen and (min-width: 767px){
       all: unset;
+      display: flex;
+      align-items: flex-start;
+      /* justify-content: space-between; */
+      flex-wrap: wrap;
+      border: unset;
+      width: 100%;
+      max-width: 64rem;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     div {
       display: flex;
       justify-content: flex-start;
+      text-transform: uppercase;
       align-items: center;
+      font-size: 0.829rem;
+      font-weight: 500;
       width: 100%;
       height: 2.9rem;
-      border-bottom: 1px solid rgb(242, 242, 242);
+      border-bottom: 2px solid rgb(242, 242, 242);
 
 
       :last-child {
         border-bottom: none;
+
+
+        @media only screen and (min-width: 767px) {
+          border-bottom: 2px solid rgb(242, 242, 242);
+        } 
       }
 
       @media only screen and (min-width: 767px){
         all: unset;
+        color: #1d3030;
+        text-transform: uppercase;
+        font-size: 0.829rem;
+        font-weight: 500;
+        padding: 0.43rem 0.989rem;
+        border: 1px solid rgb(242, 242, 242);
+        margin: 0 1rem 1rem 0;
       }
+
+
     }
 
 
@@ -211,14 +257,6 @@ export const PortfolioWrap = styled.div`
       @media only screen and (min-width: 767px){
         all: unset;
       }
-    }
-  }
-
-  .project-filter .large {
-
-    @media only screen and (min-width: 767px){
-      display: block;
-      flex-flow: row wrap;
     }
   }
 
