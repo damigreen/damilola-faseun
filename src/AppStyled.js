@@ -27,3 +27,24 @@ export const textStyle = `
     color: #313131;
     border: 1px solid red;
 `
+
+export const HeadingPrimary = `
+    font-size: 36px;
+    font-weight: 700;
+    // color: #1F2F3B;
+    color: #003300;
+    color: #1d3030;
+`
+
+export const HeadingSecondary = `
+    font-size: 24px;
+    font-family: serif;
+    font-weight: 400;
+    color: #475E67;
+`
+export const HeadingTertiary = `
+    // font-size: 24px;
+    font-weight: 500;
+    color: gray;
+    color: #4e5965;
+`
