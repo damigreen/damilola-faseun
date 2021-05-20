@@ -7,6 +7,8 @@ import Contact from './components/contact/';
 import Services from './components/services/';
 import Process from './components/process';
 import About from 'components/about';
+import Stacks from 'components/stacks';
+
 
 /*
 
@@ -97,6 +99,7 @@ function App() {
         <Services />
         <Process />
         <Portfolio data={portfolioData.portfolio} />
+        <Stacks />
       <Contact />
     </div>
   );
