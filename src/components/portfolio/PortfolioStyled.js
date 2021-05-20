@@ -39,9 +39,11 @@ export const ProjectWrapLeft = styled.div`
 `
 
 export const ProjectWrapRight = styled.div`
+
 `
 
 export const ImageWrap = styled.div`
+    margin: 0 auto;
     width: 100%;
     height: auto;
 
@@ -51,6 +53,25 @@ export const ImageWrap = styled.div`
     }
 
   .image-wrap {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+
+      @media only screen and (min-width: 767px){
+        width: auto;
+        height: auto;
+      }
+    }
+
+    img {
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+
+      @media only screen and (min-width: 767px){
+        width: auto;
+        height: auto;
+      }
   }
 `
 
