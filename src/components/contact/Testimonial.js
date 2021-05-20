@@ -11,7 +11,7 @@ const Testimonial = () => {
     <TestimonialWrap>
       <div className="testimonial-wrap">
         <TestimonialCard>
-          <div className="card-one">
+          <div className="card one">
             <div>Quote</div>
             <p>
               is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
@@ -25,7 +25,7 @@ const Testimonial = () => {
         </TestimonialCard>
 
         <TestimonialCard>
-          <div className="card-two">
+          <div className="card two">
             <div>Quote</div>
             <p>
               is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
@@ -39,7 +39,7 @@ const Testimonial = () => {
         </TestimonialCard>
 
         <TestimonialCard>
-          <div className="card-three">
+          <div className="card three">
             <div>Quote</div>
             <p>
               is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
