@@ -57,7 +57,6 @@ export const ImageWrap = styled.div`
 export const TextWrap = styled.div`
   width: 100%;
   max-width: 420px;
-  border: 1px solid green;
   
   .project-title {
 
@@ -70,7 +69,6 @@ export const TextWrap = styled.div`
 
 
 export const PortfolioWrap = styled.div`
-  border: 1px solid green;
   margin: 0;
   padding: 0;
 
@@ -128,7 +126,7 @@ export const PortfolioWrap = styled.div`
       margin-left: auto;
       margin-right: auto;
       width: 100%;
-      max-width: 65rem;
+      max-width: 75rem;
       padding: 0.34rem 0.78009rem;
     }
   }
@@ -197,7 +195,7 @@ export const PortfolioWrap = styled.div`
       flex-wrap: wrap;
       border: unset;
       width: 100%;
-      max-width: 64rem;
+      max-width: 75rem;
       margin-left: auto;
       margin-right: auto;
     }
