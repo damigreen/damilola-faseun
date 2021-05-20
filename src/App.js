@@ -92,11 +92,11 @@ function App() {
     <div className="App">
       <header>
         <Header />
+      </header>
+        <About />
         <Services />
         <Process />
-        <About />
         <Portfolio data={portfolioData.portfolio} />
-      </header>
       <Contact />
     </div>
   );

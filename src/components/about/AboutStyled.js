@@ -6,10 +6,19 @@ import {
 } from '../../AppStyled';
 
 export const AboutWrap = styled.div`
-  ${flexColumnWrap};
 
-  @media only screen and (min-width: 991px) {
-  ${flexRowWrap};
+  .about-wrap {
+    ${flexColumnWrap};
+
+    @media only screen and (min-width: 991px) {
+      ${flexRowWrap}; 
+      justify-content: space-evenly;
+      align-items: flex-start;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 75rem;
+    }
+
   }
 `
 
@@ -66,6 +75,8 @@ export const AboutImage = styled.div`
 `
 
 export const AboutContent = styled.div`
+  /* flex-flow: column wrap;
+  justify-content: flex-start; */
   padding: 40px;
   width: 100%;
   height: auto;
