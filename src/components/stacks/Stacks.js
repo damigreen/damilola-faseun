@@ -2,7 +2,7 @@ import React from 'react';
 import {
   StackWrap,
   TechList,
-  
+  StacksNav,
 } from './StackStyled';
 
 
@@ -12,14 +12,17 @@ const Stacks = () => {
     <StackWrap> 
       <div className="stack-wrap">
           <h3>Technology Stacks</h3>
-          <nav className="tech-nav">
-            <ul>
-              <li>Frontend</li>
-              <li>Backend</li>
-              <li>Database</li>
-              <li>Others</li>
-            </ul>
-          </nav>
+          <StacksNav>
+            <nav className="stacks-nav">
+              <ul>
+                <li>All</li>
+                <li>Frontend</li>
+                <li>Backend</li>
+                <li>Database</li>
+                <li>Others</li>
+              </ul>
+            </nav>
+          </StacksNav>
 
           <TechList>
             <div className="tech-list frontend">
@@ -30,6 +33,7 @@ const Stacks = () => {
                 <li className="item-list listfrontend">JQuery</li>
                 <li className="item-list frontend">VueJS</li>
                 <li className="item-list backend">NodeJS</li>
+                <li className="item-list backend">PHP</li>
                 <li className="item-list backend">GraphQL</li>
                 <li className="item-list backend">Express</li>
               </ul>
