@@ -8,6 +8,7 @@ import Services from './components/services/';
 import Process from './components/process';
 import About from 'components/about';
 import Stacks from 'components/stacks';
+import CTA from 'components/cta';
 
 
 /*
@@ -100,6 +101,7 @@ function App() {
         <Process />
         <Portfolio data={portfolioData.portfolio} />
         <Stacks />
+        <CTA />
       <Contact />
     </div>
   );

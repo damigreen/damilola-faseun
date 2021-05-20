@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StackWrap = styled.div`
-  border: 1px solid red;
+  margin-bottom: 4rem;
 
   .stack-wrap {
     margin: 0 auto;
