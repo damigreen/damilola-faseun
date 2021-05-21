@@ -7,6 +7,7 @@ export const CTAWrap = styled.div`
   left: 0;
 
   .cta-wrapper {
+    width: 100%;
     background: url('../../../images/cta-background.png');
     background-position: 50% 50%;
     background-size: cover;
@@ -15,21 +16,21 @@ export const CTAWrap = styled.div`
 
   }
 
-  .parallax {
+  /* .parallax {
     position: relative;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 0;
-  }
+  } */
 
   .cta-wrap {
     height: auto;
     min-height: 300px;
     max-height: 400px;
     margin:0 auto;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: row;
     /* justify-content: space-between; */
@@ -52,7 +53,7 @@ export const CTAWrap = styled.div`
   }
 
   .cta-text {
-    flex: 0 0 60%;
+    display: flex;
     color: #FFF;
     color: #9B7874;
     color: #f7f0f0;
@@ -69,7 +70,7 @@ export const CTAWrap = styled.div`
   }
 
   .button-wrap {
-    flex: 0 0 30%;
+    /* flex: 0 0 30%; */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;

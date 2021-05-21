@@ -5,14 +5,13 @@ export const StackWrap = styled.div`
 
   .stack-wrap {
     margin: 0 auto;
-    width: 100%;
+    width: auto;
     max-width: 80rem;
     padding: 0.34rem 1.989rem;
 
     @media only screen and (min-width: 767px){
       margin-left: auto;
       margin-right: auto;
-      width: 100%;
       max-width: 75rem;
       padding: 0.34rem 0.78009rem;
     }

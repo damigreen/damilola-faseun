@@ -8,6 +8,7 @@ import {
 
 export const ProcessWrap = styled.div`
   margin-bottom: 4rem;
+    /* width: 100%; */
 
 
   .process-wrap {
@@ -18,7 +19,7 @@ export const ProcessWrap = styled.div`
     @media only screen and (min-width: 991px) {
       ${flexRowWrap};
       margin: 0 auto;
-      width: 100%;
+      width: 90%;
       max-width: 80rem;
     }
   }
@@ -56,7 +57,7 @@ export const ProcessContent = styled.div`
     background-color: #4A474E;
     padding: 0.8rem 1rem;
     margin: 0 auto;
-    width: 96.7%;
+    max-width: 88%;
 
     @media only screen and (min-width: 991px) {
       margin-left: 2.33rem;
@@ -65,12 +66,10 @@ export const ProcessContent = styled.div`
   }
 
   .process-title {
-    /* ${flexRowWrap}; */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     width: 90%;
-    padding: 0.56rem 0.1rem;
     padding-top: 1.2rem;
     text-align: left;
 
@@ -86,7 +85,7 @@ export const ProcessContent = styled.div`
       @media only screen and (min-width: 991px) {
         border: 1px solid green;
         width: 7rem;
-        margin-bottom: 5px;
+        margin-bottom: 1rem;
         justify-self: center;
       }
 
@@ -94,20 +93,27 @@ export const ProcessContent = styled.div`
 
     @media only screen and (min-width: 991px) {
       ${flexColumnWrap};
+      padding-top: 0;
+      padding-right: 1.2rem;
+      padding: 0.93rem 1.5rem;
       align-items: flex-start;
       justify-content: flex-start;
       border-right: 1px solid gray;
+      /* margin-left: 1rem; */
     }
   }
 
   .process-text {
     color: #ffffff;
     padding: 0.93rem 1.5rem;
+    align-self: flex-start;
+    /* justify-self: flex-start; */
 
     p {
       /* margin-top: 1.5rem; */
-      padding-top: 0.542rem;
+      /* padding-top: 0.542rem; */
       /* padding-left: 1rem; */
+      margin-top: 0;
       padding-right: 0.459rem;
       text-align: left;
       font-size: 0.983rem;

@@ -39,7 +39,7 @@ export const HeroText = styled.div`
 export const HeroContent = styled.div`
   display: block;
   padding-left: 60px;
-  width: 95%;
+  /* width: 95%; */
 `
 
 export const NameDiv = styled.h1`

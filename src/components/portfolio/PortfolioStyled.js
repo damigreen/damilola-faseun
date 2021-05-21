@@ -114,7 +114,7 @@ export const PortfolioWrap = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 2rem;
-    width: 90%;
+    width: auto;
     /* width: 100%; */
     margin-bottom: 1.07622rem;
     padding: 0.34rem 1.989rem;
@@ -146,7 +146,7 @@ export const PortfolioWrap = styled.div`
       border: unset;
       margin-left: auto;
       margin-right: auto;
-      width: 100%;
+      /* width: 100%; */
       max-width: 75rem;
       padding: 0.34rem 0.78009rem;
     }

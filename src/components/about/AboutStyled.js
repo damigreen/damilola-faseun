@@ -46,9 +46,9 @@ export const AboutImage = styled.div`
   img, .frame-one, .frame-two {
     position: absolute;
     top: 0px;
+  
     left: 0px;
   }
-  
   .frame-one {
     top: 5rem;
     left:1.2rem;
@@ -78,7 +78,7 @@ export const AboutContent = styled.div`
   /* flex-flow: column wrap;
   justify-content: flex-start; */
   padding: 40px;
-  width: 100%;
+  /* width: 100%; */
   height: auto;
 
   /* @media only screen and (max-width: 468px) {

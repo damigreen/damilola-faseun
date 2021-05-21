@@ -15,52 +15,57 @@ const Contact = () => {
     const fullName = useForm('text');
     const email = useForm('email');
     const subject = useForm('text');
-    const company = useForm('text');
+    const phone = useForm('text');
     const message = useForm('text');
-
-    const name = '../../../icons/person.svg';
-
 
 
     return(
       <ContactWrap>
         <div className="contact-wrap">
           <FieldsWrap>
-            <div className="fields-wrap">
                 <h3>Get in touch</h3>
 
                 <FormWrap>
-                  <form>
-                    <div>
-                      <label for="fullname">Full name <span>*</span></label>
-                      <input {...fullName.form} className="input-field fn" />
-                    </div>
-                    <div>
-                      <label for="email">Email <span>*</span></label>
-                      <input {...email.form} className="input-field " />
-                    </div>
-                    <div>
-                      <label for="subject">Subject <span>*</span></label>
-                      <input {...subject.form} className="input-field sub" />
-                    </div>
-                    <div>
-                      <label for="company">Company </label>
-                      <input {...company.form} className="input-field" />
-                    </div>
-                    <div>
-                      <label for="message">Message <span>*</span></label>
-                      <textarea {...message.form} className="input-field fn" />
-                    </div>
-                  </form>
+                    <form>
+                      <div>
+                        <label for="fullname"></label>
+                        <input {...fullName.form} placeholder="Full Name  *" className="input-field fn" />
+
+                      </div>
+
+                      <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+                        <label for="email"></label>
+                        <input {...email.form} placeholder="Email  *" className="input-field " />
+
+                        <label for="company"></label>
+                        <input {...phone.form} placeholder="Phone" className="input-field" />
+                      </div>
+
+                      <div>
+                        <label for="subject"></label>
+                        <input {...subject.form} placeholder="Subject *" className="input-field sub" />
+
+                      </div>
+
+                      <div>
+                        <label for="message"></label>
+                        <input {...message.form} placeholder="Message  *" className="input-field fn" />
+                      </div>
+
+                      <div>
+                        <p><span>clip</span> Add an attachment</p>
+                      </div>
+
+                      <div>
+                        <button type="submit">Send message</button>
+                      </div>
+                    </form>
                 </FormWrap>
-              
-            </div>
+          
           </FieldsWrap>
 
           <TestimonialSection>
-            <div className="testimonial-section">
               <Testimonial />
-            </div>
           </TestimonialSection>
 
         </div>
