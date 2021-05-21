@@ -6,18 +6,25 @@ import {
 
 
 const Testimonial = () => {
+  const testQuote = '../../../icons/quote.png';
+  const testImage1 = '../../../images/dami.jpg';
+  const testImage2 = '../../../images/yomi.png'
+  const testImage3 = '../../../images/reymond.jpg'
+
 
   return (
     <TestimonialWrap>
       <div className="testimonial-wrap">
         <TestimonialCard>
           <div className="card one">
-            <div>Quote</div>
+            <div className="card-quote">
+              <img src={testQuote} alt="testimonial icon" />
+            </div>
             <p>
               is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
             </p>
-            <img src alt="testimonial image thumbnail picture greenmtech" />
-            <div>
+            <div className="test-avatar one"></div>
+            <div className="avatar-title">
               <p>Damilola Faseun</p>
               <p>CTO Greenmtech</p>
             </div>
@@ -26,7 +33,7 @@ const Testimonial = () => {
 
         <TestimonialCard>
           <div className="card two">
-            <div>Quote</div>
+            {/* <div>Quote</div> */}
             <p>
               is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
             </p>
