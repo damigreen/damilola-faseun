@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const TestimonialWrap = styled.div`
 
   .testimonial-wrap {
-    /* border: 1px solid red; */
     width: 100%;
     height: auto;
   }
@@ -12,7 +11,7 @@ export const TestimonialCard = styled.div`
 
   .card {
     background-color: #2E2639;
-    max-width: 360px;
+    max-width: 390px;
     height: auto;
     display: flex;
     flex-direction: column;
