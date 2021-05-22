@@ -26,38 +26,43 @@ const Contact = () => {
                 <h3>Get in touch</h3>
 
                 <FormWrap>
-                    <form>
-                      <div>
-                        <label for="fullname"></label>
-                        <input {...fullName.form} placeholder="Full Name  *" className="input-field fn" />
+                    <form className="form">
+                      <div className="input-box">
+                        <label for="fullname">FullName  *</label>
+                        <input {...fullName.form} className="input-field fn" />
 
                       </div>
 
-                      <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
-                        <label for="email"></label>
-                        <input {...email.form} placeholder="Email  *" className="input-field " />
+                      <div className="input-box" style={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-start'}}>
+                        <div style={{ flex: '0 0 60%'}}>
+                          <label for="email">Email  *</label>
+                          <input {...email.form}  className="input-field " />
+                        </div>
 
-                        <label for="company"></label>
-                        <input {...phone.form} placeholder="Phone" className="input-field" />
+                        <div style={{marginLeft: '2.248rem', flex: '0 0 34%'}}>
+                          <label for="company">Company  *</label>
+                          <input {...phone.form} className="input-field" />
+                        </div>
                       </div>
 
-                      <div>
-                        <label for="subject"></label>
-                        <input {...subject.form} placeholder="Subject *" className="input-field sub" />
+                      <div className="input-box">
+                        <label for="subject">Subject  *</label>
+                        <input {...subject.form} className="input-field sub" />
 
                       </div>
 
-                      <div>
-                        <label for="message"></label>
-                        <input {...message.form} placeholder="Message  *" className="input-field fn" />
+                      <div className="input-box">
+                        <label for="message">Message  *</label>
+                        <input {...message.form} className="input-field fn" />
                       </div>
 
-                      <div>
-                        <p><span>clip</span> Add an attachment</p>
+                      <div className="attach-box">
+                        <div className="attach-file"></div>
+                        <p className="attach-text">Add an attachment</p>
                       </div>
 
-                      <div>
-                        <button type="submit">Send message</button>
+                      <div className="submit-box">
+                        <button className="btn-submit" type="submit">Send message</button>
                       </div>
                     </form>
                 </FormWrap>

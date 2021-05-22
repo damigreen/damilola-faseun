@@ -13,8 +13,7 @@ export const ContactWrap = styled.div`
 
     .contact-wrap {
         margin: 0 auto;
-        width:85%;
-        /* width: 100%; */
+        width: 74%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -35,18 +34,13 @@ export const FieldsWrap = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: auto;
     flex: 0 0 100%;
-    /* max-width: 500px; */
-    margin: 0 auto;
     max-width: 700px;
-    /* border: 1px solid green; */
     color: #F2F2F2;
     margin-bottom: 1.9rem;
 
     @media only screen and (min-width: 1200px) {
-        /* align-items: flex-start; */
-        /* margin-left:0; */
         max-width: 50%;
         align-self: flex-start;
         justify-self: flex-start;
@@ -57,12 +51,12 @@ export const FieldsWrap = styled.div`
         @media only screen and (min-width: 1200px) {
             text-align: left;
             align-self: flex-start;
-            padding: 1rem 0.54462rem;
+            padding: 0.7381rem 0.54462rem;
             padding-bottom: 0;
-            margin-left: 1rem;
+            /* margin-left: 1rem; */
             font-size: 2.4rem;
             margin-bottom: 1rem;
-            font-weight: 500;
+            font-weight: 700;
         }
         
     }
@@ -83,41 +77,113 @@ export const FormWrap = styled.div`
     }    
 
 
-    form {
+    .form {
         width: 100%;
-    }
 
-    label {
-        margin-left: 12px;
-    }
 
-    input {
-        width: 95%;
-        border: none;
-        background-color: inherit;
-        border-bottom: 1px solid #C4C4C4;
-        padding: 0.345rem 1rem;
-        padding-bottom: 1.3rem;
-        padding-left: 0;
-        margin: 1.89rem 0.783rem 0 0;
 
-        :first-child {
-            margin-top: 0;
+        div.input-box {
+            margin-bottom: 2.9296772rem;
+            position: relative;
         }
 
-        ::placeholder {
-            color: #E0E0E0;
+        label {
+            position: absolute;
+            bottom: 7px;
+            /* padding-bottom: 1.09233rem; */
+            font-size: 0.875rem;
+            color: #C0BFC3
+        }
+
+        input {
+            width: 95%;
+            border: none;
+            background-color: inherit;
+            border-bottom: 1px solid #C4C4C4;
+            padding-left: 0;
+
+            :first-child {
+                margin-top: 0;
+            }
+
+            ::placeholder {
+                color: #E0E0E0;
+            }
+        }
+
+        input[type="text"]:focus {
+            background-color: navy;
+        }
+
+        .input-field {
+            width: 100%;
+        }
+
+        .attach-box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 1.7032rem;
+
+
+            .attach-file {
+                border-radius: 50%;
+                background-size: 25px;
+                background: url('../../../icons/attachment.png');
+                background-position: center;
+                background-color: #F2F2F2;
+                background-repeat: no-repeat;
+                height: 40px;
+                width: 40px;
+            }
+
+            .attach-file::after, .attach-file::before {
+                content: '';
+            }
+
+            .attach-text {
+                margin-left: 7px;
+                padding: 0.533rem 1rem;
+            }
+
+        }
+
+        .submit-box {
+
+            .btn-submit {
+                background-color: #fff;
+                border-radius: 7px;
+                border: none;
+                color: #1e1d28;
+                display: inline-block;
+                /* font-family: "Proxima Nova",Arial,SourceSansPro,"Segoe UI",Roboto,"Helvetica Neue",sans-serif; */
+                font-size: 1rem;
+                font-weight: 600;
+                line-height: 1.3!important;
+                margin: 0;
+                min-width: 220px;
+                padding: 20px!important;
+                transition-duration: .3s;
+                transition-property: background-color,color;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                vertical-align: middle;
+                white-space: nowrap;
+            }
         }
     }
 
-    input[type="text"] {
-    }
 
-    input[type="email"] {
-    }
 `
 
 export const TestimonialSection = styled.div`
     margin-bottom: 1rem;
     margin-top: 3.8634rem;
+
+    @media only screen and (min-width: 1200px) {
+        max-width: 45%;
+    }
+
 `
