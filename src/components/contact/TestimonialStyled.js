@@ -11,15 +11,23 @@ export const TestimonialCard = styled.div`
 
   .card {
     background-color: #2E2639;
-    max-width: 390px;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
-    padding-top: 2.51298rem;
     border-radius: 8px;
+    padding: 2.344rem;
+    margin-bottom: 1.9rem;
+
+    @media only screen and (min-width: 997px) {
+      padding: 3rem;
+      max-width: 390px;
+      padding-top: 2.51298rem;
+      margin: 0 auto;
+      margin-top: 0.831rem;
+      width: 90%;
+    }
 
     div {
       color: #F2F2F2;

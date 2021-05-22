@@ -13,18 +13,22 @@ export const ContactWrap = styled.div`
 
     .contact-wrap {
         margin: 0 auto;
-        width: 74%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 55px 0;
+
         
-        @media only screen and (min-width: 1200px) {
+        @media only screen and (min-width: 997px) {
+            width: 74%;
             height: auto;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
+            padding: 60px 0 80px 0;
         }
     }
 `
@@ -34,22 +38,32 @@ export const FieldsWrap = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
-    flex: 0 0 100%;
-    max-width: 700px;
+    /* width: auto; */
+    margin: 0 auto;
+    width: 90%;
+    /* max-width: 700px; */
+    /* margin: ; */
     color: #F2F2F2;
     margin-bottom: 1.9rem;
 
-    @media only screen and (min-width: 1200px) {
-        max-width: 50%;
+    @media only screen and (min-width: 997px) {
+        max-width: 48%;
         align-self: flex-start;
         justify-self: flex-start;
     }
 
     h3 {
+        font-size: 2.4rem;
+        padding: 0.7381rem 0.954462rem;
+        text-align: left;
+        margin-bottom: 0;
+        align-items: flex-start;
+        justify-self: flex-start;
+        width: 100%;
+        margin-top: 0;
 
-        @media only screen and (min-width: 1200px) {
-            text-align: left;
+
+        @media only screen and (min-width: 997px) {
             align-self: flex-start;
             padding: 0.7381rem 0.54462rem;
             padding-bottom: 0;
@@ -57,6 +71,7 @@ export const FieldsWrap = styled.div`
             font-size: 2.4rem;
             margin-bottom: 1rem;
             font-weight: 700;
+            margin-top: 0;
         }
         
     }
@@ -181,9 +196,11 @@ export const FormWrap = styled.div`
 export const TestimonialSection = styled.div`
     margin-bottom: 1rem;
     margin-top: 3.8634rem;
+    margin: 0 auto;
+    width: 90%;
 
-    @media only screen and (min-width: 1200px) {
-        max-width: 45%;
+    @media only screen and (min-width: 997px) {
+        max-width: 42%;
     }
 
 `
