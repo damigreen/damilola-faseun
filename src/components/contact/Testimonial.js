@@ -2,6 +2,7 @@ import React from 'react';
 import {
   TestimonialWrap,
   TestimonialCard,
+  DotsWrap,
 } from './TestimonialStyled';
 
 
@@ -37,7 +38,7 @@ const Testimonial = () => {
             <p>
               is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
             </p>
-            <img src alt="testimonial image thumbnail picture raychan" />
+            <img alt="testimonial image thumbnail picture raychan" src />
             <div>
               <p>Raymond Olatunji</p>
               <p>Rayckan Herbal Healthcare</p>
@@ -51,7 +52,7 @@ const Testimonial = () => {
             <p>
               is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
             </p>
-            <img src alt="testimonial image thumbnail picture tca" />
+            <img alt="testimonial image thumbnail picture tca" src />
             <div>
               <p>Abiola Yomi</p>
               <p>Co Founder TCA </p>
@@ -60,6 +61,14 @@ const Testimonial = () => {
         </TestimonialCard>
 
       </div>
+      
+      <DotsWrap>
+        <ul className="greenm-dots">
+          <li className="greenm-active"><button type="button"></button></li>
+          <li className=""><button type="button"></button></li>
+          <li className=""><button type="button"></button></li>
+        </ul>
+      </DotsWrap>
     </TestimonialWrap>
   )
 }

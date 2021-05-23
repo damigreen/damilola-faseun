@@ -26,7 +26,7 @@ export const TestimonialCard = styled.div`
       padding-top: 2.51298rem;
       margin: 0 auto;
       margin-top: 0.831rem;
-      width: 90%;
+      width: 80%;
     }
 
     div {
@@ -61,7 +61,6 @@ export const TestimonialCard = styled.div`
       background: url('../../../images/dami.jpg');
       background-size: cover;
       background-position: center center;
-
     }
   }
 
@@ -90,6 +89,56 @@ export const TestimonialCard = styled.div`
         margin-top: 0;
         padding-top: 0;
       }
+    }
+  }
+`
+export const DotsWrap = styled.div`
+  width: 100%;
+
+    @media only screen and (min-width: 997px) {
+      width: 100%;
+    }
+
+  .greenm-dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
+
+
+
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      height: 20px;
+      width: 20px;
+      margin: 0 5px;
+      padding: 0;
+
+    }
+
+    .greenm-active {
+      border: 4px solid #F2F2F2;
+      width: 20px;
+      height:20px;
+      border-radius: 50%;
+    }
+
+    button {
+      position: relative;
+      background-color: #4B4A53;
+      background-position: center;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: none;
     }
   }
 `
