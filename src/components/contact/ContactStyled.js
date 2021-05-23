@@ -22,7 +22,8 @@ export const ContactWrap = styled.div`
 
         
         @media only screen and (min-width: 997px) {
-            width: 74%;
+            width: 100%;
+            max-width: 74rem;
             height: auto;
             display: flex;
             flex-direction: row;
