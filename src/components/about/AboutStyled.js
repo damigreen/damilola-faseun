@@ -8,14 +8,18 @@ import {
 export const AboutWrap = styled.div`
 
   .about-wrap {
-    ${flexColumnWrap};
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
 
     @media only screen and (min-width: 991px) {
       ${flexRowWrap}; 
       justify-content: space-evenly;
       align-items: flex-start;
       margin: 0 auto;
-      width: 100%;
+      width: 90%;
+      padding: 31px;
       max-width: 75rem;
     }
 
@@ -24,6 +28,7 @@ export const AboutWrap = styled.div`
 
 export const AboutImage = styled.div`
   position: relative;
+  margin: 0 auto;
   width: 100%;
   max-width: 450px;
   height: auto;
@@ -39,20 +44,19 @@ export const AboutImage = styled.div`
 
   img {
     padding: 2rem;
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 
   img, .frame-one, .frame-two {
     position: absolute;
     top: 0px;
-  
     left: 0px;
   }
   .frame-one {
     top: 5rem;
     left:1.2rem;
-    height: 350px;
+    height: 325px;
     width:200px;
     background: #B51C1C;
 
@@ -65,7 +69,7 @@ export const AboutImage = styled.div`
     top: 1.2rem;
     left: 10rem;
     height: 200px;
-    width: 272px;
+    width: 248px;
     background: #007F00;
 
     @media only screen and (max-width: 468px) {
@@ -75,10 +79,7 @@ export const AboutImage = styled.div`
 `
 
 export const AboutContent = styled.div`
-  /* flex-flow: column wrap;
-  justify-content: flex-start; */
-  padding: 40px;
-  /* width: 100%; */
+  padding: 31px;
   height: auto;
 
   /* @media only screen and (max-width: 468px) {
@@ -93,7 +94,7 @@ export const AboutContent = styled.div`
   h3 {
     text-align: left;
     margin-bottom: 1.672rem;
-    padding: 0.45rem 1.1rem;
+    padding: 0.45rem 0rem;
 
     @media only screen and (min-width: 991px) {
       text-align: left;
@@ -102,6 +103,6 @@ export const AboutContent = styled.div`
 
   p {
     line-height: 31px;
-    padding: 0.5rem 0.856rem;
+    padding: 0.5rem 0rem;
   }
 `
