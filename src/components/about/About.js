@@ -12,6 +12,7 @@ const About = () => {
   return (
     <AboutWrap>
       <div className="about-wrap">
+        {/* <h2 className="service-intro">I am a software developer helping businesses create a presence online </h2> */}
         <AboutImage>
           <div className="frame-one"></div>
           <div className="frame-two"></div>

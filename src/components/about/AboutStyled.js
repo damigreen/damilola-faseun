@@ -10,7 +10,7 @@ export const AboutWrap = styled.div`
   .about-wrap {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     width: 100%;
 
     @media only screen and (min-width: 991px) {
@@ -22,6 +22,31 @@ export const AboutWrap = styled.div`
       padding: 31px;
       max-width: 75rem;
     }
+
+    .service-intro {
+      margin: 0 auto;
+      text-align: center;
+        width: 68%;
+        padding: 20px 30px;
+        padding-top: 40px;
+        font-size: 3.2901rem;
+        font-weight: 400;
+        line-height: 5rem;
+        /* text-align: left; */
+
+        @media only screen and (max-width: 480px) {
+            width: 90%;
+            font-size: 1.00344rem;
+            line-height: 2.3rem;
+        }
+
+        @media only screen and (max-width: 767px) {
+            width: 90%;
+            font-size: 2.90344rem;
+            line-height: 2.93rem;
+        }
+    }
+
 
   }
 `
@@ -79,8 +104,10 @@ export const AboutImage = styled.div`
 `
 
 export const AboutContent = styled.div`
-  padding: 31px;
+  padding: 31px 0;
   height: auto;
+  margin: 0 auto;
+  width: 90%;
 
   /* @media only screen and (max-width: 468px) {
       background: url('../../images/profile-image1.png');
