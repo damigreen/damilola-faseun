@@ -12,10 +12,7 @@ const Services = () => {
         <ServicesWrapper>
             <ServicesRow>
                 <div className="services-box">
-                    <h5 className="service-intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h5>
-                    <div>
-                        <h4 className="my-services-header">Services</h4>
-                    </div>
+                    <h4 className="my-services-header">I'm specialised in</h4>
 
                     <div className="services-items">
                         <div className="services-data">

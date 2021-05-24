@@ -1,23 +1,19 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import {
-    borderStyle,
     flexColumnWrap,
     textStyle,
 } from '../../AppStyled';
 
 
 
-const servicesRow = `
-`
-
 export const  ServicesWrapper = styled.div`
     /* margin-top: 300px; */
     box-sizing: border-box;
     margin-bottom: 4rem;
+    background-color: #F8F8F8;
 ` 
 
 export const ServicesRow = styled.div`
-    ${servicesRow};
     width: 100%;
     margin: 0;
     padding: 0;
@@ -25,18 +21,14 @@ export const ServicesRow = styled.div`
     .services-box {
         display: flex;
         flex-flow: column wrap;
-        width: 100%;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
 
-    .services-intro {
-        padding: 20px 30px;
-        font-size: 1.901rem;
-    }
-
+    
     .my-services-header {
+        width: 100%;
         font-size: 1.14561rem;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -44,33 +36,44 @@ export const ServicesRow = styled.div`
         border-bottom: 1px solid rgba(49,49,49,0.1);
         text-transform: uppercase;
         letter-spacing: 0.120rem;
+        margin-bottom: 0;
+        text-transform: uppercase;
     }
 
     .services-items {
         display: flex;
+        flex-direction: row;
         flex-flow: row wrap;
+        justify-content: flex-start;
         justify-content: center;
-        width: 100%;
-        /* max-width: 90rem; */
-
-
+        /* align-items: flex-start; */
+        /* width: 100%; */
     }
 
     .services-data {
-        ${flexColumnWrap};
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         padding: 40px;
+        /* width: 100%; */
         /* margin: 7px 10px; */
         border-bottom: 1px solid rgba(49,49,49,0.1);
         border-right: 1px solid rgba(49,49,49,0.1);
 
-        @media only screen and (min-width : 500px) and (max-width : 800px) {
-            flex: 0 0 50%;
-            /* border: 1px solid blue; */
+        @media only screen and (min-width: 500px) and (max-width: 800px) {
+            flex: 1 1 25%;
+            /* flex-basis: 30%; */
+            border: 1px solid red;
         }
 
-        @media only screen and (min-width : 800px) {
-            flex: 0 0 33.333%;
-            /* border: 1px solid blue; */
+        @media only screen and (min-width: 800px) {
+            flex: 1 1 20%;
+
+        }
+
+        @media only screen and (min-width: 1639px) {
+            flex: 1 1 28%;
+            
         }
 
         .service-img {
