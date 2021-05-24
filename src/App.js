@@ -9,7 +9,7 @@ import Process from './components/process';
 import About from 'components/about';
 import Stacks from 'components/stacks';
 import CTA from 'components/cta';
-
+import Footer from 'components/footer/'
 
 /*
 
@@ -93,16 +93,33 @@ function App() {
 
   return (
     <div className="App">
-      <header>
+      <header id="header">
         <Header />
       </header>
+      <section id="about">
         <About />
+      </section>
+      <section id="services">
         <Services />
+      </section>
+      <section id="process">
         <Process />
+      </section>
+      <section id="portfolio">
         <Portfolio data={portfolioData.portfolio} />
+      </section>
+      <section id="stacks">
         <Stacks />
+      </section>
+      <section id="cta">
         <CTA />
-      <Contact />
+      </section >
+      <section id="contact">
+        <Contact />
+      </section>
+      <footer id="footer">
+        <Footer />
+      </footer>
     </div>
   );
 

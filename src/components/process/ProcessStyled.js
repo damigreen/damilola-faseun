@@ -14,7 +14,7 @@ export const ProcessWrap = styled.div`
   .process-wrap {
     ${flexColumnWrap};
     /* justify-content: flex-start; */
-    padding: 40px;
+    padding: 31px;
 
     @media only screen and (min-width: 991px) {
       ${flexRowWrap};
@@ -26,22 +26,23 @@ export const ProcessWrap = styled.div`
 `
 
 export const ProcessIntro = styled.div`
-  padding: 0.4rem 0.3rem;
+  padding: 0.4rem 0rem;
 
   h3 {
     text-align: left;
-    padding: 0.5rem 0.456rem;
-    margin-left: 1.13rem;
+    padding: 0.5rem 0rem;
+    /* margin-left: 1.13rem; */
     margin-bottom: 0.9rem;
 
     @media only screen and (min-width: 991px) {
       text-align: left;
+      margin-top: 0;
     }
 
   }
 
   p {
-    padding: 0.3462rem 1.5rem;
+    padding: 0.3462rem 0rem;
     /* padding-left: 1rem;
     padding-right: 1.459rem; */
     font-size: 0.983rem;
@@ -55,9 +56,9 @@ export const ProcessContent = styled.div`
   .process-content {
     ${flexColumnWrap};
     background-color: #4A474E;
-    padding: 0.8rem 1rem;
+    padding: 0.8rem 0rem;
     margin: 0 auto;
-    max-width: 88%;
+    max-width: 100%;
 
     @media only screen and (min-width: 991px) {
       margin-left: 2.33rem;

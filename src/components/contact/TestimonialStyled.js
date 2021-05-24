@@ -121,7 +121,6 @@ export const DotsWrap = styled.div`
       width: 20px;
       margin: 0 5px;
       padding: 0;
-
     }
 
     .greenm-active {
