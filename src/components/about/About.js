@@ -19,7 +19,7 @@ const About = () => {
           <img className="about-image" alt="Image for the about section" src={aboutImage} />
         </AboutImage>
         <AboutContent>
-          <h3>About me</h3>
+          <h2>About me</h2>
           <p>
             I realize the dominating thoughts of my mind will eventually
             reproduce themselves in outward, physical action, and gradually transform

@@ -98,10 +98,13 @@ export const PortfolioWrap = styled.div`
     ${flexColumnWrap};
     justify-content: flex-start;
     margin: 0 auto;
-    width: 100%;
-    max-width: 90rem;
+    width: 90%;
 
-  }
+    @media only screen and (min-width: 991px) {
+      /* width: 100%; */
+      max-width: 90rem;
+      padding: 31px 3rem;
+    }
 
   .portfolio-header-main {
     align-items: flex-start;
@@ -115,13 +118,13 @@ export const PortfolioWrap = styled.div`
     align-items: flex-start;
     margin-top: 2rem;
     width: auto;
-    /* width: 100%; */
-    margin-bottom: 1.07622rem;
-    padding: 0.34rem 1.989rem;
+    margin-bottom: 2.20907622rem;
+    /* padding: 0.34rem 0; */
 
 
     h3, h4 {
       text-align: left;
+      margin: 0;
       /* padding-left: 1.06345rem;
       padding-right: 1.06345rem; */
       /* padding-left: 1.34rem; */
@@ -130,10 +133,12 @@ export const PortfolioWrap = styled.div`
 
     h3 {
       ${HeadingPrimary};
+      margin-bottom: 0.873rem;
     }
 
     h4 {
       ${HeadingSecondary};
+      margin-top: 0;
     }
 
     p {
@@ -146,9 +151,9 @@ export const PortfolioWrap = styled.div`
       border: unset;
       margin-left: auto;
       margin-right: auto;
-      /* width: 100%; */
+      width: 100%;
       max-width: 75rem;
-      padding: 0.34rem 0.78009rem;
+      /* padding: 0.34rem 0.78009rem; */
     }
   }
 

@@ -36,7 +36,8 @@ export const CTAWrap = styled.div`
     /* justify-content: space-between; */
     justify-content: center;
     align-items: center;
-    max-width: 80rem;
+    width: 79%;
+    /* max-width: 80rem; */
     padding: 0.34rem 1.989rem;
 
     @media only screen and (max-width: 767px) {

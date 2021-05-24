@@ -12,7 +12,7 @@ const Services = () => {
         <ServicesWrapper>
             <ServicesRow>
                 <div className="services-box">
-                    <h4 className="my-services-header">I'm specialised in</h4>
+                    <h4 className="my-services-header">My Services</h4>
 
                     <div className="services-items">
                         <div className="services-data">

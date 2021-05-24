@@ -8,19 +8,23 @@ import {
 export const AboutWrap = styled.div`
 
   .about-wrap {
-    display: flex;
     flex-direction: column;
     /* margin: 0 auto; */
-    width: 100%;
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
 
     @media only screen and (min-width: 991px) {
       ${flexRowWrap}; 
-      justify-content: space-evenly;
-      align-items: flex-start;
+      padding: 9rem 0;
       margin: 0 auto;
-      width: 90%;
-      padding: 31px;
+      /* width: 100%; */
+      /* padding: 40px 0; */
       max-width: 75rem;
+    align-items: flex-start;
+
     }
 
     .service-intro {
@@ -60,6 +64,7 @@ export const AboutImage = styled.div`
   margin-bottom: 30rem;
 
   @media only screen and (min-width: 991px) {
+    margin-right: 1rem;
     min-width: 450px;
   }
 
@@ -88,6 +93,10 @@ export const AboutImage = styled.div`
     @media only screen and (max-width: 468px) {
       display: none;
     }
+
+    @media only screen and (min-width: 991px) {
+      float: right;
+    }
   }
 
   .frame-two {
@@ -109,22 +118,28 @@ export const AboutContent = styled.div`
   margin: 0 auto;
   width: 90%;
 
-  /* @media only screen and (max-width: 468px) {
-      background: url('../../images/profile-image1.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 90% 50%;
-      color: #fff;
-    }
-  */ 
+  @media only screen and (min-width: 991px) {
+    width: 40%;
+    margin-left: 0;
+    /* background: url('../../images/profile-image1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90% 50%;
+    color: #fff; */
+    /* max-width: 75%;
+    border: 1px solid gold; */
+  }
 
-  h3 {
+  h2 {
     text-align: left;
     margin-bottom: 1.672rem;
     padding: 0.45rem 0rem;
+    font-size: 2.643rem;
+    margin-top: 0;
 
     @media only screen and (min-width: 991px) {
       text-align: left;
+      font-size: 3.2643rem;
     } 
   }
 

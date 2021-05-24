@@ -12,7 +12,7 @@ const Process = () => {
     <ProcessWrap>
       <div className="process-wrap">
         <ProcessIntro>
-            <h3>Process</h3>
+            <h2>Process</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy texthas been the industry's standard dummy text
             </p>

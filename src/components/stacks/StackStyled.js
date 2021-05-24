@@ -6,8 +6,7 @@ export const StackWrap = styled.div`
   .stack-wrap {
     margin: 0 auto;
     width: auto;
-    max-width: 80rem;
-    padding: 0.34rem 1.989rem;
+    width: 90%;
 
     @media only screen and (min-width: 767px){
       margin-left: auto;

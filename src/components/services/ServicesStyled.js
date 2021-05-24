@@ -9,8 +9,9 @@ import {
 export const  ServicesWrapper = styled.div`
     /* margin-top: 300px; */
     box-sizing: border-box;
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
     background-color: #F8F8F8;
+    padding-bottom: 6rem;
 ` 
 
 export const ServicesRow = styled.div`
@@ -29,7 +30,7 @@ export const ServicesRow = styled.div`
     
     .my-services-header {
         width: 100%;
-        font-size: 1.14561rem;
+        font-size: 1.90643rem;
         padding-top: 20px;
         padding-bottom: 20px;
         border-top: 1px solid rgba(49,49,49,0.1);
@@ -37,6 +38,7 @@ export const ServicesRow = styled.div`
         text-transform: uppercase;
         letter-spacing: 0.120rem;
         margin-bottom: 0;
+        margin-top: 0;
         text-transform: uppercase;
     }
 

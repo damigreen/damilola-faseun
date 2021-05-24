@@ -8,33 +8,39 @@ import {
 
 export const ProcessWrap = styled.div`
   margin-bottom: 4rem;
-    /* width: 100%; */
-
+  background-color: #F8F8F8;
 
   .process-wrap {
     ${flexColumnWrap};
     /* justify-content: flex-start; */
-    padding: 31px;
+    padding: 31px 0;
+    margin: 0 auto;
+    width: 90%;
 
     @media only screen and (min-width: 991px) {
       ${flexRowWrap};
       margin: 0 auto;
       width: 90%;
       max-width: 80rem;
+      padding: 31px 3rem;
     }
   }
 `
 
 export const ProcessIntro = styled.div`
-  padding: 0.4rem 0rem;
+  /* padding: 0.4rem 0rem; */
+  /* border: 2px solid #ffffff;
+  padding: 2rem;
+  padding-top: 0; */
 
-  h3 {
+  h2 {
     text-align: left;
     padding: 0.5rem 0rem;
-    /* margin-left: 1.13rem; */
     margin-bottom: 0.9rem;
+    font-size: 2.643rem;
 
     @media only screen and (min-width: 991px) {
+      font-size: 3.2643rem;
       text-align: left;
       margin-top: 0;
     }
@@ -43,8 +49,6 @@ export const ProcessIntro = styled.div`
 
   p {
     padding: 0.3462rem 0rem;
-    /* padding-left: 1rem;
-    padding-right: 1.459rem; */
     font-size: 0.983rem;
     line-height: 30px;
   }
