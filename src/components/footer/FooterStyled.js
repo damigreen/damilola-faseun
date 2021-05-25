@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 
 export const FooterWrap = styled.div`
   width: 100%;
+  background-color: #EFEEEA;
 
   .footer-wrap {
   }
@@ -19,16 +20,34 @@ export const FooterWrap = styled.div`
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    @media only screen and (min-width: 460px) and (max-width: 767px) {
+      margin: 0 auto;
+      width: 85%;
+      max-width: 74rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media only screen and (max-width: 460px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 
   .copyrights {
     text-align: center;
-    border-top: 1px solid gold;
+    border-top: 1px solid #b2ad99;
     padding: 3rem;
 
     @media only screen and (min-width: 767px) {
-      border-top: 1px solid gold;
+      border-top: 1px solid #b2ad99;
       margin: 0 auto;
       max-width: 68rem;
       text-align: right;
@@ -37,9 +56,16 @@ export const FooterWrap = styled.div`
   }
 `
 export const InfoWrap = styled.div`
+  margin-bottom: 2rem;
 
   @media only screen and (min-width: 767px) {
     flex: 0 0 30%;
+  }
+
+  @media only screen and (max-width: 460px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .info-wrap {
@@ -47,6 +73,14 @@ export const InfoWrap = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 1.4rem;
+
+    @media only screen and (max-width: 460px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 
     img {
       width: 65px;
@@ -56,6 +90,8 @@ export const InfoWrap = styled.div`
     h2 {
       text-transform: uppercase;
       margin-left: 0.791rem;
+      color: #1F1A28;
+      margin:0;
     }
   }
 
@@ -64,20 +100,38 @@ export const InfoWrap = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+
+    @media only screen and (max-width: 460px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    justify-self: center;
+  }
+
+    
   }
 `
 export const SiteMapWrap = styled.div`
-
   @media only screen and (min-width: 767px) {
     flex: 0 0 28%;
-    /* justify-self: center; */
-    align-self: center;
     vertical-align: middle;
     margin-left: 2rem;
   }
 
+  @media only screen and (max-width: 460px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.4rem;
+  }
+
 
   h3 {
+    text-transform: uppercase;
+    font-size: 1.0234rem;
+    margin: 0;
     margin-bottom: 0.68941rem;
   }
 
@@ -93,11 +147,36 @@ export const SubscriptionWrap = styled.div`
     flex: 0 0 35%;
   }
 
-
-  h3 {
-      margin-bottom: 0.68941rem;
+  @media only screen and (min-width: 460px) {
+      width: 50%;
     }
 
+  @media only screen and (max-width: 460px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.4rem;
+  }
+
+
+
+  h3 {
+    margin: 0;
+    margin-bottom: 0.68941rem;
+    text-transform: uppercase;
+    font-size: 1.0234rem;
+  }
+
+  p {
+    @media only screen and (max-width: 460px) {
+      width: 65%;
+    }
+  }
+
+  div {
+    width: 65%;
+  }
   
   
 `
