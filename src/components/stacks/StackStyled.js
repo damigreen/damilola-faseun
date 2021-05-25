@@ -1,3 +1,6 @@
+import {
+  HeadingPrimary,
+} from 'AppStyled';
 import styled from 'styled-components';
 
 export const StackWrap = styled.div`
@@ -7,6 +10,7 @@ export const StackWrap = styled.div`
     margin: 0 auto;
     width: auto;
     width: 90%;
+    padding: 4rem 0;
 
     @media only screen and (min-width: 767px){
       margin-left: auto;
@@ -17,14 +21,17 @@ export const StackWrap = styled.div`
   }
 
   h3 {
-    font-size: 1.6393456rem;
-    font-weight: 700;
-    color: #1d3030;
+    ${HeadingPrimary}
     margin: 1.783rem auto;
 
     @media only screen and (min-width: 1200px) {
-      font-size: 1.79345rem;
+
     }
+  }
+
+  .tech-list {
+    /* margin-bottom: 2rem;
+    border: 1px solid gold; */
   }
 
   ul {
