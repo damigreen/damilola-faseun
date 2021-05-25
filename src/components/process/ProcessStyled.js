@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 import {
-  borderStyle,
   flexColumnWrap,
   flexRowWrap,
-  textStyle,
+  HeadingPrimary,
 } from '../../AppStyled';
 
 export const ProcessWrap = styled.div`
-  margin-bottom: 4rem;
   background-color: #F8F8F8;
+  /* background-color: #f4f3f0; */
+  padding: 6rem 0;
+  padding-top: 0;
 
   .process-wrap {
     ${flexColumnWrap};
@@ -21,30 +22,29 @@ export const ProcessWrap = styled.div`
       ${flexRowWrap};
       margin: 0 auto;
       width: 90%;
-      max-width: 80rem;
+      max-width: 74rem;
       padding: 31px 3rem;
+      align-items: flex-start;
     }
   }
 `
 
 export const ProcessIntro = styled.div`
-  /* padding: 0.4rem 0rem; */
-  /* border: 2px solid #ffffff;
-  padding: 2rem;
-  padding-top: 0; */
+  flex: 0 0 30%;
+
 
   h2 {
     text-align: left;
     padding: 0.5rem 0rem;
     margin-bottom: 0.9rem;
     font-size: 2.643rem;
+    ${HeadingPrimary}
 
     @media only screen and (min-width: 991px) {
-      font-size: 3.2643rem;
       text-align: left;
       margin-top: 0;
-    }
 
+    }
   }
 
   p {
