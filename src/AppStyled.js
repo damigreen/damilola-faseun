@@ -29,11 +29,13 @@ export const textStyle = `
 `
 
 export const HeadingPrimary = `
-    font-size: 36px;
+    font-size: 42px;
     font-weight: 700;
-    // color: #1F2F3B;
-    color: #003300;
     color: #1d3030;
+
+    @media only screen and (max-width: 1024px) {
+        font-size: 36px;
+    }
 `
 
 export const HeadingSecondary = `
@@ -43,7 +45,7 @@ export const HeadingSecondary = `
     color: #475E67;
 `
 export const HeadingTertiary = `
-    // font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
     color: gray;
     color: #4e5965;
