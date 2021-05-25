@@ -1,17 +1,18 @@
 import styled from 'styled-components'
 import {
-    flexColumnWrap,
     textStyle,
+    HeadingPrimary,
+    HeadingSecondary,
+    HeadingTertiary,
 } from '../../AppStyled';
 
 
 
 export const  ServicesWrapper = styled.div`
-    /* margin-top: 300px; */
     box-sizing: border-box;
-    /* margin-bottom: 4rem; */
+    padding-bottom: 4rem;
     background-color: #F8F8F8;
-    padding-bottom: 6rem;
+    /* background-color: #f4f3f0; */
 ` 
 
 export const ServicesRow = styled.div`
@@ -40,6 +41,8 @@ export const ServicesRow = styled.div`
         margin-bottom: 0;
         margin-top: 0;
         text-transform: uppercase;
+        ${HeadingSecondary};
+        color: #1d3030;
     }
 
     .services-items {
@@ -65,7 +68,6 @@ export const ServicesRow = styled.div`
         @media only screen and (min-width: 500px) and (max-width: 800px) {
             flex: 1 1 25%;
             /* flex-basis: 30%; */
-            border: 1px solid red;
         }
 
         @media only screen and (min-width: 800px) {
@@ -87,10 +89,7 @@ export const ServicesRow = styled.div`
             font-size: 1.03rem;
             text-transform: uppercase;
             letter-spacing: 0.120rem;
-            /* background: red; */
             text-align: center;
-            /* padding: 0.4rem 0.7rem; */
-            /* align-self: flex-start; */
         }
 
         .horizontal-line {
