@@ -54,7 +54,7 @@ export const FieldsWrap = styled.div`
     }
 
     h3 {
-        font-size: 2.4rem;
+        font-size: 2.324rem;
         padding: 0.7381rem 0.954462rem;
         text-align: left;
         margin-bottom: 0;

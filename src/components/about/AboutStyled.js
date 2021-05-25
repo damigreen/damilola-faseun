@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import {
-  borderStyle,
   flexRowWrap,
-  flexColumnWrap,
+  HeadingPrimary,
+  HeadingSecondary
 } from '../../AppStyled';
 
 export const AboutWrap = styled.div`
@@ -131,15 +131,16 @@ export const AboutContent = styled.div`
   }
 
   h2 {
+    ${HeadingPrimary};
     text-align: left;
     margin-bottom: 1.672rem;
     padding: 0.45rem 0rem;
-    font-size: 2.643rem;
     margin-top: 0;
 
     @media only screen and (min-width: 991px) {
       text-align: left;
-      font-size: 3.2643rem;
+    /* font-size: 2.643rem;
+      font-size: 3.2643rem; */
     } 
   }
 
