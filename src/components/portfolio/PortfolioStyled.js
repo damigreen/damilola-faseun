@@ -92,7 +92,8 @@ export const TextWrap = styled.div`
 export const PortfolioWrap = styled.div`
   margin: 0;
   padding: 0;
-
+  padding: 4rem 0;
+  background-color: #EFF0F3;
 
   .portfolio-wrap {
     ${flexColumnWrap};
@@ -119,7 +120,6 @@ export const PortfolioWrap = styled.div`
     margin-top: 2rem;
     width: auto;
     margin-bottom: 2.20907622rem;
-    /* padding: 0.34rem 0; */
 
 
     h3, h4 {
