@@ -50,3 +50,10 @@ export const HeadingTertiary = `
     color: gray;
     color: #4e5965;
 `
+
+export const HeroHeading =  styled.h1`
+    margin: 0;
+    padding: 0;
+    /* font-size: 100%; */
+    line-height: 1.42857;
+`
