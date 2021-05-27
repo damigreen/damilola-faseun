@@ -16,16 +16,14 @@ function Navigation() {
         <div className="nav-filter">FILTER</div>
 
         <div className="nav-bar">
-          <NavBar>
-            <NavItem><a>Insights</a></NavItem>
-            <NavItem><a>Work</a></NavItem>
-            <NavItem><a>Services</a></NavItem>
-            <NavItem><a>About</a></NavItem>
-          </NavBar>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#portfolio">Insights</a></li>
+          </ul>
         </div>
       </div>
-
-
     </NavWrapper>
   )
 }
