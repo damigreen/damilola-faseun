@@ -1,10 +1,10 @@
-import { HeroHeading } from 'AppStyled';
 import styled, { css, ThemeProvider } from 'styled-components';
 
 
 export const HeaderWrap = styled.div`
   color: #EEEEEF;
   width: 100%;
+  font-family: Montserrat, sans-serif;
 
   .header-wrap {
     height: 100vh;
@@ -35,6 +35,7 @@ export const HeroImage = styled.div`
   left: 0;
   bottom: 0;
   width: 100%;
+  max-width: 1800px;
   height: 100%;
   background: url('../../../images/hero-image.png');
   background-position: center top;
@@ -48,6 +49,7 @@ export const HeroImage = styled.div`
   @media only screen and (max-width: 767px) {
     width: 100%;
     height: 493px;
+    /* background-color: rgba(0,0,0,0.6); */
   }
 `
 
@@ -64,9 +66,7 @@ export const HeroText = styled.div`
   margin-top: 80px;
   width: auto;
   /* width: 100%; */
-  /* max-width: 1800px; */
   height: auto;
-  border: 1px solid gold;
   color: #fff;
   transition: color .3s ease,opacity .3s ease .65s;
   z-index: 7;
@@ -85,13 +85,103 @@ export const HeroText = styled.div`
     /* padding-left: 7rem; */
     /* vertical-align: center; */
   }
+`
+
+export const HeroHeadingWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: 0 0 10px;
+  padding: 0 0 5px;
+  /* border: 1px solid gold; */
+
+  @media only screen and (max-width: 767px) {
+      align-items: center;
+      justify-content: center;
+  }
 
 `
 
-// export const NameDiv = styled.h1`
-//   ${HeroHeading};
-//   margin-bottom: .1875566421em;
-// `
+export const HeroHeadingName = styled.h4`
+  margin: 0;
+  padding: 0 0 5px;
+  padding: 5px;
+  /* background-color: #EFEEEA; */
+  width: fit-content;
+  color: #EFEEEA;
+  /* text-transform: uppercase; */
+
+  span {
+    color: #f06449;
+    opacity: 0.5
+  }
+
+  .open-bracket {
+  }
+`
+
+export const HeroHeading =  styled.h1`
+  margin: 0;
+  padding: 0;
+  font-size: calc(112.5% + 2.273vw);
+  line-height: 1.42857;
+  /* margin: 0 0 10px;
+  padding: 0 0 5px; */
+  /* border: 1px solid gold; */
+  /* :nth-child(2) {
+    margin: 0;
+    padding: 0;
+  } */
+
+  @media only screen and (max-width: 767px) {
+      width: 100%;
+      text-align: center;
+  }
+`
+
+export const HeroDescription = styled.p`
+  margin: 0;
+  padding: 0;
+  font-size: 1.375rem;
+  font-weight: 400;
+  max-width: 600px;
+  line-height: 31px;
+
+  @media only screen and (max-width: 1024px) {
+    width: 80%;
+    text-align: left;
+    font-size: 1.20139536rem;
+    line-height: 31px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    width: 90%;
+    text-align: center;
+    font-size: 1.0139536rem;
+    line-height: 22px;
+  } 
+
+  .slide-web {
+    background-color: #196619;
+    background-color: #145214;
+    padding:3px;
+  }
+
+  .slide-mobile {
+    display: none;
+  }
+
+  .slide-software {
+    display: none;
+
+  }
+
+  .slide-ecommerce {
+    display: none;
+
+  }
+`
 
 export const TitleDiv = styled.h3`
   font-style: italic;
@@ -106,13 +196,13 @@ export const ButtonDiv = styled.div`
   vertical-align: middle;
 `
 
-export const AboutButton = styled.button`
+export const ContactButton = styled.button`
   /* background: linear-gradient(0deg, #EF3D39, #EF3D39); */
 
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-style: normal;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 21px;
   /* identical to box height */
 
@@ -120,10 +210,22 @@ export const AboutButton = styled.button`
   letter-spacing: 0.12em;
   border-radius: 2px;
 
-  background-color: #f06449;
-  border: none;
+  /* background-color: #f06449; */
+  background-color: inherit;
+  border: 1px solid #ef3636;
+  /* border: none; */
   background: linear-gradient(270deg,#f06449,#ef3636);
   transition: all .3s;
-  width: 7em;
-  height: 40.5px
+  width: 12em;
+  height: 3.4654rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media only screen and (max-width: 767px) {
+    width: 10rem;
+    height: 3rem;
+    font-size: 14px;
+  }
 `

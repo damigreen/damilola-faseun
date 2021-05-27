@@ -4,17 +4,15 @@ import {
   HeaderWrap,
   HeroWrap,
   HeroText,
-  HeroContent,
   TitleDiv,
-  AboutButton,
+  ContactButton,
   ButtonDiv,
   HeroImage,
-} from './HeaderStyle'
-import {
   HeroHeading,
-  HeroHeadingName,
   HeroDescription,
-} from 'AppStyled';
+  HeroHeadingName,
+  HeroHeadingWrap,
+} from './HeaderStyle'
 
 
 function Header() {
@@ -26,7 +24,7 @@ function Header() {
             <NameDiv>Damilola Faseun</NameDiv>
             <TitleDiv>Freelance Full stack Developer based in Lagos, Nigeria</TitleDiv>
             <ButtonDiv>
-              <AboutButton>About Me</AboutButton>
+              <ContactButton>About Me</ContactButton>
             </ButtonDiv>
           </HeroContent>
         </HeroText>
@@ -37,25 +35,30 @@ function Header() {
     <HeaderWrap>
       <div className="header-wrap">
         <HeroWrap>
+          <Navigation />
+
           <HeroImage>
           </HeroImage>
-        </HeroWrap>
-        
-        <Navigation />
 
-        <HeroText>
-            <HeroHeadingName>Hi, I'm Damilola Faseun</HeroHeadingName>
-            <HeroHeading>Full stack Developer</HeroHeading>
-            <HeroHeading> based in Lagos, Nigeria</HeroHeading>
-            <HeroDescription>Engineering top-notch <span className="slide-web">custom web development</span>
-                                                    <span className="slide-mobile" style={{ display: 'none' }}>mobile apps</span>
-                                                    <span className="slide-software" style={{ display: 'none' }}>software product</span>
-                                                    <span className="slide-ecommerce" style={{ display: 'none' }}>e-commerce solutions</span> with a mix of creative ideas and technology with digital knowledge to </HeroDescription>
-            <TitleDiv></TitleDiv>
-            <ButtonDiv>
-              <AboutButton>About Me</AboutButton>
-            </ButtonDiv>
-        </HeroText>
+
+          <HeroText>
+              <HeroHeadingWrap>
+                {/* <HeroHeadingName><span className="open-bracket">&#8249; &#8250;</span> Hello I'm <span className="close-bracket">&#8249; / &#8250;</span></HeroHeadingName> */}
+                <HeroHeadingName>Hello I'm</HeroHeadingName>
+                <HeroHeading>Damilola Faseun</HeroHeading>
+                <HeroHeading>Full Stack Web Developer</HeroHeading>
+              </HeroHeadingWrap>
+
+              <HeroDescription>Engineering top-notch <span className="slide-web">custom website</span>
+                                                      <span className="slide-mobile" style={{ display: 'none' }}>mobile apps</span>
+                                                      <span className="slide-software" style={{ display: 'none' }}>software product</span>
+                                                      <span className="slide-ecommerce" style={{ display: 'none' }}>e-commerce solutions</span> with a mix of creative ideas and digital technology</HeroDescription>
+              <TitleDiv></TitleDiv>
+              <ButtonDiv>
+                <ContactButton>Contact me!</ContactButton>
+              </ButtonDiv>
+          </HeroText>
+        </HeroWrap>
       </div>
     </HeaderWrap>
   )
