@@ -10,6 +10,7 @@ import About from 'components/about';
 import Stacks from 'components/stacks';
 import CTA from 'components/cta';
 import Footer from 'components/footer/'
+import Test from 'components/test/';
 
 /*
 
@@ -120,6 +121,7 @@ function App() {
       <footer id="footer">
         <Footer />
       </footer>
+      {/* <Test /> */}
     </div>
   );
 
