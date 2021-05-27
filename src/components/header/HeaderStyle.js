@@ -22,20 +22,23 @@ export const HeaderWrap = styled.div`
 
 export const HeroWrap = styled.div`
   height: auto;
+  width: 100%;
   height: 100%;
   background: conic-gradient(from 163.17deg at 50% 50%, rgba(72, 73, 86, 0.73) 0deg, rgba(47, 79, 79, 0.502145) 180.62deg, rgba(94, 215, 215, 0.456489) 232.5deg, rgba(47, 79, 79, 0.258928) 277.18deg, rgba(59, 67, 73, 0.158272) 309.38deg, rgba(180, 46, 110, 0) 360deg), #191A1D;
   background-blend-mode: soft-light, normal;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  box-sizing: border-box;
+  /* border: 1px solid rgba(0, 0, 0, 0.3); */
+  /* box-sizing: border-box; */
   /* border: 4px solid brown; */
 `
 
 export const HeroImage = styled.div`
   position: absolute;
+  top: 0;
   left: 0;
   bottom: 0;
+  display: block;
   width: 100%;
-  max-width: 1800px;
+  /* max-width: 1800px; */
   height: 100%;
   background: url('../../../images/hero-image.png');
   background-position: center top;
@@ -44,7 +47,6 @@ export const HeroImage = styled.div`
   transform: translate(0px, 0px);
   visibility: inherit;
   opacity: 0.2;
-  /* border: 5px solid green; */
 
   @media only screen and (max-width: 767px) {
     width: 100%;
@@ -72,6 +74,8 @@ export const HeroText = styled.div`
   z-index: 7;
   padding: 0 7rem;
   padding-right: 0;
+
+
 
   @media only screen and (max-width: 767px) {
     margin-left: auto;

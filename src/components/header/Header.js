@@ -33,17 +33,15 @@ function Header() {
 
   return (
     <HeaderWrap>
+      <Navigation />
       <div className="header-wrap">
         <HeroWrap>
-          <Navigation />
-
           <HeroImage>
           </HeroImage>
 
 
           <HeroText>
               <HeroHeadingWrap>
-                {/* <HeroHeadingName><span className="open-bracket">&#8249; &#8250;</span> Hello I'm <span className="close-bracket">&#8249; / &#8250;</span></HeroHeadingName> */}
                 <HeroHeadingName>Hello I'm</HeroHeadingName>
                 <HeroHeading>Damilola Faseun</HeroHeading>
                 <HeroHeading>Full Stack Web Developer</HeroHeading>
