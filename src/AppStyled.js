@@ -53,30 +53,3 @@ export const HeadingTertiary = `
     color: #4e5965;
 `
 
-export const HeroHeadingName = styled.h4`
-    margin: 0 0 10px;
-    padding: 0 0 5px;
-`
-export const HeroHeading =  styled.h1`
-    margin: 0 0 10px;
-    padding: 0 0 5px;
-    /* font-size: 4rem; */
-    font-size: calc(112.5% + 2.273vw);
-    line-height: 1.42857;
-    border: 1px solid gold;
-`
-
-export const HeroDescription = styled.p`
-    margin: 0;
-    padding: 0;
-    font-size: 1.375rem;
-    font-weight: 400;
-    max-width: 600px;
-    line-height: 31px;
-
-    @media only screen and (max-width: 767px) {
-        width: 90%;
-        text-align: center;
-        font-size: 0.9536rem;
-    }
-`
