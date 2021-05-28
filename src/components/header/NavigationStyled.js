@@ -2,14 +2,29 @@ import styled from 'styled-components';
 
 
 export const NavWrapper = styled.div`
-  /* background-color: brown; */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5rem;
-  z-index: 10;
-  border: 1px solid gold;
+  .nav-main {
+    --text-color: #fff;
+    --background: transparent;
+    --text-inverse: #333;
+    --text-hover: #B63221;
+
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    z-index: 10;
+    border: 1px solid gold;
+    color: var(--text-color);
+  }
+
+  .page-scrolled {
+    background-color: #fff;
+    height: 3rem;
+    color: #333;
+  }
 
   @media only screen and (max-width: 1000px) {
       height: 3rem;
@@ -20,7 +35,6 @@ export const NavWrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 4rem;
     padding: 5px;
     border: 1px solid green;
     margin: 0 auto;
@@ -30,13 +44,11 @@ export const NavWrapper = styled.div`
 
     @media only screen and (max-width: 1000px) {
       width: 100%;
-      height: 2.3758rem;
     }
   }
 
   
   .nav-bar {
-    border: 1px solid gold;
     /* margin-right: 4rem; */
 
     ul {
@@ -60,25 +72,32 @@ export const NavWrapper = styled.div`
         /* float: right; */
         font-weight: 500;
 
+        .invert-link {
+          color: var(--text-inverse);
+        }
 
         a {
           padding: 0;
           margin: 0;
-          color: #fff;
-  
+          color: inherit;
+          
           :link {
-            color: #fff;
+            /* color: #fff; */
             text-decoration: none;
           }
 
           :visited {
             background-color: #862020;
           }
-
+          
+          /* Make an animated border for the hover state */
           :hover {
-            border-bottom: 1px solid gold;
+            /* border-bottom: 1px solid gold; */
             position: relative;
-            /* overflow:hidden; */
+            overflow: hidden;
+            /* color: #B63221; */
+            color: var(--text-hover);
+            text-decoration: none;
           }
             transition: .3s;
 
