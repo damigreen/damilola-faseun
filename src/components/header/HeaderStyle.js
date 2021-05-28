@@ -26,9 +26,7 @@ export const HeroWrap = styled.div`
   height: 100%;
   background: conic-gradient(from 163.17deg at 50% 50%, rgba(72, 73, 86, 0.73) 0deg, rgba(47, 79, 79, 0.502145) 180.62deg, rgba(94, 215, 215, 0.456489) 232.5deg, rgba(47, 79, 79, 0.258928) 277.18deg, rgba(59, 67, 73, 0.158272) 309.38deg, rgba(180, 46, 110, 0) 360deg), #191A1D;
   background-blend-mode: soft-light, normal;
-  /* border: 1px solid rgba(0, 0, 0, 0.3); */
   /* box-sizing: border-box; */
-  /* border: 4px solid brown; */
 `
 
 export const HeroImage = styled.div`
@@ -41,7 +39,7 @@ export const HeroImage = styled.div`
   /* max-width: 1800px; */
   height: 100%;
   background: url('../../../images/hero-image.png');
-  background-position: center top;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   transform: translate(0px, 0px);
@@ -49,6 +47,7 @@ export const HeroImage = styled.div`
   opacity: 0.2;
 
   @media only screen and (max-width: 767px) {
+    background-position: center top;
     width: 100%;
     height: 493px;
     /* background-color: rgba(0,0,0,0.6); */
@@ -86,7 +85,7 @@ export const HeroText = styled.div`
     align-items: center;
     justify-content: center;
     padding: 0 3rem;
-    /* padding-left: 7rem; */
+    padding-left: 4rem;
     /* vertical-align: center; */
   }
 `
@@ -98,7 +97,6 @@ export const HeroHeadingWrap = styled.div`
   /* align-items: center; */
   margin: 0 0 10px;
   padding: 0 0 5px;
-  /* border: 1px solid gold; */
 
   @media only screen and (max-width: 767px) {
       align-items: center;
@@ -132,7 +130,6 @@ export const HeroHeading =  styled.h1`
   line-height: 1.42857;
   /* margin: 0 0 10px;
   padding: 0 0 5px; */
-  /* border: 1px solid gold; */
   /* :nth-child(2) {
     margin: 0;
     padding: 0;
@@ -216,7 +213,6 @@ export const ContactButton = styled.button`
 
   /* background-color: #f06449; */
   background-color: inherit;
-  border: 1px solid #ef3636;
   /* border: none; */
   background: linear-gradient(270deg,#f06449,#ef3636);
   transition: all .3s;
@@ -232,4 +228,37 @@ export const ContactButton = styled.button`
     height: 3rem;
     font-size: 14px;
   }
+`
+
+export const SocialIcons = styled.div`
+  
+  .social-icons {
+    float: right; 
+  }
+
+.social-icons.icons-col {
+    position: relative;
+    top: 18rem;
+    right: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 27px;
+    align-items: center;
+
+    @media only screen and (max-width: 1200px) {
+      top: 8rem; 
+      right: 2rem;
+      height: 8rem;
+    }
+
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  
 `

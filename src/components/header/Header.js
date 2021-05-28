@@ -12,6 +12,7 @@ import {
   HeroDescription,
   HeroHeadingName,
   HeroHeadingWrap,
+  SocialIcons,
 } from './HeaderStyle'
 
 
@@ -56,6 +57,15 @@ function Header() {
                 <ContactButton>Contact me!</ContactButton>
               </ButtonDiv>
           </HeroText>
+
+          <SocialIcons>
+            <div className="social-icons icons-col icons-row">
+              <img src={`../../../icons/github.png`} alt="gitnub icon" />
+              <img src={`../../../icons/linkedin.png`} alt="gitnub icon" />
+              <img src={`../../../icons/twitter.png`} alt="gitnub icon" />
+              <img src={`../../../icons/behance.png`} alt="gitnub icon" />
+            </div>
+          </SocialIcons>
         </HeroWrap>
       </div>
     </HeaderWrap>
