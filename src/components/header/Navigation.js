@@ -11,9 +11,8 @@ function Navigation() {
   return (
     <NavWrapper>
       <div className="nav-wrapper">
-        <div className="logo-box"></div>
+        <div className="logo-box">LOGO</div>
 
-        <div className="nav-filter">FILTER</div>
 
         <div className="nav-bar">
           <ul>
@@ -23,6 +22,8 @@ function Navigation() {
             <li><a href="#portfolio">Insights</a></li>
           </ul>
         </div>
+        
+        <div className="nav-filter">FILTER</div>
       </div>
     </NavWrapper>
   )
