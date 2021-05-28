@@ -251,7 +251,7 @@ export const SocialIcons = styled.div`
     align-items: center;
 
     @media only screen and (max-width: 1200px) {
-      top: 8rem; 
+      top: 10rem; 
       right: 2rem;
       height: 8rem;
     }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navigation from './Navigation';
 import {
   HeaderWrap,
@@ -16,21 +16,45 @@ import {
 } from './HeaderStyle'
 
 
+const heroSectionOption = {
+  rootMargin: "0px 0px 200px 0px"
+};
+
+const handleIntersection = () => {
+  try {
+    const navHeader = document.querySelector('.nav-main');
+    const navLink = document.querySelector('.nav-link');
+    const heroSection = document.querySelector('.header-wrap');
+
+    const heroSectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        // console.log(entry);
+
+        if (!entry.isIntersecting) {
+          navHeader.classList.add('page-scrolled');
+          navLink.classList.add('invert-link');
+        } else {
+          navHeader.classList.remove('page-scrolled');
+          navLink.classList.remove('invert-link');
+        }
+      })
+    },heroSectionOption);
+    
+    heroSectionObserver.observe(heroSection);
+    console.log('done-------------')
+  
+ 
+  } catch (e) {
+    console.log(e);
+  }
+}
+
+
+
 function Header() {
-  {/* <HeroWrap>
-    <HeroImage>
-      <Navigation />
-        <HeroText>
-          <HeroContent>
-            <NameDiv>Damilola Faseun</NameDiv>
-            <TitleDiv>Freelance Full stack Developer based in Lagos, Nigeria</TitleDiv>
-            <ButtonDiv>
-              <ContactButton>About Me</ContactButton>
-            </ButtonDiv>
-          </HeroContent>
-        </HeroText>
-    </HeroImage>
-  </HeroWrap> */}
+    useEffect(() => {
+      handleIntersection();
+    }, [handleIntersection]);
 
   return (
     <HeaderWrap>
@@ -60,10 +84,18 @@ function Header() {
 
           <SocialIcons>
             <div className="social-icons icons-col icons-row">
-              <img src={`../../../icons/github.png`} alt="gitnub icon" />
-              <img src={`../../../icons/linkedin.png`} alt="gitnub icon" />
-              <img src={`../../../icons/twitter.png`} alt="gitnub icon" />
-              <img src={`../../../icons/behance.png`} alt="gitnub icon" />
+              <a href="">
+                <img src={`../../../icons/github.png`} alt="gitnub icon" />
+              </a>
+              <a>
+                <img src={`../../../icons/linkedin.png`} alt="gitnub icon" />
+              </a>
+              <a>
+                <img src={`../../../icons/twitter.png`} alt="gitnub icon" />
+              </a>
+              <a>
+                <img src={`../../../icons/behance.png`} alt="gitnub icon" />
+              </a>
             </div>
           </SocialIcons>
         </HeroWrap>
