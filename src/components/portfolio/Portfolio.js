@@ -60,7 +60,7 @@ const Portfolio = (portfolio) => {
     
     const projects = portfolio.data.projects.map((p, i) => {
         return (
-            <ProjectWrap>
+            <ProjectWrap key={i}>
                 <div className="project-wrap">
                     { i%2 ? <ProjectsLeft p={p} i={i} /> : <ProjectsRight p={p} i={i} /> }
                 </div>
