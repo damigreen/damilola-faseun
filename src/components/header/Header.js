@@ -22,9 +22,9 @@ const heroSectionOption = {
 
 const handleIntersection = () => {
   try {
+    const heroSection = document.querySelector('.header-wrap');
     const navHeader = document.querySelector('.nav-main');
     const navLink = document.querySelector('.nav-link');
-    const heroSection = document.querySelector('.header-wrap');
 
     const heroSectionObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -40,9 +40,7 @@ const handleIntersection = () => {
       })
     },heroSectionOption);
     
-    heroSectionObserver.observe(heroSection);
-    console.log('done-------------')
-  
+    heroSectionObserver.observe(heroSection);  
  
   } catch (e) {
     console.log(e);
@@ -85,16 +83,16 @@ function Header() {
           <SocialIcons>
             <div className="social-icons icons-col icons-row">
               <a href="">
-                <img src={`../../../icons/github.png`} alt="gitnub icon" />
+                <img src={`../../../icons/github.png`} alt="github icon" />
               </a>
               <a>
-                <img src={`../../../icons/linkedin.png`} alt="gitnub icon" />
+                <img src={`../../../icons/linkedin.png`} alt="linkein icon" />
               </a>
               <a>
-                <img src={`../../../icons/twitter.png`} alt="gitnub icon" />
+                <img src={`../../../icons/twitter.png`} alt="twitter icon" />
               </a>
               <a>
-                <img src={`../../../icons/behance.png`} alt="gitnub icon" />
+                <img src={`../../../icons/behance.png`} alt="behance icon" />
               </a>
             </div>
           </SocialIcons>
