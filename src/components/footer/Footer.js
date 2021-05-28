@@ -42,7 +42,7 @@ const Footer = () => {
                         <p>Enter your mail to get notified about new solutions and offers</p>
                         <div>
                             <form>
-                                <label for="subscription">
+                                <label htmlFor="subscription">
                                     <input {...email.form } placeholder="Email" />
                                 </label>
                             </form>

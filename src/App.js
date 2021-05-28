@@ -77,10 +77,11 @@ Buttons
 */
 
 
+
 function App() {
   const [ portfolioData, setData ] = useState({});
   const dataUrl = './portfolioData.json'
-
+  
 
   useEffect(() => {
     const loadData = () => {
