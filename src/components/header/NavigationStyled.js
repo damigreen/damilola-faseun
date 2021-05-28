@@ -16,11 +16,12 @@ export const NavWrapper = styled.div`
     width: 100%;
     height: 5rem;
     z-index: 10;
-    border: 1px solid gold;
     color: var(--text-color);
+    font-family: var(--font-serif) Verdana, Geneva, Tahoma, sans-serif;
   }
-
+  
   .page-scrolled {
+    border-bottom: 2px solid #F8F8F8;
     background-color: #fff;
     height: 3rem;
     color: #333;
@@ -36,7 +37,7 @@ export const NavWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin: 0 auto;
     width: 94%;
     background-color: inherit;
@@ -57,6 +58,7 @@ export const NavWrapper = styled.div`
       width: auto;
       flex-direction: row;
       list-style-type: none;
+      align-items: center;
       margin: 0;
       padding: 0;
       overflow: hidden;
@@ -67,19 +69,41 @@ export const NavWrapper = styled.div`
       }
 
       li {
-        width: 45px;
+        width: 60px;
         padding: 0 1.5rem;
-        /* float: right; */
         font-weight: 500;
+        
+        :last-child {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-self: center;
+          background: var(--primary-color1);
+          height: 2rem;
+          color: var(--white-two);
+          border-radius: 2px;
+          
+          :hover {
+            background-color: var(--white-one);
+            color: var(--black-one);
+            border: 1px solid var(--black-one);
+          }
+        }
+        
+        .insight {
+          color: var(--white-two);
+        }
 
         .invert-link {
           color: var(--text-inverse);
+          
         }
-
+        
         a {
           padding: 0;
           margin: 0;
-          color: inherit;
+          color: var(--black-two);
+
           
           :link {
             /* color: #fff; */
@@ -103,7 +127,7 @@ export const NavWrapper = styled.div`
 
           :active {
             color: blue;
-            border-bottom: 1px solid gold;  
+            background-color: var(--primary-color1);
           }
         }    
       }
