@@ -28,31 +28,31 @@ const Contact = () => {
                 <FormWrap>
                     <form className="form">
                       <div className="input-box">
-                        <label for="fullname">FullName  *</label>
+                        <label htmlFor="fullname">FullName  *</label>
                         <input {...fullName.form} className="input-field fn" />
 
                       </div>
 
                       <div className="input-box" style={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-start'}}>
                         <div style={{ flex: '0 0 60%'}}>
-                          <label for="email">Email  *</label>
+                          <label htmlFor="email">Email  *</label>
                           <input {...email.form}  className="input-field " />
                         </div>
 
                         <div style={{marginLeft: '2.248rem', flex: '0 0 34%'}}>
-                          <label for="company">Company  *</label>
+                          <label htmlFor="company">Company  *</label>
                           <input {...phone.form} className="input-field" />
                         </div>
                       </div>
 
                       <div className="input-box">
-                        <label for="subject">Subject  *</label>
+                        <label htmlFor="subject">Subject  *</label>
                         <input {...subject.form} className="input-field sub" />
 
                       </div>
 
                       <div className="input-box">
-                        <label for="message">Message  *</label>
+                        <label htmlFor="message">Message  *</label>
                         <input {...message.form} className="input-field fn" />
                       </div>
 
