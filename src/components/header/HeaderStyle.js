@@ -105,22 +105,12 @@ export const HeroHeadingWrap = styled.div`
 
 `
 
-export const HeroHeadingName = styled.h4`
+export const HeroHeadingName = styled.h3`
   margin: 0;
   padding: 0 0 5px;
   padding: 5px;
-  /* background-color: #EFEEEA; */
   width: fit-content;
   color: #EFEEEA;
-  /* text-transform: uppercase; */
-
-  span {
-    color: #f06449;
-    opacity: 0.5
-  }
-
-  .open-bracket {
-  }
 `
 
 export const HeroHeading =  styled.h1`
@@ -144,6 +134,8 @@ export const HeroHeading =  styled.h1`
 export const HeroDescription = styled.p`
   margin: 0;
   padding: 0;
+  /* font-family: var(--font-serif); */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.375rem;
   font-weight: 400;
   max-width: 600px;
@@ -163,17 +155,21 @@ export const HeroDescription = styled.p`
     line-height: 22px;
   } 
 
-  .slide-web {
-    background-color: #196619;
-    background-color: #145214;
+  .bg-trans {
+    /* background-color: #145214; */
+    background-color: #6D8567;
     padding:3px;
   }
 
-  .slide-mobile {
+  .bg-web {
+
+  }
+
+  .bg-mobile {
     display: none;
   }
 
-  .slide-software {
+  .bg-software {
     display: none;
 
   }
@@ -212,16 +208,15 @@ export const ContactButton = styled.button`
   border-radius: 2px;
 
   /* background-color: #f06449; */
-  background-color: inherit;
-  /* border: none; */
-  background: linear-gradient(270deg,#f06449,#ef3636);
+  border: 5px;
+  /* background: linear-gradient(270deg,#f06449,#ef3636); */
+  background: linear-gradient(300deg,#ef3636,var(--primary-color1));
   transition: all .3s;
-  width: 12em;
-  height: 3.4654rem;
+  width: 10em;
+  height: 3.14654rem;
   padding-left: 1rem;
   padding-right: 1rem;
   text-align: center;
-  text-transform: uppercase;
 
   @media only screen and (max-width: 767px) {
     width: 10rem;

@@ -24,7 +24,9 @@ const handleIntersection = () => {
   try {
     const heroSection = document.querySelector('.header-wrap');
     const navHeader = document.querySelector('.nav-main');
-    const navLink = document.querySelector('.nav-link');
+    // const navLink = document.querySelector('.nav-link');
+    const navLink = document.querySelector('ul');
+    console.log(navLink);
 
     const heroSectionObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -32,10 +34,11 @@ const handleIntersection = () => {
 
         if (!entry.isIntersecting) {
           navHeader.classList.add('page-scrolled');
-          navLink.classList.add('invert-link');
+          navLink.style.color = "#212529";
         } else {
           navHeader.classList.remove('page-scrolled');
-          navLink.classList.remove('invert-link');
+          // navLink.classList.remove('invert-link');
+          navLink.style.color = "#f4f4f4";
         }
       })
     },heroSectionOption);
@@ -65,15 +68,17 @@ function Header() {
 
           <HeroText>
               <HeroHeadingWrap>
-                <HeroHeadingName>Hello I'm</HeroHeadingName>
+              {/* <HeroHeadingName style={{color: "#6E8577"}}>Hello I'm</HeroHeadingName> */}
+                {/* <HeroHeadingName style={{color: "#80855A", border: 0,padding: 0}}>Hello I'm</HeroHeadingName> */}
+                <HeroHeadingName style={{color: "#838285", border: 0,padding: 0}}>Hello I'm</HeroHeadingName>
                 <HeroHeading>Damilola Faseun</HeroHeading>
                 <HeroHeading>Full Stack Web Developer</HeroHeading>
               </HeroHeadingWrap>
 
-              <HeroDescription>Engineering top-notch <span className="slide-web">custom website</span>
-                                                      <span className="slide-mobile" style={{ display: 'none' }}>mobile apps</span>
-                                                      <span className="slide-software" style={{ display: 'none' }}>software product</span>
-                                                      <span className="slide-ecommerce" style={{ display: 'none' }}>e-commerce solutions</span> with a mix of creative ideas and digital technology</HeroDescription>
+              <HeroDescription>Engineering top-notch <span className="bg-trans bg-web">custom website</span>
+                                                      <span className="bg-trans bg-mobile" style={{ display: 'none' }}>mobile apps</span>
+                                                      <span className="bg-trans bg-software" style={{ display: 'none' }}>software product</span>
+                                                      <span className="bg-trans bg-ecommerce" style={{ display: 'none' }}>e-commerce solutions</span> with a mix of creative ideas and digital technology</HeroDescription>
               <TitleDiv></TitleDiv>
               <ButtonDiv>
                 <ContactButton>Contact me!</ContactButton>
