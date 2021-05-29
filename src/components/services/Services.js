@@ -26,7 +26,7 @@ const Services = () => {
 
                         <div className="services-data">
                             <img className="service-img" src />
-                            <h4>Search Engine Optimization</h4>
+                            <h4>SEO and Online Marketing</h4>
                             <span className="horizontal-line"></span>
                             <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.  and typesetting industry and typesetting industry
@@ -42,18 +42,10 @@ const Services = () => {
                             </p>
                         </div>
 
-                        <div className="services-data">
-                            <img className="service-img" src />
-                            <h4>Database Management</h4>
-                            <span className="horizontal-line"></span>
-                            <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.  and typesetting industry and typesetting industry
-                            </p>
-                        </div>
 
                         <div className="services-data">
                             <img className="service-img" src />
-                            <h4>Wordpress Theme Development</h4>
+                            <h4>Portfolio and E-commerce Websites</h4>
                             <span className="horizontal-line"></span>
                             <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.  and typesetting industry and typesetting industry
@@ -63,6 +55,15 @@ const Services = () => {
                         <div className="services-data">
                             <img className="service-img" src />
                             <h4>Wordpress Theme</h4>
+                            <span className="horizontal-line"></span>
+                            <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.  and typesetting industry and typesetting industry
+                            </p>
+                        </div>
+                        
+                        <div className="services-data">
+                            <img className="service-img" src />
+                            <h4>Consulting and Strategy</h4>
                             <span className="horizontal-line"></span>
                             <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.  and typesetting industry and typesetting industry
