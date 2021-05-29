@@ -15,6 +15,7 @@ export const NavWrapper = styled.div`
     left: 0;
     width: 100%;
     height: 5rem;
+    /* border: 1px solid red; */
     z-index: 10;
     color: var(--text-color);
     font-family: var(--font-serif) Verdana, Geneva, Tahoma, sans-serif;
@@ -24,19 +25,20 @@ export const NavWrapper = styled.div`
     border-bottom: 2px solid #F8F8F8;
     background-color: #fff;
     height: 3rem;
-    color: #333;
+    transition: height .781s;
   }
 
   @media only screen and (max-width: 1000px) {
-      height: 3rem;
-    }
-
+    height: 3rem;
+  }
+  
   .nav-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    /* border: 1px solid green; */
     /* border: 1px solid green; */
     margin: 0 auto;
     width: 94%;
@@ -63,6 +65,11 @@ export const NavWrapper = styled.div`
       padding: 0;
       overflow: hidden;
       width: 100%;
+      
+      .nav-list {
+        color: yellow;
+        
+      }
 
       @media only screen and (max-width: 1200px) {
         display: none;
@@ -72,6 +79,8 @@ export const NavWrapper = styled.div`
         width: 60px;
         padding: 0 1.5rem;
         font-weight: 500;
+        /* color: #fff; */
+        color: inherit;
         
         :last-child {
           display: flex;
@@ -95,18 +104,25 @@ export const NavWrapper = styled.div`
         }
 
         .invert-link {
-          color: var(--text-inverse);
-          
+          color: #333;
+          /* background: red; */
+
+          :link {
+            color: var(--text-inverse);
+            /* color: inherit; */
+          }
         }
         
         a {
           padding: 0;
           margin: 0;
-          color: var(--black-two);
+          /* color: var(--white-one); */
+          color: inherit;
 
           
           :link {
-            /* color: #fff; */
+            color: #fff;
+            /* color: inherit; */
             text-decoration: none;
           }
 

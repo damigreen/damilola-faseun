@@ -16,7 +16,7 @@ function Navigation() {
 
 
           <div className="nav-bar">
-            <ul>
+            <ul className="nav-list">
               <li><a className="nav-link" href="#about">About</a></li>
               <li><a className="nav-link" href="#services">Services</a></li>
               <li><a className="nav-link" href="#portfolio">Work</a></li>
