@@ -210,13 +210,28 @@ export const ContactButton = styled.button`
   /* background-color: #f06449; */
   border: 5px;
   /* background: linear-gradient(270deg,#f06449,#ef3636); */
-  background: linear-gradient(300deg,#ef3636,var(--primary-color1));
+  /* background: linear-gradient(300deg,#ef3636,var(--primary-color1)); */
+  background: inherit;
+  border: 2px solid var(--primary-color1);
   transition: all .3s;
   width: 10em;
   height: 3.14654rem;
   padding-left: 1rem;
   padding-right: 1rem;
   text-align: center;
+  cursor: pointer;
+
+  // Stack multiple shadows, one from the left, the other from the right
+  :hover,
+  :focus {
+    box-shadow: 
+      /* inset -3.5em 0 0 0 var(--hover),
+      inset 3.5em 0 0 0 var(--hover);   */
+      inset -5em 0 0 0 var(--hover),
+      inset 5em 0 0 0 var(--hover);  
+      
+  }
+
 
   @media only screen and (max-width: 767px) {
     width: 10rem;

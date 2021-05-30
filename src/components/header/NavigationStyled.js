@@ -88,19 +88,25 @@ export const NavWrapper = styled.div`
           align-items: center;
           align-self: center;
           background: var(--primary-color1);
-          height: 2rem;
           color: var(--white-two);
           border-radius: 2px;
+          height: 2.46503rem;
+          transition: all .5s ease-out;
+          /* transition:all .5s ease; */
           
-          :hover {
-            background-color: var(--white-one);
-            color: var(--black-one);
-            border: 1px solid var(--black-one);
+          :hover, :active {
+            border: 1px solid var(--hover);
+            color: var(--hover);
+            background-color: inherit;
+              /* height: 4rem;   */
+            }
           }
-        }
-        
-        .insight {
-          color: var(--white-two);
+
+          /* .pulse:hover, 
+          .pulse:focus {
+            animation: pulse 1s;
+            box-shadow: 0 0 0 2em rgba(#fff,0);
+          } */
         }
 
         .invert-link {
