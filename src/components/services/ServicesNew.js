@@ -29,13 +29,14 @@ const ServicesNew = () => {
                 </h1>
                 <ButtonSecondary className="services-button">Services</ButtonSecondary>
 
-              </div>
+              </div>  
             </ServiceInfo>
 
             <ServiceCard>
               <div className="service-card">
+                
                 <div className="col-card">
-                  <img className="col-img" src />
+                  <img className="col-img bounce" src={`../../../icons/code.png`} />
                   <div className="col-inner">
                     <h4>Responsive Web Design</h4>
                     <span className="horizontal-line"></span>
@@ -46,7 +47,7 @@ const ServicesNew = () => {
                 </div>
 
                 <div className="col-card">
-                    <img className="col-img" src />
+                    <img className="col-img bounce" src={`../../../icons/code.png`} />
                     <div className="col-inner">
                       <h4>SEO and Online Marketing</h4>
                       <span className="horizontal-line"></span>
@@ -58,7 +59,7 @@ const ServicesNew = () => {
                 </div>
 
                 <div className="col-card">
-                    <img className="col-img" src />
+                    <img className="col-img bounce" src={`../../../icons/code.png`} />
                     <div className="col-inner">
                       <h4>Web and Mobile Development</h4>
                       <span className="horizontal-line"></span>
@@ -70,7 +71,7 @@ const ServicesNew = () => {
 
 
                 <div className="col-card">
-                    <img className="col-img" src />
+                    <img className="col-img bounce" src={`../../../icons/code.png`} />
                     <div className="col-inner">
                       <h4>E-commerce</h4>
                       <span className="horizontal-line"></span>
