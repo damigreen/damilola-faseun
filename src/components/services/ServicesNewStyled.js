@@ -29,40 +29,50 @@ export const ServicesRow = styled.div`
 
     @media only screen and (min-width: 1024px) {
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
       align-items: flex-start;
+      max-width: 74rem;
+      padding: 31px 3rem;
     }
   }
-
   `
 
 export const ServiceInfo = styled.div`
 
   .service-info {
-    border: 1px solid orange;
+    border: 1px solid green;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @media only screen and (min-width: 1024px) {
+      align-items: flex-start;
+    }
   }
-
-
   
   .col-title {
     ${HeadingTertiary};
+    align-self: center;
 
     @media only screen and (min-width: 1024px) {
-      ${HeadingSecondary}  
+      ${HeadingSecondary}
+      width: 100%;
     }
   }
 
   .col-header {
-    ${HeadingSecondary};
+    ${HeadingPrimary};
+    align-self: center;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
 
     @media only screen and (min-width: 1024px) {
       ${HeadingPrimary};
-      width: 50%;
-      
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -71,18 +81,34 @@ export const ServiceInfo = styled.div`
     display: none;
 
     @media only screen and (min-width: 1024px) {
-      display: block;
-
+      
     }
   }
-
 `
 
 export const ServiceCard = styled.div`
-  border: 1px solid red;
+  width: auto;
 
   .service-card {
     border: 1px solid purple;
-  }
+    display: flex;
+    flex-direction: column;
 
+    @media only screen and (min-width: 1024px) {      
+
+    }
+
+    .col-card {
+      border: 1px solid yellow;
+      /* padding: 0 3rem; */
+    }
+
+    .col-img {
+
+    }
+
+    .col-inner {
+      /* padding: 0 2rem; */
+    }
+  }
 `

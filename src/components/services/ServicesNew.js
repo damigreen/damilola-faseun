@@ -22,61 +22,65 @@ const ServicesNew = () => {
                   Intelligent solutions to give you a competitive advantage
                   I help global brand develop digital product
                 */}
-                <h1 className="col-header">Building better product</h1>
+                <h1 className="col-header">
+                  <span>Building </span>
+                  <span>better </span>
+                  <span>product</span>
+                </h1>
                 <ButtonSecondary className="services-button">Services</ButtonSecondary>
 
               </div>
             </ServiceInfo>
 
-            <div className="service-col-two">
-              <ServiceCard>
-                <div className="service-card">
-                  <div className="card-data">
-                    <img className="card-img" src />
+            <ServiceCard>
+              <div className="service-card">
+                <div className="col-card">
+                  <img className="col-img" src />
+                  <div className="col-inner">
                     <h4>Responsive Web Design</h4>
                     <span className="horizontal-line"></span>
                     <p className="card-content">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. and typesetting industry and typesetting industry
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. and typesetting industry and typesetting industry
                     </p>
                   </div>
-
-                  <div className="card-data">
-                      <img className="card-img" src />
-                      <div>
-                        <h4>SEO and Online Marketing</h4>
-                        <span className="horizontal-line"></span>
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry.  and typesetting industry and typesetting industry
-                        </p>
-
-                      </div>
-                  </div>
-
-                  <div className="card-data">
-                      <img className="card-img" src />
-                      <div>
-                        <h4>Web and Mobile Development</h4>
-                        <span className="horizontal-line"></span>
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. and typesetting industry and typesetting industry 
-                        </p>
-                      </div>
-                  </div>
-
-
-                  <div className="card-data">
-                      <img className="card-img" src />
-                      <div>
-                        <h4>E-commerce</h4>
-                        <span className="horizontal-line"></span>
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry.  and typesetting industry and typesetting industry
-                        </p>
-                      </div>
-                  </div>
                 </div>
-              </ServiceCard>
-            </div>
+
+                <div className="col-card">
+                    <img className="col-img" src />
+                    <div className="col-inner">
+                      <h4>SEO and Online Marketing</h4>
+                      <span className="horizontal-line"></span>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.  and typesetting industry and typesetting industry
+                      </p>
+
+                    </div>
+                </div>
+
+                <div className="col-card">
+                    <img className="col-img" src />
+                    <div className="col-inner">
+                      <h4>Web and Mobile Development</h4>
+                      <span className="horizontal-line"></span>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. and typesetting industry and typesetting industry 
+                      </p>
+                    </div>
+                </div>
+
+
+                <div className="col-card">
+                    <img className="col-img" src />
+                    <div className="col-inner">
+                      <h4>E-commerce</h4>
+                      <span className="horizontal-line"></span>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.  and typesetting industry and typesetting industry
+                      </p>
+                    </div>
+                </div>
+              </div>
+            </ServiceCard>
           </div>
         </ServicesRow>
       </div>
