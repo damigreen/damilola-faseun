@@ -10,6 +10,7 @@ import About from 'components/about';
 import Stacks from 'components/stacks';
 import CTA from 'components/cta';
 import Footer from 'components/footer/'
+import ServicesNew from 'components/services/ServicesNew';
 import Test from 'components/test/';
 
 /*
@@ -102,7 +103,8 @@ function App() {
         <About />
       </section>
       <section id="services">
-        <Services />
+        {/* <Services /> */}
+        <ServicesNew />
       </section>
       <section id="process">
         <Process />
