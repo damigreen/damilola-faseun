@@ -22,7 +22,8 @@ export const NavWrapper = styled.div`
   }
   
   .page-scrolled {
-    border-bottom: 2px solid #F8F8F8;
+    border-bottom: .8px solid rgba(138, 185, 51, .4);
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);
     background-color: #fff;
     height: 3rem;
     transition: height .781s;
