@@ -20,8 +20,8 @@ export const ProcessWrap = styled.div`
 
     @media only screen and (min-width: 991px) {
       ${flexRowWrap};
-      margin: 0 auto;
       width: 90%;
+      margin: 0 auto;
       max-width: 74rem;
       padding: 31px 3rem;
       align-items: flex-start;
