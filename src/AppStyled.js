@@ -53,4 +53,18 @@ export const HeadingTertiary = `
     color: gray;
     color: #4e5965;
 `
+export const ButtonSecondary = styled.button`
+    padding: 0.4961rem 1rem;
+    height: auto;
+    width: 9rem;
+    color: var(--white-two);
+    text-transform: uppercase;
+    font-size: 0.88982rem;
+    border-radius: 3px;
 
+    @media only screen and (max-width: 460px) {
+    font-size: 0.79882rem;
+    width: 7.9rem;
+    height: 2.4rem;
+    } 
+`
