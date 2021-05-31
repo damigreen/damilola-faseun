@@ -156,8 +156,7 @@ export const HeroDescription = styled.p`
   } 
 
   .bg-trans {
-    /* background-color: #145214; */
-    background-color: #6D8567;
+    background-color: rgba(138, 185, 51, 1);
     padding:3px;
   }
 
