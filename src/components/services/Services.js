@@ -16,7 +16,7 @@ const Services = () => {
 
                     <div className="services-items">
                         <div className="services-data">
-                            <img className="service-img" src />
+                            <img className="service-img" src={`../../../icons/responsive.png`} />
                             <h4>Responsive Web Design</h4>
                             <span className="horizontal-line"></span>
                             <p className="services-content">
@@ -25,7 +25,7 @@ const Services = () => {
                         </div>
 
                         <div className="services-data">
-                            <img className="service-img" src />
+                            <img className="service-img" src={`../../../icons/seo.png`} />
                             <h4>SEO and Online Marketing</h4>
                             <span className="horizontal-line"></span>
                             <p>
@@ -34,8 +34,8 @@ const Services = () => {
                         </div>
 
                         <div className="services-data">
-                            <img className="service-img" src />
-                            <h4>Mobile App Development</h4>
+                            <img className="service-img" src={`../../../icons/mobile.png`} />
+                            <h4>Web and Mobile Development</h4>
                             <span className="horizontal-line"></span>
                             <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. and typesetting industry and typesetting industry 
@@ -44,8 +44,8 @@ const Services = () => {
 
 
                         <div className="services-data">
-                            <img className="service-img" src />
-                            <h4>Portfolio and E-commerce Websites</h4>
+                            <img className="service-img" src={`../../../icons/ecommerce.png`} />
+                            <h4>E-commerce</h4>
                             <span className="horizontal-line"></span>
                             <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.  and typesetting industry and typesetting industry
@@ -53,8 +53,8 @@ const Services = () => {
                         </div>
 
                         <div className="services-data">
-                            <img className="service-img" src />
-                            <h4>Wordpress Theme</h4>
+                            <img className="service-img" src={`../../../icons/business.png`} />
+                            <h4>Portfolio Website</h4>
                             <span className="horizontal-line"></span>
                             <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.  and typesetting industry and typesetting industry
@@ -62,7 +62,7 @@ const Services = () => {
                         </div>
                         
                         <div className="services-data">
-                            <img className="service-img" src />
+                            <img className="service-img" src={`../../../icons/strategy.png`} />
                             <h4>Consulting and Strategy</h4>
                             <span className="horizontal-line"></span>
                             <p>

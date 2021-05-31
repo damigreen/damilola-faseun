@@ -59,6 +59,8 @@ export const ServicesRow = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        /* justify-content: center; */
+        align-items: center;
         padding: 40px;
         /* width: 100%; */
         /* margin: 7px 10px; */
