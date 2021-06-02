@@ -3,7 +3,10 @@ import {
   ProcessWrap,
   ProcessIntro,
   ProcessContent,
+  ProcessCard,
+
 } from './ProcessStyled';
+
 
 
 const Process = () => {
@@ -11,32 +14,43 @@ const Process = () => {
   return (
     <ProcessWrap>
       <div className="process-wrap">
-        <ProcessIntro>
-            <h2>Process</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy texthas been the industry's standard dummy text
-            </p>
-        </ProcessIntro>
+        {/* <h3>Lorem Ipsum is simply dummy</h3> */}
+        <h2>Process</h2>
         <ProcessContent>
           <div className="process-content">
-            <div className="process-title">
-              {/* <div>Design</div> */}
-              <div>Prototype</div>
-              <div>Develop</div>
-              <div>Testing</div>
-              <div>Deploy</div>
-              <div>QA</div>
-            </div>
 
-            <div className="process-text">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-            </div>
+            <ProcessCard>
+              <div className="process-card">
+                <div className="bg bg-design">
+                  <h4>Design</h4>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+              </div>
+            </ProcessCard>
+
+            <ProcessCard>
+              <div className="process-card">
+                <div className="bg bg-develop">
+                  <h4>Design</h4>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>                
+              </div>
+            </ProcessCard>
+
+            <ProcessCard>
+              <div className="process-card">
+                <div className="bg bg-deploy">
+                  <h4>Design</h4>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+              </div>
+            </ProcessCard>
           </div>
         </ProcessContent>
-
       </div>
     </ProcessWrap>
   )
 }
+
 
 export default Process;

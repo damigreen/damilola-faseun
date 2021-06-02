@@ -3,128 +3,67 @@ import {
   flexColumnWrap,
   flexRowWrap,
   HeadingPrimary,
+  HeadingSecondary,
+  HeadingTertiary,
+
 } from '../../AppStyled';
 
+
+
 export const ProcessWrap = styled.div`
-  background-color: #F8F8F8;
-  /* background-color: #f4f3f0; */
-  padding: 6rem 0;
-  padding-top: 0;
+  padding: 50px 0;
 
   .process-wrap {
-    ${flexColumnWrap};
-    /* justify-content: flex-start; */
-    padding: 31px 0;
-    margin: 0 auto;
-    width: 90%;
-
-    @media only screen and (min-width: 991px) {
-      ${flexRowWrap};
-      width: 90%;
-      margin: 0 auto;
-      max-width: 74rem;
-      padding: 31px 3rem;
-      align-items: flex-start;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    
+    @media only screen and (min-width: 1024px) {
+      align-items: center;
+      /* justify-content: flex-start; */
     }
   }
-`
 
-export const ProcessIntro = styled.div`
-  flex: 0 0 30%;
+  h3 {
+    ${HeadingSecondary};
+    font-size: 1.514529873rem;
+    text-align: center;
+    line-height: 31px;
+    width: 100%;
 
+  }
 
   h2 {
-    text-align: left;
-    padding: 0.5rem 0rem;
-    margin-bottom: 0.9rem;
-    font-size: 2.643rem;
-    ${HeadingPrimary}
-
-    @media only screen and (min-width: 991px) {
-      text-align: left;
-      margin-top: 0;
-
-    }
-  }
-
-  p {
-    padding: 0.3462rem 0rem;
-    font-size: 0.983rem;
-    line-height: 30px;
+    ${HeadingPrimary};
+    text-align: center;
+    border: 1px solid red;
+    margin-top: 10px;
+    width: 100%;
   }
 `
 
 export const ProcessContent = styled.div`
 
-
   .process-content {
-    ${flexColumnWrap};
-    background-color: #4A474E;
-    padding: 0.8rem 0rem;
-    margin: 0 auto;
-    max-width: 100%;
+    border: 1px solid green;
 
-    @media only screen and (min-width: 991px) {
-      margin-left: 2.33rem;
-      ${flexRowWrap};
+
+    @media only screen and (min-width: 1024px) {
+      background: lime;
     }
   }
+`
 
-  .process-title {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    width: 90%;
-    padding-top: 1.2rem;
-    text-align: left;
+export const ProcessCard = styled.div`
 
-
-    div {
-      padding: 0.2rem 0.5rem;
-      color: #fff;
-      font-size: 0.9rem;
-      font-weight: 500;
-      text-align: left;
-      text-transform: uppercase;
-
-      @media only screen and (min-width: 991px) {
-        border: 1px solid green;
-        width: 7rem;
-        margin-bottom: 1rem;
-        justify-self: center;
-      }
-
-    }
-
-    @media only screen and (min-width: 991px) {
-      ${flexColumnWrap};
-      padding-top: 0;
-      padding-right: 1.2rem;
-      padding: 0.93rem 1.5rem;
-      align-items: flex-start;
-      justify-content: flex-start;
-      border-right: 1px solid gray;
-      /* margin-left: 1rem; */
-    }
+  .process-card {
+    border: 1px solid yellow;
+    
   }
 
-  .process-text {
-    color: #ffffff;
-    padding: 0.93rem 1.5rem;
-    align-self: flex-start;
-    /* justify-self: flex-start; */
-
-    p {
-      /* margin-top: 1.5rem; */
-      /* padding-top: 0.542rem; */
-      /* padding-left: 1rem; */
-      margin-top: 0;
-      padding-right: 0.459rem;
-      text-align: left;
-      font-size: 0.983rem;
-      font-weight: 400;
-      line-height: 31px;
-    }
-
+  .bg {
+    border: 1px solid green;
   }
 `
