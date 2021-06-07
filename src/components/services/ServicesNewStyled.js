@@ -20,7 +20,7 @@ export const ServicesWrap = styled.div`
 export const ServicesRow = styled.div`
 
   .services-row {
-    border: 1px solid gold;
+    /* border: 1px solid gold; */
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -36,17 +36,17 @@ export const ServicesRow = styled.div`
       padding: 31px 3rem;
     }
   }
-  `
+`
 
 export const ServiceInfo = styled.div`
   flex: 0 0 30.33%;
 
   .service-info {
+    border: 1px solid green;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    border: 1px solid green;
     
     @media only screen and (min-width: 1024px) {
       padding-top: 50px;
@@ -97,10 +97,9 @@ export const ServiceCard = styled.div`
   flex: 0 0 70.33%;
 
   .service-card {
-    /* border: 1px solid purple; */
+    /* border: 2px solid green; */
     display: flex;
     flex-direction: column;
-    border: 2px solid green;
     width: 100%;
     padding: 50px 0;
 
@@ -112,7 +111,7 @@ export const ServiceCard = styled.div`
     }
     
     .col-card {
-      border: 1px solid brown;
+      /* border: 1px solid brown; */
       padding: 0 3rem;
       display: flex;
       flex-direction: row;
@@ -138,14 +137,10 @@ export const ServiceCard = styled.div`
       @media only screen and (min-width: 1300px) {
         padding: 0 20px;
         flex: 0 0 44.87673%;
-
-
       }
     }
     
     .col-img {
-      /* width: 55px;
-      height: 55px; */
       width: 100%;
       max-width: 55px;
       height: auto;
@@ -157,13 +152,7 @@ export const ServiceCard = styled.div`
 
     .bounce {
       position: relative;
-      /* left:50%; */
       bottom:0;
-      /* margin-top:-25px;
-      margin-left:-25px; */
-      /* height:50px;
-      width:50px; */
-      /* background:red; */
       animation: bounce 2s infinite;
       -webkit-animation:bounce 3s infinite ease-in-out;
     }
