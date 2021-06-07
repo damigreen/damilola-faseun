@@ -8,7 +8,6 @@ import {
 } from './ProcessStyled';
 
 
-
 const Process = () => {
 
   return (
@@ -17,29 +16,29 @@ const Process = () => {
         {/* <h3>Lorem Ipsum is simply dummy</h3> */}
         <h2>Process</h2>
         <ProcessContent>
-          <div className="process-content">
+          <div className="process-content flex-row">
 
-            <ProcessCard>
-              <div className="process-card">
-                <div className="bg bg-design">
+            <ProcessCard className="process-card flex-med">
+              <div className="card">
+                <div className="card-bg design flex-md end">
                   <h4>Design</h4>
                 </div>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
               </div>
             </ProcessCard>
 
-            <ProcessCard>
-              <div className="process-card">
-                <div className="bg bg-develop">
+            <ProcessCard className="process-card flex-med">
+              <div className="card">
+                <div className="card-bg develop flex-md end">
                   <h4>Design</h4>
                 </div>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>                
               </div>
             </ProcessCard>
 
-            <ProcessCard>
-              <div className="process-card">
-                <div className="bg bg-deploy">
+            <ProcessCard className="process-card flex-med">
+              <div className="card">
+                <div className="card-bg deploy flex-md end">
                   <h4>Design</h4>
                 </div>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
@@ -51,6 +50,5 @@ const Process = () => {
     </ProcessWrap>
   )
 }
-
 
 export default Process;

@@ -5,9 +5,8 @@ import {
   HeadingPrimary,
   HeadingSecondary,
   HeadingTertiary,
-
+  FlexRow,
 } from '../../AppStyled';
-
 
 
 export const ProcessWrap = styled.div`
@@ -45,25 +44,67 @@ export const ProcessWrap = styled.div`
 `
 
 export const ProcessContent = styled.div`
-
+  
   .process-content {
-    border: 1px solid green;
-
-
     @media only screen and (min-width: 1024px) {
-      background: lime;
     }
   }
 `
 
 export const ProcessCard = styled.div`
-
-  .process-card {
-    border: 1px solid yellow;
-    
+  @media only screen and (min-width: 1024px) {
   }
 
-  .bg {
-    border: 1px solid green;
+  .process-card {
+  }
+  
+  .card {
+    border: 1px solid yellow;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  .design {
+    background-image: url('../../../images/design.png');
+    background-position: center top;
+  }
+  
+  .develop {
+    background-image: url('../../../images/develop.png');
+  }
+  
+  .deploy {
+    background-image: url('../../../images/deploy.png');
+    /* background-position: center 50%; */
+  }
+  
+  .card-bg {
+    height: 150px;
+    max-height: auto;
+    min-height: 1px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media only screen and (min-width: 1024px) {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  h4 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: var(--white-two);
+
+    @media only screen and (min-width: 1024px) {
+      margin: 0;
+    }
+  }
+
+  p {
+    padding: 20px;
+    margin: 0;
   }
 `
