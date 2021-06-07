@@ -25,3 +25,49 @@ h1, h2 {
   margin-bottom: 0.9rem;
 }
 
+.flex-md {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+}
+.end {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+  padding: 31px 0;  
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90%;
+  padding: 31px 0;
+  border: 1px solid green;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (min-width: 991px) {
+    max-width: 84rem;
+    padding: 31px 3rem;
+  }
+}
+
+.flex-med {
+  border: 1px solid gold;
+  flex: 0 0 90%;
+  padding: 0 20px;
+
+  @media only screen and (min-width: 1024px) {
+    flex: 0 0 28.533333%;
+  }
+}
+

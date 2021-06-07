@@ -66,5 +66,17 @@ export const ButtonSecondary = styled.button`
     font-size: 0.79882rem;
     width: 7.9rem;
     height: 2.4rem;
-    } 
+} 
+`
+
+export const FlexRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 90%;
+    padding: 31px 0;
+    border: 1px solid brown;
+    justify-content: center;
+    align-items: center;
 `
