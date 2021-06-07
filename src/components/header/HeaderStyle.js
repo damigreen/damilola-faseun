@@ -22,7 +22,7 @@ export const HeaderWrap = styled.div`
 
 export const HeroWrap = styled.div`
   height: auto;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   background: conic-gradient(from 163.17deg at 50% 50%, rgba(72, 73, 86, 0.73) 0deg, rgba(47, 79, 79, 0.502145) 180.62deg, rgba(94, 215, 215, 0.456489) 232.5deg, rgba(47, 79, 79, 0.258928) 277.18deg, rgba(59, 67, 73, 0.158272) 309.38deg, rgba(180, 46, 110, 0) 360deg), #191A1D;
   background-blend-mode: soft-light, normal;
@@ -45,6 +45,7 @@ export const HeroImage = styled.div`
   transform: translate(0px, 0px);
   visibility: inherit;
   opacity: 0.2;
+  z-index: 0;
 
   @media only screen and (max-width: 767px) {
     background-position: center top;
