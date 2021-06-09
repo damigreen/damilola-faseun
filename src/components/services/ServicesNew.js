@@ -36,7 +36,7 @@ const ServicesNew = () => {
               <div className="service-card">
                 
                 <div className="col-card">
-                  <img className="col-img bounce" src={`../../../icons/code.png`} />
+                  <img className="col-img bounce" src={`../../../icons/responsive.png`} />
                   <div className="col-inner">
                     <h4>Responsive Web Design</h4>
                     <span className="horizontal-line"></span>
@@ -47,7 +47,7 @@ const ServicesNew = () => {
                 </div>
 
                 <div className="col-card">
-                    <img className="col-img bounce" src={`../../../icons/code.png`} />
+                    <img className="col-img bounce" src={`../../../icons/seo.png`} />
                     <div className="col-inner">
                       <h4>SEO and Online Marketing</h4>
                       <span className="horizontal-line"></span>
@@ -59,7 +59,7 @@ const ServicesNew = () => {
                 </div>
 
                 <div className="col-card">
-                    <img className="col-img bounce" src={`../../../icons/code.png`} />
+                    <img className="col-img bounce" src={`../../../icons/dev1.png`} />
                     <div className="col-inner">
                       <h4>Web and Mobile Development</h4>
                       <span className="horizontal-line"></span>
@@ -71,7 +71,7 @@ const ServicesNew = () => {
 
 
                 <div className="col-card">
-                    <img className="col-img bounce" src={`../../../icons/code.png`} />
+                    <img className="col-img bounce" src={`../../../icons/ecommerce.png`} />
                     <div className="col-inner">
                       <h4>E-commerce</h4>
                       <span className="horizontal-line"></span>

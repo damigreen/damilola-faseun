@@ -127,8 +127,8 @@ export const ServiceCard = styled.div`
 
         img {
           width: 100%;
-          max-width: 55px;
-          height: 55px;
+          /* max-width: 55px;
+          height: 55px; */
           margin-top: 50px;
         }
   
