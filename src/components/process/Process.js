@@ -30,7 +30,7 @@ const Process = () => {
             <ProcessCard className="process-card flex-med">
               <div className="card">
                 <div className="card-bg develop flex-md end">
-                  <h4>Design</h4>
+                  <h4>Develop</h4>
                 </div>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>                
               </div>
@@ -39,7 +39,7 @@ const Process = () => {
             <ProcessCard className="process-card flex-med">
               <div className="card">
                 <div className="card-bg deploy flex-md end">
-                  <h4>Design</h4>
+                  <h4>Deploy</h4>
                 </div>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
               </div>
