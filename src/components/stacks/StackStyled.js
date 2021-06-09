@@ -48,6 +48,7 @@ export const StacksNav = styled.div`
   .stacks-nav {
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 2rem;
 
     ul {
       align-items: flex-start;
@@ -75,17 +76,26 @@ export const TechList = styled.div`
 
   .tech-list {
     margin: 1rem auto;
-    width: 90%;
+    /* width: 90%; */
+    padding: 0  15px;
 
     ul {
-      justify-content: space-between;
-      align-items: flex-start;
+      justify-content: flex-start;
       align-items: center;
+      margin: 0 -1rem;
+      padding: 0;
     }
 
     ul li {
-      border: 1px solid green;
+      /* border: 1px solid green; */
+      margin: 0 1rem;
+      margin-bottom: 15px;
+    }
+  }
 
+  .icon-stack {
+    @media only screen and (min-width: 1034px) {
+      /* height: 55px; */
     }
   }
 
