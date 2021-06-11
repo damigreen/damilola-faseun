@@ -46,7 +46,7 @@ const Stacks = () => {
                   <img className='icon-stack'src="../../../icons/python.png" alt="python icon" />
                 </li>
                 <li className="item-list frontend">
-                  <img className='icon-stack'src="../../../icons/wordpress.png" alt="wordpress icon" />
+            <img className='icon-stack'src="../../../icons/wordpress.png  " alt="wordpress icon" />
                 </li>
                 <li className="item-list frontend">
                   <img className='icon-stack'src="../../../icons/graphql.png" alt="graphql icon" />

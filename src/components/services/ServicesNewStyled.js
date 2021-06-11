@@ -13,7 +13,6 @@ export const ServicesWrap = styled.div`
   
   .services-wrap {
     width: auto;
-    border: 1px solid brown;
   }
 `
 
@@ -42,17 +41,14 @@ export const ServiceInfo = styled.div`
   flex: 0 0 30.33%;
 
   .service-info {
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     
     @media only screen and (min-width: 1024px) {
+      margin-top: 50px;
       padding-top: 50px;
-      /* align-items: flex-start; */
-      /* align-items: center; */
-      /* justify-content: center; */
     }
   }
   
