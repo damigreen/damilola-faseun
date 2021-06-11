@@ -13,7 +13,6 @@ export const ProcessWrap = styled.div`
   padding: 50px 0;
 
   .process-wrap {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -37,7 +36,6 @@ export const ProcessWrap = styled.div`
   h2 {
     ${HeadingPrimary};
     text-align: center;
-    border: 1px solid red;
     margin-top: 10px;
     width: 100%;
   }
@@ -59,7 +57,6 @@ export const ProcessCard = styled.div`
   }
   
   .card {
-    border: 1px solid yellow;
     margin: 0;
     padding: 0;
   }
