@@ -27,7 +27,6 @@ const Footer = () => {
                             <div>Twitter</div>
                             <div>Behance</div>
                         </div>
-                        {/* <h2>Greenmtech</h2> */}
                     </InfoWrap>
                     <SiteMapWrap>
                         <h3>Site Map</h3>

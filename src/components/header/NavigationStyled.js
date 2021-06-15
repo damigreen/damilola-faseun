@@ -15,7 +15,6 @@ export const NavWrapper = styled.div`
     left: 0;
     width: 100%;
     height: 5rem;
-    /* border: 1px solid red; */
     z-index: 10;
     color: var(--text-color);
     font-family: var(--font-serif) Verdana, Geneva, Tahoma, sans-serif;
@@ -39,8 +38,6 @@ export const NavWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    /* border: 1px solid green; */
-    /* border: 1px solid green; */
     margin: 0 auto;
     width: 94%;
     background-color: inherit;
@@ -53,10 +50,8 @@ export const NavWrapper = styled.div`
 
   
   .nav-bar {
-    /* margin-right: 4rem; */
 
     ul {
-      /* border: 1px solid red; */
       display: flex;
       width: auto;
       flex-direction: row;
@@ -80,7 +75,6 @@ export const NavWrapper = styled.div`
         width: 60px;
         padding: 0 1.5rem;
         font-weight: 500;
-        /* color: #fff; */
         color: inherit;
         
         :last-child {
@@ -93,43 +87,31 @@ export const NavWrapper = styled.div`
           border-radius: 2px;
           height: 2.46503rem;
           transition: all .5s ease-out;
-          /* transition:all .5s ease; */
           
           :hover, :active {
             border: 1px solid var(--hover);
             color: var(--hover);
             background-color: inherit;
-              /* height: 4rem;   */
             }
           }
-
-          /* .pulse:hover, 
-          .pulse:focus {
-            animation: pulse 1s;
-            box-shadow: 0 0 0 2em rgba(#fff,0);
-          } */
         }
 
         .invert-link {
           color: #333;
-          /* background: red; */
 
           :link {
             color: var(--text-inverse);
-            /* color: inherit; */
           }
         }
         
         a {
           padding: 0;
           margin: 0;
-          /* color: var(--white-one); */
           color: inherit;
 
           
           :link {
             color: #fff;
-            /* color: inherit; */
             text-decoration: none;
           }
 
@@ -137,12 +119,9 @@ export const NavWrapper = styled.div`
             background-color: #862020;
           }
           
-          /* Make an animated border for the hover state */
           :hover {
-            /* border-bottom: 1px solid gold; */
             position: relative;
             overflow: hidden;
-            /* color: #B63221; */
             color: var(--text-hover);
             text-decoration: none;
           }

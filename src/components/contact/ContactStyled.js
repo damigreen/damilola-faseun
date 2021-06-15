@@ -39,11 +39,8 @@ export const FieldsWrap = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: auto; */
     margin: 0 auto;
     width: 90%;
-    /* max-width: 700px; */
-    /* margin: ; */
     color: #F2F2F2;
     margin-bottom: 1.9rem;
 
@@ -68,7 +65,6 @@ export const FieldsWrap = styled.div`
             align-self: flex-start;
             padding: 0.7381rem 0.54462rem;
             padding-bottom: 0;
-            /* margin-left: 1rem; */
             font-size: 2.4rem;
             margin-bottom: 1rem;
             font-weight: 700;
@@ -106,7 +102,6 @@ export const FormWrap = styled.div`
         label {
             position: absolute;
             bottom: 7px;
-            /* padding-bottom: 1.09233rem; */
             font-size: 0.875rem;
             color: #C0BFC3
         }
@@ -172,7 +167,6 @@ export const FormWrap = styled.div`
                 border: none;
                 color: #1e1d28;
                 display: inline-block;
-                /* font-family: "Proxima Nova",Arial,SourceSansPro,"Segoe UI",Roboto,"Helvetica Neue",sans-serif; */
                 font-size: 1rem;
                 font-weight: 600;
                 line-height: 1.3!important;

@@ -66,16 +66,6 @@ const Stacks = () => {
                 <li className="item-list frontend">
                   <img className='icon-stack'src="../../../icons/webpack.png" alt="webpack icon" />
                 </li>
-
-
-                {/* <li className="item-list frontend">CSS3</li>
-                <li className="item-list frontend">ReactJS</li>
-                <li className="item-list listfrontend">JQuery</li>
-                <li className="item-list frontend">VueJS</li>
-                <li className="item-list backend">NodeJS</li>
-                <li className="item-list backend">PHP</li>
-                <li className="item-list backend">GraphQL</li>
-                <li className="item-list backend">Express</li> */}
               </ul>
             </div>
           </TechList>

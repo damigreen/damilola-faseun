@@ -15,13 +15,11 @@ export const ProjectWrap = styled.div`
     flex-direction: column;
     justify-content:center;
     align-items: flex-start;
-    /* align-items: center; */
     flex-wrap: wrap;
     padding: 1.415rem;
     width: auto;
 
     @media only screen and (min-width: 767px) {
-      /* flex-flow: row wrap; */
 
     }
   }
@@ -102,7 +100,6 @@ export const PortfolioWrap = styled.div`
     width: 90%;
 
     @media only screen and (min-width: 991px) {
-      /* width: 100%; */
       max-width: 90rem;
       padding: 31px 3rem;
     }
@@ -125,10 +122,6 @@ export const PortfolioWrap = styled.div`
     h3, h4 {
       text-align: left;
       margin: 0;
-      /* padding-left: 1.06345rem;
-      padding-right: 1.06345rem; */
-      /* padding-left: 1.34rem; */
-
     }
 
     h3 {
@@ -153,7 +146,6 @@ export const PortfolioWrap = styled.div`
       margin-right: auto;
       width: 100%;
       max-width: 75rem;
-      /* padding: 0.34rem 0.78009rem; */
     }
   }
 
@@ -217,7 +209,6 @@ export const PortfolioWrap = styled.div`
       all: unset;
       display: flex;
       align-items: flex-start;
-      /* justify-content: space-between; */
       flex-wrap: wrap;
       border: unset;
       width: 100%;
@@ -290,16 +281,12 @@ export const PortfolioWrap = styled.div`
     flex-direction: column;
     justify-content:center;
     align-items: flex-start;
-    /* align-items: center; */
     flex-wrap: wrap;
 
     @media only screen and (min-width: 767px) {
-      /* width: auto;
-      height: auto; */
       flex-flow: row wrap;
       flex: 0 0 40%;
-
     }
   }
+}
 `
-

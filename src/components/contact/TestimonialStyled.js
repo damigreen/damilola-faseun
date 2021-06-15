@@ -35,7 +35,6 @@ export const TestimonialCard = styled.div`
 
     p {
       color: #E0E0E0;
-      /* line-height: 25px; */
       text-align: center;
     }
   }
@@ -66,14 +65,10 @@ export const TestimonialCard = styled.div`
 
   .card.two {
     display: none;
-    /* width: 400px;
-    height: auto; */
   }
 
   .card.three {
     display: none;
-    /* width: 400px;
-    height: auto; */
   }
 
   .avatar-title {
