@@ -24,20 +24,17 @@ const handleIntersection = () => {
   try {
     const heroSection = document.querySelector('.header-wrap');
     const navHeader = document.querySelector('.nav-main');
-    // const navLink = document.querySelector('.nav-link');
     const navLink = document.querySelector('ul');
     console.log(navLink);
 
     const heroSectionObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        // console.log(entry);
 
         if (!entry.isIntersecting) {
           navHeader.classList.add('page-scrolled');
           navLink.style.color = "#212529";
         } else {
           navHeader.classList.remove('page-scrolled');
-          // navLink.classList.remove('invert-link');
           navLink.style.color = "#f4f4f4";
         }
       })
@@ -68,8 +65,6 @@ function Header() {
 
           <HeroText>
               <HeroHeadingWrap>
-              {/* <HeroHeadingName style={{color: "#6E8577"}}>Hello I'm</HeroHeadingName> */}
-                {/* <HeroHeadingName style={{color: "#80855A", border: 0,padding: 0}}>Hello I'm</HeroHeadingName> */}
                 <HeroHeadingName style={{color: "#838285", border: 0,padding: 0}}>Hello I'm</HeroHeadingName>
                 <HeroHeading>Damilola Faseun</HeroHeading>
                 <HeroHeading>Full Stack Web Developer</HeroHeading>

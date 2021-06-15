@@ -96,7 +96,6 @@ export const InfoWrap = styled.div`
   }
 
   .social-icons {
-    /* margin-top: 1rem; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -176,7 +175,5 @@ export const SubscriptionWrap = styled.div`
 
   div {
     width: 65%;
-  }
-  
-  
+  }  
 `

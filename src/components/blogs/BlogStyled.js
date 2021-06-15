@@ -15,6 +15,3 @@ export const BlogRow = styled.div`
 export const BlogHeader = styled.h2`
   color: red;
 `
-// export const primaryFont = '
-//   font-family: a
-// '

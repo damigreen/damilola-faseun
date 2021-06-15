@@ -16,15 +16,6 @@ export const CTAWrap = styled.div`
 
   }
 
-  /* .parallax {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-  } */
-
   .cta-wrap {
     height: auto;
     min-height: 300px;
@@ -33,11 +24,8 @@ export const CTAWrap = styled.div`
     width: auto;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     justify-content: center;
     align-items: center;
-    /* width: 79%; */
-    /* max-width: 80rem; */
     padding: 0.34rem 1.989rem;
 
     @media only screen and (max-width: 767px) {
@@ -76,7 +64,6 @@ export const CTAWrap = styled.div`
   }
 
   .button-wrap {
-    /* flex: 0 0 30%; */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
