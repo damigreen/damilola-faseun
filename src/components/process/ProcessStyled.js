@@ -15,12 +15,10 @@ export const ProcessWrap = styled.div`
   .process-wrap {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: flex-start;
     
     @media only screen and (min-width: 1024px) {
       align-items: center;
-      /* justify-content: flex-start; */
     }
   }
 
@@ -73,7 +71,6 @@ export const ProcessCard = styled.div`
   
   .deploy {
     background-image: url('../../../images/deploy.png');
-    /* background-position: center 50%; */
   }
   
   .card-bg {
