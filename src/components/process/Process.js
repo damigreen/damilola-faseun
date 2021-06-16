@@ -13,6 +13,7 @@ const Process = () => {
   return (
     <ProcessWrap>
       <div className="process-wrap">
+
         <h2>Process</h2>
         <ProcessContent>
           <div className="process-content flex-row">
