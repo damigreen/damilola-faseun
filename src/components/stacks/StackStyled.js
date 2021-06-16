@@ -87,7 +87,6 @@ export const TechList = styled.div`
     }
 
     ul li {
-      /* border: 1px solid green; */
       margin: 0 1rem;
       margin-bottom: 15px;
     }
@@ -98,5 +97,4 @@ export const TechList = styled.div`
       /* height: 55px; */
     }
   }
-
 `

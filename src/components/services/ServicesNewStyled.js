@@ -19,7 +19,6 @@ export const ServicesWrap = styled.div`
 export const ServicesRow = styled.div`
 
   .services-row {
-    /* border: 1px solid gold; */
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -93,7 +92,6 @@ export const ServiceCard = styled.div`
   flex: 0 0 70.33%;
 
   .service-card {
-    /* border: 2px solid green; */
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -107,7 +105,6 @@ export const ServiceCard = styled.div`
     }
     
     .col-card {
-      /* border: 1px solid brown; */
       padding: 0 3rem;
       display: flex;
       flex-direction: row;
@@ -123,11 +120,8 @@ export const ServiceCard = styled.div`
 
         img {
           width: 100%;
-          /* max-width: 55px;
-          height: 55px; */
           margin-top: 50px;
-        }
-  
+        }  
       }
 
       @media only screen and (min-width: 1300px) {
