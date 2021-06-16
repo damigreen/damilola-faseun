@@ -12,7 +12,6 @@ export const  ServicesWrapper = styled.div`
     box-sizing: border-box;
     padding-bottom: 4rem;
     background-color: #F8F8F8;
-    /* background-color: #f4f3f0; */
 ` 
 
 export const ServicesRow = styled.div`
@@ -27,7 +26,6 @@ export const ServicesRow = styled.div`
         align-items: center;
         text-align: center;
     }
-
     
     .my-services-header {
         width: 100%;
@@ -51,25 +49,19 @@ export const ServicesRow = styled.div`
         flex-flow: row wrap;
         justify-content: flex-start;
         justify-content: center;
-        /* align-items: flex-start; */
-        /* width: 100%; */
     }
 
     .services-data {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        /* justify-content: center; */
         align-items: center;
         padding: 40px;
-        /* width: 100%; */
-        /* margin: 7px 10px; */
         border-bottom: 1px solid rgba(49,49,49,0.1);
         border-right: 1px solid rgba(49,49,49,0.1);
 
         @media only screen and (min-width: 500px) and (max-width: 800px) {
             flex: 1 1 25%;
-            /* flex-basis: 30%; */
         }
 
         @media only screen and (min-width: 800px) {
