@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 
 
 export const FlexDrip = styled.div`
-    /* align-items:  */
 `
 
 export const borderStyle = `
