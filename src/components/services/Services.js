@@ -16,7 +16,7 @@ const Services = () => {
 
                     <div className="services-items">
                         <div className="services-data">
-                            <img className="service-img" src={`../../../icons/responsive.png`} />
+                            {/* <img className="service-img" src={`../../../icons/responsive.png`} /> */}
                             <h4>Responsive Web Design</h4>
                             <span className="horizontal-line"></span>
                             <p className="services-content">
@@ -25,7 +25,7 @@ const Services = () => {
                         </div>
 
                         <div className="services-data">
-                            <img className="service-img" src={`../../../icons/seo.png`} />
+                            {/* <img className="service-img" src={`../../../icons/seo.png`} /> */}
                             <h4>SEO and Online Marketing</h4>
                             <span className="horizontal-line"></span>
                             <p>
@@ -34,7 +34,7 @@ const Services = () => {
                         </div>
 
                         <div className="services-data">
-                            <img className="service-img" src={`../../../icons/mobile.png`} />
+                            {/* <img className="service-img" src={`../../../icons/mobile.png`} /> */}
                             <h4>Web and Mobile Development</h4>
                             <span className="horizontal-line"></span>
                             <p>
@@ -44,7 +44,7 @@ const Services = () => {
 
 
                         <div className="services-data">
-                            <img className="service-img" src={`../../../icons/ecommerce.png`} />
+                            {/* <img className="service-img" src={`../../../icons/ecommerce.png`} /> */}
                             <h4>E-commerce</h4>
                             <span className="horizontal-line"></span>
                             <p>
@@ -53,7 +53,7 @@ const Services = () => {
                         </div>
 
                         <div className="services-data">
-                            <img className="service-img" src={`../../../icons/business.png`} />
+                            {/* <img className="service-img" src={`../../../icons/business.png`} /> */}
                             <h4>Portfolio Website</h4>
                             <span className="horizontal-line"></span>
                             <p>
@@ -62,7 +62,7 @@ const Services = () => {
                         </div>
                         
                         <div className="services-data">
-                            <img className="service-img" src={`../../../icons/strategy.png`} />
+                            {/* <img className="service-img" src={`../../../icons/strategy.png`} /> */}
                             <h4>Consulting and Strategy</h4>
                             <span className="horizontal-line"></span>
                             <p>

@@ -4,10 +4,10 @@ import {
   AboutContent,
   AboutImage,
 } from './AboutStyled';
+const aboutImage = '../../images/profile-image.jpg';
 
 
 const About = () => {
-  const aboutImage = '../../images/profile-image.jpg';
 
   return (
     <AboutWrap>
