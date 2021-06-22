@@ -9,7 +9,9 @@ import {
     ImageWrap,
 
 } from './PortfolioStyled';
-
+import {
+    ContactButton,
+} from '../header/HeaderStyle'
 
 const showFilterWidget = () => {
     console.log('show filter')
@@ -66,7 +68,7 @@ const Portfolio = (portfolio) => {
                 </div>
             </ProjectWrap>
         )
-    });
+    }).slice(0, 4);
     
     return(
         <PortfolioWrap>
@@ -93,6 +95,9 @@ const Portfolio = (portfolio) => {
                 </div>
                 <div className="project-div">
                     {projects}
+                </div>
+                <div>
+                    <button className="portfolio-button">See all works</button>
                 </div>
             </div>
         </PortfolioWrap>

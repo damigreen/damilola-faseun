@@ -289,4 +289,38 @@ export const PortfolioWrap = styled.div`
     }
   }
 }
+
+.portfolio-button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--black-two);
+  letter-spacing: 0.12em;
+  border-radius: 2px;
+  border: 5px;
+  background: inherit;
+  border: 2px solid var(--primary-color1);
+  transition: all .5s;
+  width: 15em;
+  height: 3.14654rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 0.763rem;
+
+  // Stack multiple shadows, one from the left, the other from the right
+  :hover,
+  :focus {
+    box-shadow: 
+      /* inset -3.5em 0 0 0 var(--hover),
+      inset 3.5em 0 0 0 var(--hover);   */
+      inset -15em 0 0 0 var(--hover),
+      inset 15em 0 0 0 var(--hover);  
+      color: var(--white-two);
+  }
+}
+
 `
