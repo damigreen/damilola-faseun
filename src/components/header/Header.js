@@ -24,6 +24,7 @@ const handleIntersection = () => {
   try {
     const heroSection = document.querySelector('.header-wrap');
     const navHeader = document.querySelector('.nav-main');
+    const logoSpan = document.querySelector('.logo-span');
     const navLink = document.querySelector('ul');
     console.log(navLink);
 
@@ -33,9 +34,11 @@ const handleIntersection = () => {
         if (!entry.isIntersecting) {
           navHeader.classList.add('page-scrolled');
           navLink.style.color = "#212529";
+          logoSpan.style.color = "#171717";
         } else {
           navHeader.classList.remove('page-scrolled');
           navLink.style.color = "#f4f4f4";
+          logoSpan.style.color = "#D44B31";
         }
       })
     },heroSectionOption);

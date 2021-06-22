@@ -4,13 +4,13 @@ import './App.scss';
 import Header from "./components/header/"
 import Portfolio from "./components/portfolio/";
 import Contact from './components/contact/';
-import Services from './components/services/';
 import Process from './components/process';
 import About from 'components/about';
 import Stacks from 'components/stacks';
 import CTA from 'components/cta';
 import Footer from 'components/footer/'
 import ServicesNew from 'components/services/ServicesNew';
+import Services from './components/services/';
 import Test from 'components/test/';
 
 /*

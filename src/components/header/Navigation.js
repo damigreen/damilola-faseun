@@ -12,7 +12,10 @@ function Navigation() {
     <NavWrapper>
       <div className="nav-main">
         <div className="nav-wrapper">
-          <div className="logo-box">LOGO</div>
+          {/* <div className="logo-box"></div> */}
+          <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+            <img className="logo-box" src={`../../../icons/logo1.png`} alt="website logo" /><span className="logo-span" style={{color: '#D44B31', fontSize: '2rem', marginLeft: '0.6731rem', fontWeight: '500'}}>tech</span>
+          </div>
 
 
           <div className="nav-bar">
