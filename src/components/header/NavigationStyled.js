@@ -48,7 +48,17 @@ export const NavWrapper = styled.div`
     }
   }
 
-  
+
+  /* .logo-box {
+    background-image: url('../../../icons/logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 1px;
+    width: auto;
+  }
+
+   */
   .nav-bar {
 
     ul {
