@@ -93,6 +93,10 @@ export const PortfolioWrap = styled.div`
   padding: 4rem 0;
   background-color: #EFF0F3;
 
+  .port-nav {
+    color: #171717;
+  }
+
   .portfolio-wrap {
     ${flexColumnWrap};
     justify-content: flex-start;
