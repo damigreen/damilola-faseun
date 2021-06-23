@@ -1,5 +1,4 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useState, useEffect } from 'react';
 import {
     PortfolioWrap,
     ProjectWrap,
@@ -16,6 +15,7 @@ import Navigation from '../header/Navigation';
 const showFilterWidget = () => {
     console.log('show filter')
 }
+
 
 const ProjectsLeft = ({i, p}) => {
     return (
@@ -55,6 +55,23 @@ const ProjectsRight = ({i, p}) => {
 
 
 const Portfolio = (portfolio) => {
+    const [navBar, setNavBar] = useState(null);
+    const [navMain, setNavMain] = useState(null);
+
+    useEffect(() => {
+        setNavBar(document.querySelector('.nav-bar'));
+        setNavMain(document.querySelector('.nav-main'));
+
+        if ((navMain && navBar)) {
+            // console.log('no objects......................');
+            navBar.style.color = '#171717';
+            navMain.style.borderBottom = '.8px solid rgba(138, 185, 51, .4)';
+            navMain.style.boxShadow = '0 2px 8px 0 rgb(0 0 0 / 10%)';
+            navMain.style.height = '3rem';
+            navMain.style.transition =  'height .781s'
+        }
+    }, [navBar, navMain]);
+
     
     if (portfolio.data === undefined) {
         return <div>Loading.....................</div>
