@@ -42,7 +42,6 @@ export const NavWrapper = styled.div`
     width: 94%;
     background-color: inherit;
 
-
     @media only screen and (max-width: 1000px) {
       width: 100%;
     }
