@@ -7,8 +7,9 @@ import {
     ProjectWrapRight,
     TextWrap,
     ImageWrap,
+
 } from './PortfolioStyled';
-import { Link } from 'react-router-dom';
+import Navigation from '../header/Navigation';
 
 
 
@@ -67,14 +68,16 @@ const Portfolio = (portfolio) => {
                 </div>
             </ProjectWrap>
         )
-    }).slice(0, 4);
+    });
     
     return(
         <PortfolioWrap>
+          <Navigation className="port-nav" />
             <div className="portfolio-wrap">
                 <div className="portfolio-header-main">
                     <div className="portfolio-heading">
                         <h3>Selected Works</h3>
+                        
                         <h4>Take a peek at some of my latest project</h4>
                         {/* <p>From Web and mobile applications to websites for different sectors like hospitality, education e-commerce and business website, check out some of my projects</p> */}
                     </div>
@@ -95,7 +98,6 @@ const Portfolio = (portfolio) => {
                 <div className="project-div">
                     {projects}
                 </div>
-                <Link to='/portfolio-all'><button className="portfolio-button">See all works</button></Link>
             </div>
         </PortfolioWrap>
     )
