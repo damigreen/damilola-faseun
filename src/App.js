@@ -10,73 +10,14 @@ import Stacks from 'components/stacks';
 import CTA from 'components/cta';
 import Footer from 'components/footer/'
 import ServicesNew from 'components/services/ServicesNew';
+import PortfolioAll from 'components/portfolio/PortfolioAll';
 import Services from './components/services/';
 import Test from 'components/test/';
-
-/*
-
-* Application Information
-
-Header
-	Navigation
-
-		fonts-family:
-		font-size: 
-		color
-		color-active
-		color-hover
-		color-visited
-
-	HeroTextPrimary 
-    font-family:
-		font-size:
-		font-weight:
-    color:
-    background:
-  
-  HeroTextSecondary 
-  font-family:
-  font-size:
-  font-weight:
-  color:
-  background:
-
-    Button1
-      color:
-      background:
-    Button2
-      color:
-      background:
-
-Body
-  header-primary
-    font-family
-    font-weight:
-    color: 
-    background:
-
-  header-secondary
-    font-family
-    font-weight:
-    color: 
-    background:
-  
-  paragraph
-    font-family
-    font-weight:
-    color: 
-    background:
-  
-Buttons 
-  color:
-  background:
-  hover
-  visited
-  link
-  focus:  
-
-*/
-
+import { 
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom'
 
 
 function App() {
@@ -95,37 +36,50 @@ function App() {
   
 
   return (
-    <div className="App">
-      <header id="header">
-        <Header />
-      </header>
-      <section id="about">
-        <About />
-      </section>
-      <section id="services">
-        {/* <Services /> */}
-        <ServicesNew />
-      </section>
-      <section id="process">
-        <Process />
-      </section>
-      <section id="portfolio">
-        <Portfolio data={portfolioData.portfolio} />
-      </section>
-      <section id="stacks">
-        <Stacks />
-      </section>
-      <section id="cta">
-        <CTA />
-      </section >
-      <section id="contact">
-        <Contact />
-      </section>
-      <footer id="footer">
-        <Footer />
-      </footer>
-      {/* <Test /> */}
-    </div>
+    <Router>
+      <Switch>
+          <div className="App">
+            <Route exact path="/">
+            <header id="header">
+              <Header />
+            </header>
+            <section id="about">
+              <About />
+            </section>
+            <section id="services">
+              {/* <Services /> */}
+              <ServicesNew />
+            </section>
+            <section id="process">
+              <Process />
+            </section>
+            <section id="portfolio">
+              <Portfolio data={portfolioData.portfolio} />
+            </section>
+            <section id="stacks">
+              <Stacks />
+            </section>
+            <section id="cta">
+              <CTA />
+            </section >
+            </Route>
+
+            <Route exact path='/portfolio-all'>
+              <PortfolioAll data={portfolioData.portfolio} />
+            </Route>  
+            <section id="contact">
+              <Contact />
+            </section>
+
+            <footer id="footer">
+              <Footer />
+            </footer>
+            {/* <Test /> */}
+          </div>
+
+       
+      </Switch>
+    </Router>
   );
 
 }
