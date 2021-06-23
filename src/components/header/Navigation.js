@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import {
   NavWrapper,
-  NavBar,
-  NavItem,
-
 } from './NavigationStyled';
+import { Link } from 'react-router-dom';
+
+
 
 function Navigation() {
   
@@ -13,9 +13,9 @@ function Navigation() {
       <div className="nav-main">
         <div className="nav-wrapper">
           {/* <div className="logo-box"></div> */}
-          <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+          <Link to='/' style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', textDecoration: 'none'}}>
             <img className="logo-box" src={`../../../icons/logo1.png`} alt="website logo" /><span className="logo-span" style={{color: '#D44B31', fontSize: '2rem', marginLeft: '0.6731rem', fontWeight: '500'}}>tech</span>
-          </div>
+          </Link>
 
 
           <div className="nav-bar">
