@@ -90,7 +90,6 @@ export const NavWrapper = styled.div`
             border: 1px solid var(--hover);
             color: var(--hover);
             background-color: inherit;
-            }
           }
         }
 
@@ -109,7 +108,7 @@ export const NavWrapper = styled.div`
 
           
           :link {
-            color: #fff;
+            /* color: #fff; */
             text-decoration: none;
           }
 

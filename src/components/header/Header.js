@@ -25,8 +25,8 @@ const handleIntersection = () => {
     const heroSection = document.querySelector('.header-wrap');
     const navHeader = document.querySelector('.nav-main');
     const logoSpan = document.querySelector('.logo-span');
-    const navLink = document.querySelector('ul');
-    console.log(navLink);
+    const navLink = document.querySelector('.nav-list');
+    // const navLink = document.querySelector('ul');
 
     const heroSectionObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
