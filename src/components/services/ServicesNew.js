@@ -41,7 +41,7 @@ const ServicesNew = () => {
                     <h4>Responsive Web Design</h4>
                     <span className="horizontal-line"></span>
                     <p className="card-content">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. and typesetting industry and typesetting industry
+                      Get visually impressive web design and development solutions for your brand that functions on all platforms and offers the ultimate user experience.
                     </p>
                   </div>
                 </div>
@@ -52,7 +52,7 @@ const ServicesNew = () => {
                       <h4>SEO and Online Marketing</h4>
                       <span className="horizontal-line"></span>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.  and typesetting industry and typesetting industry
+                        Improve your visibility and website ranking by generating organic traffic using optimized SEO analytics and marketing strategy
                       </p>
 
                     </div>
@@ -64,7 +64,7 @@ const ServicesNew = () => {
                       <h4>Web and Mobile Development</h4>
                       <span className="horizontal-line"></span>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. and typesetting industry and typesetting industry 
+                      I offer custom web and mobile development services using the latest and cutting edge technologies to produce exclusive and high quality products specifically tailored for you and your business needs.
                       </p>
                     </div>
                 </div>
@@ -75,8 +75,8 @@ const ServicesNew = () => {
                     <div className="col-inner">
                       <h4>E-commerce</h4>
                       <span className="horizontal-line"></span>
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.  and typesetting industry and typesetting industry
+                      <p >
+                        Own your own store and start selling your products online by leveraging several ecommerce platforms that will help you to deliver your products to more people around the world 
                       </p>
                     </div>
                 </div>
