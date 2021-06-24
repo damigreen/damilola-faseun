@@ -25,7 +25,7 @@ const About = () => {
           <b>I create web, Android, IOS and cross platform applications</b> with focus on  meeting brands needs in terms of functionality and apperance.
           <br />My passion is creating <b>web technologies and innovations</b> that helps you reach more customers and <b>aids business growth</b> using the latest and in demand technologies.
 
-          As a highly diligent and hardworking freelancer, I have <b>designed, developed, and deployed</b> several top quality work that cuts accross different sectors like small business, finance, education etc. <b>providing solutions that meets business needs and guranteed</b> to increase conversion rate of your products.
+          As a highly diligent and hardworking freelancer, I have <b>designed, developed, and deployed</b> several top quality work that cuts accross different sectors like small business, finance, education, retail etc. <b>providing solutions that meets business needs and guranteed</b> to increase conversion rate of your products.
           </p>
         </AboutContent>
       </div>
