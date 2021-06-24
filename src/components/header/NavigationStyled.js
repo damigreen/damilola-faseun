@@ -18,6 +18,9 @@ export const NavWrapper = styled.div`
     z-index: 10;
     color: var(--text-color);
     font-family: var(--font-serif) Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: rgba(29, 39, 40, 0.6);
+    background-color: rgba(0, 0, 0, 0.4); */
+    /* border: 2px solid gold; */
   }
   
   .page-scrolled {

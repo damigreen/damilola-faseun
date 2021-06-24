@@ -55,7 +55,7 @@ const handleIntersection = () => {
 function Header() {
     useEffect(() => {
       handleIntersection();
-    }, [handleIntersection]);
+    }, []);
 
   return (
     <HeaderWrap>
@@ -85,16 +85,16 @@ function Header() {
 
           <SocialIcons>
             <div className="social-icons icons-col icons-row">
-              <a href="">
+              <a href="https://github.com/damigreen" rel="noreferrer" target="_blank">
                 <img src={`../../../icons/github.png`} alt="github icon" />
               </a>
-              <a>
+              <a href="https://www.linkedin.com/in/damilola-faseun-748602b1" rel="noreferrer" target="_blank">
                 <img src={`../../../icons/linkedin.png`} alt="linkein icon" />
               </a>
-              <a>
+              <a href="https://twitter.com/damilolaFaseun" rel="noreferrer" target="_blank">
                 <img src={`../../../icons/twitter.png`} alt="twitter icon" />
               </a>
-              <a>
+              <a href="https://www.behance.net/damigreen" rel="noreferrer" target="_blank">
                 <img src={`../../../icons/behance.png`} alt="behance icon" />
               </a>
             </div>
