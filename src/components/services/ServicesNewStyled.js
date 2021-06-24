@@ -106,9 +106,6 @@ export const ServiceCard = styled.div`
     
     .col-card {
       padding: 0 3rem;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
       
       div {
         margin-top: 50px;
@@ -161,8 +158,17 @@ export const ServiceCard = styled.div`
     }
     
     .col-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
       
       @media only screen and (min-width: 1024px) {      
+      }
+
+      p {
+        font-size: 0.922rem;
+        line-height: 23px;
       }
     }
   }
