@@ -17,22 +17,22 @@ const showFilterWidget = () => {
 }
 
 const ProjectsLeft = ({i, p}) => {
-    return (
-        <ProjectWrapLeft key={i}>
-            <div className="project left">
-                <ImageWrap>
-                    <div className="image-wrap">
-                        <img alt="Image for projects done" src={`../../../images/${p.image}`} />
-                    </div>
-                </ImageWrap>
+  return (
+    <ProjectWrapLeft key={i}>
+        <div className="project left">
+            <ImageWrap>
+                <div className="image-wrap">
+                    <img alt="Image for projects done" src={`../../../images/${p.image}`} />
+                </div>
+            </ImageWrap>
 
-                <TextWrap>
-                    <p className="project-title">{p.title}{`This image has the value ${i}`}</p>
-                    <p className="project-category">{p.categories}</p>
-                </TextWrap>
-            </div>
-        </ProjectWrapLeft>
-    )
+            <TextWrap>
+                <p className="project-title">{p.title}{`This image has the value ${i}`}</p>
+                <p className="project-category">{p.categories}</p>
+            </TextWrap>
+        </div>
+    </ProjectWrapLeft>
+  )
 }
 
 const ProjectsRight = ({i, p}) => {

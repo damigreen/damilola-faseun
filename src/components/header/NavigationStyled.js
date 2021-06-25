@@ -32,7 +32,7 @@ export const NavWrapper = styled.div`
   }
 
   @media only screen and (max-width: 1000px) {
-    height: 3rem;
+    /* height: 3rem; */
   }
   
   .nav-wrapper {
@@ -46,7 +46,8 @@ export const NavWrapper = styled.div`
     background-color: inherit;
 
     @media only screen and (max-width: 1000px) {
-      width: 100%;
+      /* width: 100%; */
+      
     }
   }
 
@@ -138,16 +139,29 @@ export const NavWrapper = styled.div`
 
   .nav-filter {
     display: none;
-    background-color: red;
-    border: 3px solid gold;
 
     @media only screen and (max-width: 1200px) {
       display: block;
-      background-color: green;
       float: right;
       justify-self: last baseline;
+      height: 35px;
+      width: 35px;
       align-self: center;
+      background-image: url('../../../icons/justify-white.png');
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
+  
+  .nav-filter-ext {
 
+    @media only screen and (max-width: 1200px) {
+      display: block;
+      height: 35px;
+      width: 35px;
+      background-image: url('../../../icons/justify.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
 `
