@@ -304,7 +304,7 @@ export const PortfolioWrap = styled.div`
   border-radius: 2px;
   border: 5px;
   background: inherit;
-  border: 2px solid var(--primary-color1);
+  border: 1px solid var(--primary-color1);
   transition: all .5s;
   width: 15em;
   height: 3.14654rem;
