@@ -59,9 +59,9 @@ function App() {
             <section id="stacks">
               <Stacks />
             </section>
-            <section id="cta">
+            {/* <section id="cta">
               <CTA />
-            </section >
+            </section > */}
             </Route>
 
             <Route exact path='/portfolio-all'>

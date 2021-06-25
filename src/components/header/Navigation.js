@@ -12,7 +12,6 @@ function Navigation() {
     <NavWrapper>
       <div className="nav-main">
         <div className="nav-wrapper">
-          {/* <div className="logo-box"></div> */}
           <Link to='/' style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', textDecoration: 'none'}}>
             <img className="logo-box" src={`../../../icons/logo1.png`} alt="website logo" /><span className="logo-span" style={{color: '#D44B31', fontSize: '2rem', marginLeft: '0.6731rem', fontWeight: '500'}}>tech</span>
           </Link>
@@ -27,7 +26,7 @@ function Navigation() {
             </ul>
           </div>
 
-          <div className="nav-filter">FILTER</div>
+          <div className="nav-filter"></div>
         </div>
 
       </div>

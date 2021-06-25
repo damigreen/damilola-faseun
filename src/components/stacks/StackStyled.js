@@ -86,9 +86,14 @@ export const TechList = styled.div`
       padding: 0;
     }
 
-    ul li {
-      margin: 0 1rem;
+    li {
+      margin: 0 1.6rem;
       margin-bottom: 15px;
+    }
+
+    img {
+      max-width: 100%;
+      height: 55px;
     }
   }
 
