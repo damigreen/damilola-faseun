@@ -27,7 +27,6 @@ const handleIntersection = () => {
     const logoSpan = document.querySelector('.logo-span');
     const navLink = document.querySelector('.nav-list');
     const navFilter = document.querySelector('.nav-filter');
-    // const navLink = document.querySelector('ul');
 
     const heroSectionObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -36,21 +35,12 @@ const handleIntersection = () => {
           navHeader.classList.add('page-scrolled');
           navLink.style.color = "#212529";
           logoSpan.style.color = "#171717";
-          // navFilter.style.border = '1px solid red';
-          // navFilter.style.background = `url('../../../icons/justify.png')`;
-          // navFilter.style.backgroundSize = 'cover';
-          // navFilter.style.backgroundRepeat = 'no-repeat';
           navFilter.classList.add('nav-filter-ext')
         } else {
           navHeader.classList.remove('page-scrolled');
           navLink.style.color = "#f4f4f4";
           logoSpan.style.color = "#D44B31";
-          // navFilter.style.background = `url('../../../icons/justify-white.png')`;
-          // navFilter.style.backgroundSize = 'cover';
-          // navFilter.style.backgroundRepeat = 'no-repeat';
-          // navFilter.style.border = 'none';
           navFilter.classList.remove('nav-filter-ext')
-
         }
       })
     },heroSectionOption);
