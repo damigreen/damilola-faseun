@@ -7,6 +7,31 @@ import {
 
 const Stacks = () => {
 
+  // var mySkillNames = Object.keys(skills);
+
+  //   const mySkills = mySkillNames.map(sk => {
+  //     return (
+  //       <Card style={{marginTop: '70px'}} title={sk} >
+  //         {skills[sk].map(s => {
+  //           var iconName = `images/icons/${s.split("|")[1]}`
+  //           console.log(iconName)
+  //           var iconUrl = iconName +".svg";
+  //           var iconUrlAlt = 'images/icons/'+s.split("|")[1]+".png";
+  //           var icon = iconName.includes('PNG') ? iconUrlAlt : iconUrl;
+
+  //           console.log((iconUrl))
+  //           return (
+  //               <Card.Grid style={gridStyle}>
+  //                 <div>{s.split("|")[0]}</div>
+  //                 <img src={icon} />
+  //               </Card.Grid>
+  //           )}
+  //         )}
+  //       </Card>
+  //     )
+  //   })
+
+
   return (
     <StackWrap> 
       <div className="stack-wrap">
@@ -27,7 +52,7 @@ const Stacks = () => {
             <div className="tech-list frontend">
               <ul>
                 <li className="item-list frontend">
-                  <img className='icon-stack'src="../../../icons/javascript.png" alt="javascript icon" />
+                  <img className='icon-stack'src="../../../icons/Javascript.png" alt="javascript icon" />
                 </li>
                 <li className="item-list frontend">
                   <img className='icon-stack'src="../../../icons/node.png" alt="node js icon" />
@@ -51,7 +76,7 @@ const Stacks = () => {
                   <img className='icon-stack'src="../../../icons/graphql.png" alt="graphql icon" />
                 </li>
                 <li className="item-list frontend">
-                  <img className='icon-stack'src="../../../icons/slack.png" alt="slack icon" />
+                  <img className='icon-stack'src="../../../icons/Slack.png" alt="slack icon" />
                 </li>
                 <li className="item-list frontend">
                   <img className='icon-stack'src="../../../icons/figma.png" alt="figma icon" />

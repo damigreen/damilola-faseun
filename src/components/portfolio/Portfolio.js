@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import {
     PortfolioWrap,
     ProjectWrap,
@@ -19,7 +18,7 @@ const showFilterWidget = () => {
 const ProjectsLeft = ({i, p}) => {
   return (
     <ProjectWrapLeft key={i}>
-        <div className="project left">
+        <a href={p.url} target="_blank" rel='noreferrer' className="project left">
             <ImageWrap>
                 <div className="image-wrap">
                     <img alt="Image for projects done" src={`../../../images/${p.image}`} />
@@ -27,10 +26,10 @@ const ProjectsLeft = ({i, p}) => {
             </ImageWrap>
 
             <TextWrap>
-                <p className="project-title">{p.title}{`This image has the value ${i}`}</p>
+                <p className="project-title">{p.title}</p>
                 <p className="project-category">{p.categories}</p>
             </TextWrap>
-        </div>
+        </a>
     </ProjectWrapLeft>
   )
 }
@@ -38,25 +37,30 @@ const ProjectsLeft = ({i, p}) => {
 const ProjectsRight = ({i, p}) => {
     return (
         <ProjectWrapRight key={i}>
-            <div className="project right">
+            <a href={p.url}  target="_blank" rel='noreferrer' className="project right">
                 <ImageWrap>
                         <img alt="Image for projects done" src={`../../../images/${p.image}`} />
                 </ImageWrap>
 
                 <TextWrap>
-                    <p className="project-title">{p.title} {`This image has the value ${i}`}</p>
+                    <p className="project-title">{p.title}</p>
                     <p className="project-category">{p.categories}</p>
                 </TextWrap>
-            </div>
+            </a>
         </ProjectWrapRight>
     )
 }
 
 
 const Portfolio = (portfolio) => {
+    console.log(portfolio);
     
     if (portfolio.data === undefined) {
         return <div>Loading.....................</div>
+    }
+
+    const handleFilter = () => {
+        console.log('filter clicked');
     }
     
     const projects = portfolio.data.projects.map((p, i) => {
@@ -85,11 +89,12 @@ const Portfolio = (portfolio) => {
                     <div className="filter-box"><span className="filter-by">Filter by</span> <span className="filter-button" onClick={showFilterWidget}><img src={'../../../icons/filter-icon.png'} /></span></div>
 
                     <div className="project-filter large">
-                        <div><span className="filter-option"></span> <p className="filter-name">E-commerce</p></div>
-                        <div><span className="filter-option"></span> <p className="filter-name">Agency</p></div>
-                        <div><span className="filter-option"></span> <p className="filter-name">Business & Portfolio</p></div>
-                        <div><span className="filter-option"></span> <p className="filter-name">Hospitality</p></div>
-                        <div><span className="filter-option"></span> <p className="filter-name">Education</p></div>
+                        <div onclick={handleFilter}><span></span> <p className="filter-name">All</p></div>
+                        <div className="filter-option"><span></span> <p className="filter-name">E-commerce</p></div>
+                        <div className="filter-option"><span></span> <p className="filter-name">Agency</p></div>
+                        <div className="filter-option"><span></span> <p className="filter-name">Business & Portfolio</p></div>
+                        <div className="filter-option"><span></span> <p className="filter-name">Hospitality</p></div>
+                        <div className="filter-option"><span></span> <p className="filter-name">Education</p></div>
                     </div>
                 </div>
                 <div className="project-div">
