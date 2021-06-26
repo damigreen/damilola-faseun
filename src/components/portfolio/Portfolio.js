@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     PortfolioWrap,
     ProjectWrap,
@@ -53,17 +53,46 @@ const ProjectsRight = ({i, p}) => {
 
 
 const Portfolio = (portfolio) => {
-    console.log(portfolio);
+    const [portfolioData, setPortfolioData] = useState([]);
+
+    useEffect(() => {
+        if (portfolio.data) {
+            setPortfolioData(portfolio.data.projects);
+        }
+    }, [portfolio]);
     
     if (portfolio.data === undefined) {
         return <div>Loading.....................</div>
     }
 
-    const handleFilter = () => {
+    const handleFilter = (type) => {
+        console.log(portfolio.data.projects)
         console.log('filter clicked');
+        if (type === 'All') {
+            console.log('OK')
+            setPortfolioData(portfolio.data.projects);
+            const ele = document.querySelector('.all-filter');
+            console.log(ele)
+            if (ele) {
+                ele.classList.add('filter-click');
+                ele.style.backgroundColor = '#ffffff';
+            }
+        } else {
+            const match = portfolio.data.projects.filter(p => {
+                return p.cat.includes(type) ? p : null;
+            });
+            setPortfolioData(match);
+            const ele = document.querySelector('.all-filter');
+            console.log(ele)
+            if (ele) {
+                ele.classList.remove('filter-click');
+                ele.style.backgroundColor = 'inherit'
+            }
+        }
     }
     
-    const projects = portfolio.data.projects.map((p, i) => {
+    // const projects = portfolio.data.projects.map((p, i) => {
+    const projects = portfolioData.map((p, i) => {
         return (
             <ProjectWrap key={i}>
                 <div className="project-wrap">
@@ -89,12 +118,14 @@ const Portfolio = (portfolio) => {
                     <div className="filter-box"><span className="filter-by">Filter by</span> <span className="filter-button" onClick={showFilterWidget}><img src={'../../../icons/filter-icon.png'} /></span></div>
 
                     <div className="project-filter large">
-                        <div onclick={handleFilter}><span></span> <p className="filter-name">All</p></div>
-                        <div className="filter-option"><span></span> <p className="filter-name">E-commerce</p></div>
-                        <div className="filter-option"><span></span> <p className="filter-name">Agency</p></div>
-                        <div className="filter-option"><span></span> <p className="filter-name">Business & Portfolio</p></div>
-                        <div className="filter-option"><span></span> <p className="filter-name">Hospitality</p></div>
-                        <div className="filter-option"><span></span> <p className="filter-name">Education</p></div>
+                        {/* <div className="filter-option all-filter" onclick={() => handleFilter('All')}><span></span> <p className="filter-name">All</p></div> */}
+                        <div className="filter-option all-filter" onClick={() => handleFilter('All')}><span></span> <p className="filter-name">All</p></div>
+                        <div className="filter-option ecommerce-filter" onClick={() => handleFilter('Ecommerce')}><span></span> <p className="filter-name">E-commerce</p></div>
+                        <div className="filter-option agency-filter" onClick={() => handleFilter('Agency')}><span></span> <p className="filter-name">Agency</p></div>
+                        <div className="filter-option business-filter" onClick={() => handleFilter('Portfolio')}><span></span> <p className="filter-name">Business & Portfolio</p></div>
+                        <div className="filter-option design-filter" onClick={() => handleFilter('Design')}><span></span> <p className="filter-name">Design</p></div>
+                        <div className="filter-option hospitality-filter" onClick={() => handleFilter('Hospitality')}><span></span> <p className="filter-name">Hospitality</p></div>
+                        <div className="filter-option education-filter" onClick={() => handleFilter('Education')}><span></span> <p className="filter-name">Education</p></div>
                     </div>
                 </div>
                 <div className="project-div">

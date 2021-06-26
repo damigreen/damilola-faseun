@@ -243,11 +243,11 @@ export const PortfolioWrap = styled.div`
 
 
       :last-child {
-        border-bottom: none;
+        /* border-bottom: none; */
 
 
         @media only screen and (min-width: 767px) {
-          border-bottom: 2px solid rgb(242, 242, 242);
+          /* border-bottom: 2px solid rgb(242, 242, 242); */
         } 
       }
 
@@ -278,15 +278,35 @@ export const PortfolioWrap = styled.div`
       }
     }
 
+
     .filter-option {
-      background: red;
-      border: 1px solid red;
+      /* border: 2px solid #c4c4c4; */
+      border: 1px solid #ACA7A6;
+      font-size: 0.7801833rem;
+      font-weight: 600;
+      cursor: pointer;
+
+      :hover, :active {
+        background-color: #ffffff;
+        border: none;
+      }
+    }
+    
+    .all-filter {
+      background-color: #ffffff;
+    }
+
+
+    .filter-click {
+      background-color: #ffffff;
+      border: none;
     }
 
     .filter-name {
       padding: 1rem;
       margin-top: 1.2rem;
-
+      /* font-weight: 700; */
+      
       @media only screen and (min-width: 767px){
         all: unset;
       }
