@@ -33,11 +33,15 @@ export const ProjectWrap = styled.div`
 `
 
 export const ProjectWrapLeft = styled.div`
-
+  a {
+    text-decoration: none;
+  }
 `
 
 export const ProjectWrapRight = styled.div`
-
+  a {
+      text-decoration: none;
+    }
 `
 
 export const ImageWrap = styled.div`
@@ -76,13 +80,17 @@ export const ImageWrap = styled.div`
 export const TextWrap = styled.div`
   width: 100%;
   max-width: 420px;
+  padding: 0 0.78536rem;
   
   .project-title {
-
+    font-size: 1.652rem;
+    line-height: 39px;
+    color: #3d5265;
+    margin-bottom: 0;
   }
 
   .project-category {
-
+    color: #808080;
   }
 `
 
@@ -219,6 +227,7 @@ export const PortfolioWrap = styled.div`
       max-width: 75rem;
       margin-left: auto;
       margin-right: auto;
+      width: 80%;
     }
 
     div {
@@ -252,8 +261,6 @@ export const PortfolioWrap = styled.div`
         border: 1px solid rgb(242, 242, 242);
         margin: 0 1rem 1rem 0;
       }
-
-
     }
 
 
@@ -263,10 +270,17 @@ export const PortfolioWrap = styled.div`
       height: 1rem;
       background-color: rgb(255, 255, 255);
       border: 1px solid rgb(242, 242, 242);
+      /* border: 5px solid gold; */
+
 
       @media only screen and (min-width: 767px){
         all: unset;
       }
+    }
+
+    .filter-option {
+      background: red;
+      border: 1px solid red;
     }
 
     .filter-name {
@@ -278,7 +292,7 @@ export const PortfolioWrap = styled.div`
       }
     }
   }
-
+  
 
   .project-div {
     display: flex;
@@ -304,7 +318,7 @@ export const PortfolioWrap = styled.div`
   border-radius: 2px;
   border: 5px;
   background: inherit;
-  border: 1px solid var(--primary-color1);
+  border: 1px solid var(--text-color);
   transition: all .5s;
   width: 15em;
   height: 3.14654rem;
