@@ -126,6 +126,7 @@ export const HeroDescription = styled.p`
   font-weight: 400;
   max-width: 600px;
   line-height: 31px;
+  color: #ffffff;
 
   @media only screen and (max-width: 1024px) {
     width: 80%;
