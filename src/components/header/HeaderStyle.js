@@ -143,8 +143,11 @@ export const HeroDescription = styled.p`
   } 
 
   .bg-trans {
+    /* align-items: center;
     background-color: rgba(138, 185, 51, 1);
-    padding:3px;
+    background-color: #B63221;
+    padding:3px; */
+    /* height: 9rem; */
   }
 
   .bg-web {
@@ -189,7 +192,8 @@ export const ContactButton = styled.button`
   border-radius: 2px;
   border: 5px;
   background: inherit;
-  border: 2px solid var(--primary-color1);
+  border: 1px solid #3F8005;
+  /* border: 2px solid var(--btn-color); */
   transition: all .3s;
   width: 10em;
   height: 3.14654rem;
@@ -204,8 +208,9 @@ export const ContactButton = styled.button`
     box-shadow: 
       /* inset -3.5em 0 0 0 var(--hover),
       inset 3.5em 0 0 0 var(--hover);   */
-      inset -5em 0 0 0 var(--hover),
-      inset 5em 0 0 0 var(--hover);  
+      inset -5em 0 0 0 var(--btn-color),
+      inset 5em 0 0 0 var(--btn-color);  
+      border: 1px solid var(--btn-color);
       
   }
 
