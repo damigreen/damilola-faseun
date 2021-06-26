@@ -11,6 +11,8 @@ export const TestimonialCard = styled.div`
 
   .card {
     background-color: #2E2639;
+    background-color: #475A61;
+    background-color: #426158;
     height: auto;
     display: flex;
     flex-direction: column;

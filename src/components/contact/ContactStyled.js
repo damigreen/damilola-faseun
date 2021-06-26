@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const ContactWrap = styled.div`
-    background-color: #1F1A28;
+    background-color: #344247;
     display: flex;
     justify-content: center;
     align-items: center;
