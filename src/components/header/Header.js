@@ -59,6 +59,10 @@ function Header() {
       handleIntersection();
     }, []);
 
+    const headerAnime = () => {
+      
+    }
+
   return (
     <HeaderWrap>
       <Navigation />
