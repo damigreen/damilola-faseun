@@ -83,7 +83,7 @@ export const TextWrap = styled.div`
   padding: 0 0.78536rem;
   
   .project-title {
-    font-size: 1.652rem;
+    font-size: 1.342652rem;
     line-height: 39px;
     color: #3d5265;
     margin-bottom: 0;
@@ -286,7 +286,11 @@ export const PortfolioWrap = styled.div`
       font-weight: 600;
       cursor: pointer;
 
-      :hover, :active {
+      :hover {
+        background-color: #ffffff;
+        border: none;
+      }
+      :active {
         background-color: #ffffff;
         border: none;
       }
@@ -300,6 +304,11 @@ export const PortfolioWrap = styled.div`
     .filter-click {
       background-color: #ffffff;
       border: none;
+    }
+
+    .filter-unclick {
+      background-color: inherit;
+      border: 1px solid #ACA7A6;
     }
 
     .filter-name {
@@ -331,14 +340,14 @@ export const PortfolioWrap = styled.div`
 .portfolio-button {
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 21px;
   color: var(--black-two);
   letter-spacing: 0.12em;
   border-radius: 2px;
   border: 5px;
   background: inherit;
-  border: 1px solid var(--text-color);
+  border: 1px solid #ACA7A6;
   transition: all .5s;
   width: 15em;
   height: 3.14654rem;
@@ -355,8 +364,8 @@ export const PortfolioWrap = styled.div`
     box-shadow: 
       /* inset -3.5em 0 0 0 var(--hover),
       inset 3.5em 0 0 0 var(--hover);   */
-      inset -15em 0 0 0 var(--hover),
-      inset 15em 0 0 0 var(--hover);  
+      inset -15em 0 0 0 var(--btn-color),
+      inset 15em 0 0 0 var(--btn-color);
       color: var(--white-two);
   }
 }
