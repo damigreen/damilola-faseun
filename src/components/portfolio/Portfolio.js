@@ -11,10 +11,6 @@ import { Link } from 'react-router-dom';
 
 
 
-const showFilterWidget = () => {
-    console.log('show filter')
-}
-
 const ProjectsLeft = ({i, p}) => {
   return (
     <ProjectWrapLeft key={i}>
@@ -54,6 +50,7 @@ const ProjectsRight = ({i, p}) => {
 
 const Portfolio = (portfolio) => {
     const [portfolioData, setPortfolioData] = useState([]);
+    const [isActive, setActive] = useState(false);
 
     useEffect(() => {
         if (portfolio.data) {
@@ -114,6 +111,35 @@ const Portfolio = (portfolio) => {
             </ProjectWrap>
         )
     }).slice(0, 4);
+
+    let projectFilter = document.querySelector('.project-filter');
+    if (projectFilter) {
+        window.matchMedia("(min-width: 767px)").matches ? projectFilter.style.flexDirection = 'row' : projectFilter.style.flexDirection = 'column';
+    }
+    const showFilterWidget = () => {
+        console.log('show filter');
+        // setActive(!isActive);
+        const projectFilter = document.querySelector('.project-filter');
+        const filter = document.querySelector('.filter');
+        if (isActive === false && projectFilter && filter) {
+            console.log('filter present===========================');
+            projectFilter.style.display = 'flex';
+            console.log('yeadh=====================');
+            console.log(window.matchMedia("(max-width: 767px)").matches);
+            window.matchMedia("(min-width: 767px)").matches ? projectFilter.style.flexDirection = 'row' : projectFilter.style.flexDirection = 'column';
+            // window.matchMedia("(min-width: 700px)") ? projectFilter.style.flexDirection = 'column' : projectFilter.style.flexDirection = 'row';
+            projectFilter.classList.add('filter-style');
+            filter.style.display = 'flex';
+            filter.style.flexDirection = 'column';
+            // setActive(true);
+        }
+
+        if (isActive === false) {
+
+        }
+
+    }
+    
     
     return(
         <PortfolioWrap>
@@ -128,9 +154,9 @@ const Portfolio = (portfolio) => {
 
                 <div className="filter">
                     {/* <div className="filter-box"><p>Filter by</p> <span onClick={showFilterWidget}><img src={'../../../icons/filter-icon.png'} /></span></div> */}
-                    <div className="filter-box"><span className="filter-by">Filter by</span> <span className="filter-button" onClick={showFilterWidget}><img src={'../../../icons/filter-icon.png'} /></span></div>
+                    <div className="filter-box"><span className="filter-by">Filter by</span> <span className="filter-button" onClick={showFilterWidget}><div className="filter-icon" alt='filter icon' ></div></span></div>
 
-                    <div className="project-filter large">
+                    <div className="project-filter large small-filter">
                         {/* <div className="filter-option all-filter" onclick={() => handleFilter('All')}><span></span> <p className="filter-name">All</p></div> */}
                         <div className="filter-option all-filter" onClick={() => handleFilter('All')}><span></span> <p className="filter-name">All</p></div>
                         <div className="filter-option ecommerce-filter" onClick={() => handleFilter('Ecommerce')}><span></span> <p className="filter-name">E-commerce</p></div>
