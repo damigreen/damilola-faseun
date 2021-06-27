@@ -161,6 +161,11 @@ export const PortfolioWrap = styled.div`
     }
   }
 
+  .filter-style {
+    display: flex;
+    flex-direction: column;
+  }
+
   .filter {
     width: 90%;
     position: relative;
@@ -168,6 +173,9 @@ export const PortfolioWrap = styled.div`
 
     @media only screen and (min-width: 767px){
       border: unset;
+      display: flex;
+      flex-direction: row;
+      border: 1px solid green;
     }
   }
 
@@ -190,36 +198,64 @@ export const PortfolioWrap = styled.div`
     letter-spacing: 0.125rem;
     text-align: left;
     color: #1F2F3B;
-
+    
     @media only screen and (min-width: 767px){
       display: none;
     }
 
-    .filter-by {
-
+    @media only screen and (max-width: 767px){
+      border: 1px solid #c4c4c4;
+      margin: 0 auto;
+      width: 75%;
     }
 
+    .filter-icon {
+      height: 16px;
+      width: 16px;
+      background: url('../../../icons/filter-icon.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      /* border: 1px solid red; */
+    }
+    
+    .filter-by {
+      
+    }
+    
     .filter-button {
-
+      
       img {
         height: 16px;
         width: 16px;
       }
     }
   }
-
+  
+  .filter-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1rem 1.02rem;
+    padding: 0.711rem 0.5424rem;
+    /* width:95%; */
+  }
+  
   .project-filter {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     margin: 0 1.02rem;
+    margin: 0 auto;
     padding: 0.711rem 0.5424rem;
     width:90%;
 
     @media only screen and (min-width: 767px){
       all: unset;
       display: flex;
+      flex-direction: row;
       align-items: flex-start;
       flex-wrap: wrap;
       border: unset;
@@ -228,6 +264,13 @@ export const PortfolioWrap = styled.div`
       margin-left: auto;
       margin-right: auto;
       width: 80%;
+    }
+
+    @media only screen and (max-width: 767px){
+      all: unset;
+      display: none;
+      margin: 0 auto;
+      width:81.6893%;
     }
 
     div {
