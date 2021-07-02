@@ -11,4 +11,4 @@ test('render contents', () => {
   const component = render(<Header />);
 
   expect(component.container).toHavaText(headerName)
-})
+});
