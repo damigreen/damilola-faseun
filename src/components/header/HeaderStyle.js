@@ -195,7 +195,6 @@ export const ContactButton = styled.button`
   border: 5px;
   background: inherit;
   border: 1px solid #3F8005;
-  /* border: 2px solid var(--btn-color); */
   transition: all .3s;
   width: 10em;
   height: 3.14654rem;
@@ -204,7 +203,6 @@ export const ContactButton = styled.button`
   text-align: center;
   cursor: pointer;
 
-  // Stack multiple shadows, one from the left, the other from the right
   :hover,
   :focus {
     box-shadow: 
