@@ -122,9 +122,7 @@ const Portfolio = (portfolio) => {
         const projectFilter = document.querySelector('.project-filter');
         const filter = document.querySelector('.filter');
         if (isActive === false && projectFilter && filter) {
-            console.log('filter present===========================');
             projectFilter.style.display = 'flex';
-            console.log('yeadh=====================');
             console.log(window.matchMedia("(max-width: 767px)").matches);
             window.matchMedia("(min-width: 767px)").matches ? projectFilter.style.flexDirection = 'row' : projectFilter.style.flexDirection = 'column';
             // window.matchMedia("(min-width: 700px)") ? projectFilter.style.flexDirection = 'column' : projectFilter.style.flexDirection = 'row';
