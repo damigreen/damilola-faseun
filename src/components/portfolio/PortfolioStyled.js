@@ -17,6 +17,8 @@ export const ProjectWrap = styled.div`
     flex-wrap: wrap;
     padding: 1.415rem;
     width: auto;
+    /* margin-top: ${props => props.index % 2 ? "200px" : "0"};
+    border: ${props => props.index % 2 ? "1px solid red" : "none"}; */
 
     @media only screen and (min-width: 767px) {
 
@@ -28,10 +30,10 @@ export const ProjectWrap = styled.div`
     height: auto;
   }
 
-
 `
 
 export const ProjectWrapLeft = styled.div`
+
   a {
     text-decoration: none;
   }

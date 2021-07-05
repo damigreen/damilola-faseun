@@ -20,7 +20,7 @@ const showFilterWidget = () => {
 const ProjectsLeft = ({i, p}) => {
     return (
         <ProjectWrapLeft key={i}>
-            <a href={p.url} target="_blank" rel='noreferrer' className="project left">
+            <a href={p.url} target="_blank" rel='noreferrer' className="project left-all ">
                 <ImageWrap>
                     <div className="image-wrap">
                         <img alt="Image for projects done" src={`../../../images/${p.image}`} />
@@ -39,7 +39,7 @@ const ProjectsLeft = ({i, p}) => {
 const ProjectsRight = ({i, p}) => {
     return (
         <ProjectWrapRight key={i}>
-            <a href={p.url} target="_blank" rel='noreferrer' className="project right">
+            <a href={p.url} target="_blank" rel='noreferrer' className="project right-all">
                 <ImageWrap>
                         <img alt="Image for projects done" src={`../../../images/${p.image}`} />
                 </ImageWrap>
@@ -79,9 +79,9 @@ const Portfolio = (portfolio) => {
     
     const projects = portfolio.data.projects.map((p, i) => {
         return (
-            <ProjectWrap key={i}>
+            <ProjectWrap index={i} key={i}>
                 <div className="project-wrap">
-                    { i%2 ? <ProjectsLeft p={p} i={i} /> : <ProjectsRight p={p} i={i} /> }
+                    { i%2 ? <ProjectsRight p={p} i={i} /> : <ProjectsLeft p={p} i={i} /> }
                 </div>
             </ProjectWrap>
         )
