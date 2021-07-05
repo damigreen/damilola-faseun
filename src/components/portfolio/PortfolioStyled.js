@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import {
-  borderStyle, flexColumnWrap,
-  flexRowWrap,
+  flexColumnWrap,
   HeadingPrimary,
   HeadingSecondary,
   HeadingTertiary,
@@ -44,7 +43,7 @@ export const ProjectWrapRight = styled.div`
     }
 `
 
-export const ImageWrap = styled.div`
+export const ImageWrap = styled.a`
     margin: 0 auto;
     width: 100%;
     height: auto;

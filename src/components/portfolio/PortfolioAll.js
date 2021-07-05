@@ -20,7 +20,7 @@ const showFilterWidget = () => {
 const ProjectsLeft = ({i, p}) => {
     return (
         <ProjectWrapLeft key={i}>
-            <div className="project left">
+            <a href={p.url} target="_blank" rel='noreferrer' className="project left">
                 <ImageWrap>
                     <div className="image-wrap">
                         <img alt="Image for projects done" src={`../../../images/${p.image}`} />
@@ -31,7 +31,7 @@ const ProjectsLeft = ({i, p}) => {
                     <p className="project-title">{p.title}{`This image has the value ${i}`}</p>
                     <p className="project-category">{p.categories}</p>
                 </TextWrap>
-            </div>
+            </a>
         </ProjectWrapLeft>
     )
 }
@@ -39,7 +39,7 @@ const ProjectsLeft = ({i, p}) => {
 const ProjectsRight = ({i, p}) => {
     return (
         <ProjectWrapRight key={i}>
-            <div className="project right">
+            <a href={p.url} target="_blank" rel='noreferrer' className="project right">
                 <ImageWrap>
                         <img alt="Image for projects done" src={`../../../images/${p.image}`} />
                 </ImageWrap>
@@ -48,7 +48,7 @@ const ProjectsRight = ({i, p}) => {
                     <p className="project-title">{p.title} {`This image has the value ${i}`}</p>
                     <p className="project-category">{p.categories}</p>
                 </TextWrap>
-            </div>
+            </a>
         </ProjectWrapRight>
     )
 }
