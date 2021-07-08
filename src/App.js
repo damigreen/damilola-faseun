@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import './App.scss';
 import Header from "./components/header/"
 import Portfolio from "./components/portfolio/";
@@ -12,6 +11,8 @@ import Footer from 'components/footer/'
 import ServicesNew from 'components/services/ServicesNew';
 import PortfolioAll from 'components/portfolio/PortfolioAll';
 import Services from './components/services/';
+import dataServices from './services/index';
+import Project from './components/portfolio/Project';
 import Test from 'components/test/';
 import { 
   BrowserRouter as Router,
@@ -21,18 +22,26 @@ import {
 
 
 function App() {
-  const [ portfolioData, setData ] = useState({});
-  const dataUrl = './portfolioData.json'
-  
+  const [ portfolioData, setData ] = useState({});  
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    const loadData = () => {
-      axios.get(dataUrl).then(response => {
-        setData(response.data);
-      });
+    // const loadData = () => {
+    //   axios.get(dataUrl).then(response => {
+    //     setData(response.data);
+    //   });
+    // }
+    // loadData();
+
+    dataServices.getData().then(response => {
+      setData(response);
+    });
+
+    if (portfolioData.portfolio) {
+      setProjects(portfolioData.portfolio.projects)
     }
-    loadData();
-  }, [dataUrl] );
+
+  }, []);
   
 
   return (
@@ -67,6 +76,17 @@ function App() {
             <Route exact path='/portfolio-all'>
               <PortfolioAll data={portfolioData.portfolio} />
             </Route>  
+            <section>
+              {
+                // portfolioData.portfolio.projects.map(p => (
+                projects.map(p => (
+                  // <Route exact path={ `/${p.link}`}>
+                  <Route exact path={p.display ? `/${p.link}` : `${p.url}ddllllllll`}>
+                    <Project />
+                  </Route>
+                ))
+              }
+            </section>
             <section id="contact">
               <Contact />
             </section>
