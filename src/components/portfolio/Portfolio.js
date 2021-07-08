@@ -14,7 +14,12 @@ import { Link } from 'react-router-dom';
 const ProjectsLeft = ({i, p}) => {
   return (
     <ProjectWrapLeft key={i}>
-        <a href={p.url} target="_blank" rel='noreferrer' className="project left">
+        <Link 
+            to={p.display === true ? `/${p.link}` : {pathname: p.url}}
+            target={p.display ? "" : "_blank"}
+            className="project left"
+            rel='noreferrer'
+        >
             <ImageWrap>
                 <div className="image-wrap">
                     <img alt="Image for projects done" src={`../../../images/${p.image}`} />
@@ -25,7 +30,7 @@ const ProjectsLeft = ({i, p}) => {
                 <p className="project-title">{p.title}</p>
                 <p className="project-category">{p.categories}</p>
             </TextWrap>
-        </a>
+        </Link>
     </ProjectWrapLeft>
   )
 }
@@ -33,7 +38,12 @@ const ProjectsLeft = ({i, p}) => {
 const ProjectsRight = ({i, p}) => {
     return (
         <ProjectWrapRight key={i}>
-            <a href={p.url}  target="_blank" rel='noreferrer' className="project right">
+            <Link
+                to={p.display === true ? `/${p.link}` : {pathname: p.url}}
+                target={p.display ? "" : "_blank"}
+                className="project right"
+                rel='noreferrer'
+            >
                 <ImageWrap>
                         <img alt="Image for projects done" src={`../../../images/${p.image}`} />
                 </ImageWrap>
@@ -42,7 +52,7 @@ const ProjectsRight = ({i, p}) => {
                     <p className="project-title">{p.title}</p>
                     <p className="project-category">{p.categories}</p>
                 </TextWrap>
-            </a>
+            </Link>
         </ProjectWrapRight>
     )
 }
