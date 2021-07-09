@@ -30,6 +30,12 @@ p {
   color: #333333;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .flex-md {
   display: flex;
   flex-direction: column;

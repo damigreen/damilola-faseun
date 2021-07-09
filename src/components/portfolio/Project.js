@@ -3,44 +3,15 @@ import {
   ProjectWrap
 } from './ProjectStyled'
 
-const Project = () => {
+
+const Project = ({ project }) => {
+  console.log(project) 
 
 
   return (
     <ProjectWrap>
-      <div>
-        <h1>Projects</h1>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <button>View Website</button>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
-        <div>I am going to be successful</div>
+      <div className='project-wrap'>
+        <h1 className='primary-heading flex-center'>Projects</h1>
       </div>
     </ProjectWrap>
   )
