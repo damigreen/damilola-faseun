@@ -26,13 +26,6 @@ function App() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    // const loadData = () => {
-    //   axios.get(dataUrl).then(response => {
-    //     setData(response.data);
-    //   });
-    // }
-    // loadData();
-
     dataServices.getData().then(response => {
       setData(response);
     });
@@ -49,42 +42,54 @@ function App() {
       <Switch>
           <div className="App">
             <Route exact path="/">
-            <header id="header">
-              <Header />
-            </header>
-            <section id="about">
-              <About />
-            </section>
-            <section id="services">
-              {/* <Services /> */}
-              <ServicesNew />
-            </section>
-            <section id="process">
-              <Process />
-            </section>
-            <section id="portfolio">
-              <Portfolio data={portfolioData.portfolio} />
-            </section>
-            <section id="stacks">
-              <Stacks />
-            </section>
-            {/* <section id="cta">
-              <CTA />
-            </section > */}
+              <header id="header">
+                <Header />
+              </header>
+              <section id="about">
+                <About />
+              </section>
+              <section id="services">
+                {/* <Services /> */}
+                <ServicesNew />
+              </section>
+              <section id="process">
+                <Process />
+              </section>
+              <section id="portfolio">
+                <Portfolio data={portfolioData.portfolio} />
+              </section>
+              <section id="stacks">
+                <Stacks />
+              </section>
+              {/* <section id="cta">
+                <CTA />
+              </section > */}
             </Route>
 
             <Route exact path='/portfolio-all'>
               <PortfolioAll data={portfolioData.portfolio} />
-            </Route>  
+            </Route>
+            
             <section>
               {
-                // portfolioData.portfolio.projects.map(p => (
-                projects.map(p => (
-                  // <Route exact path={ `/${p.link}`}>
-                  <Route exact path={p.display ? `/${p.link}` : `${p.url}ddllllllll`}>
-                    <Project />
-                  </Route>
-                ))
+                projects.map(p => p.display === true) ?
+                <Route path='/:link' render={( { match } ) => {
+                  console.log(match.params.link === 'portfolio-all');
+
+                  if (match.params.link === 'portfolio-all') {
+                    return (
+                      <div></div>
+                    )
+                  } else
+                  return (
+                    <Project project={projects.find(p => p.link === match.params.link)}  />
+                  )
+                }}>
+                </Route>
+                :
+                <Route path='/'>
+                  <Project />
+                </Route>
               }
             </section>
             <section id="contact">
