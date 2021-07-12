@@ -71,6 +71,16 @@ p {
   }
 }
 
+.wrap-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+}
+
 .flex-med {
   flex: 0 0 90%;
   padding: 0 20px;
@@ -78,4 +88,26 @@ p {
   @media only screen and (min-width: 1024px) {
     flex: 0 0 28.533333%;
   }
+}
+
+.relative {
+  position: relative;
+  top: 0;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+  top: 200px;
+}
+
+.float-l {
+  float: left;
+}
+
+.float-r {
+  float: rigth;
 }
