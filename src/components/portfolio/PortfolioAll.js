@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useLayoutEffect } from 'react';
 import {
     PortfolioWrap,
     ProjectWrap,
@@ -68,6 +68,10 @@ const ProjectsRight = ({i, p}) => {
 const Portfolio = (portfolio) => {
     const [navBar, setNavBar] = useState(null);
     const [navMain, setNavMain] = useState(null);
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+    });
 
     useEffect(() => {
         setNavBar(document.querySelector('.nav-bar'));
