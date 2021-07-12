@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useLayoutEffect } from 'react';
 import './App.scss';
 import Header from "./components/header/"
 import Portfolio from "./components/portfolio/";
@@ -24,6 +24,10 @@ import {
 function App() {
   const [ portfolioData, setData ] = useState({});  
   const [projects, setProjects] = useState([]);
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  })
 
   useEffect(() => {
     dataServices.getData().then(response => {
@@ -74,15 +78,16 @@ function App() {
               {
                 projects.map(p => p.display === true) ?
                 <Route path='/:link' render={( { match } ) => {
-                  console.log(match.params.link === 'portfolio-all');
-
                   if (match.params.link === 'portfolio-all') {
                     return (
                       <div></div>
                     )
                   } else
                   return (
-                    <Project project={projects.find(p => p.link === match.params.link)}  />
+                    <Project
+                      // project={projects.find(p => p.link === match.params.link)}
+                      // currentProject={projects.find(p => p.link === match.params.link)}
+                    />
                   )
                 }}>
                 </Route>

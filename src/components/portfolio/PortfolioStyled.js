@@ -176,7 +176,6 @@ export const PortfolioWrap = styled.div`
       border: unset;
       display: flex;
       flex-direction: row;
-      border: 1px solid green;
     }
   }
 
