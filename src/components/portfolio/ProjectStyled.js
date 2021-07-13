@@ -123,3 +123,7 @@ export const SectionC = styled.section`
     padding-bottom: 0;
   }
 `
+
+export const SectionD = styled.section`
+  border: 1px solid red;
+`

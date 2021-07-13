@@ -18,7 +18,7 @@ const Footer = () => {
                 <div className="footer-row">
                     <InfoWrap>
                         <div className="info-wrap">
-                            <img src={`../../../icons/footer-logo-icon.png`} alt="company logo`" />
+                            <img src={`../../../icons/logo1.png`} alt="company logo`" />
                             <h2>Damigreentech</h2>
                         </div>
                         <div className="social-icons">

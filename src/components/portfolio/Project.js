@@ -6,6 +6,8 @@ import {
   ProjectHero,
   ProjectSection,
   SectionC,
+  SectionD,
+  
 } from './ProjectStyled';
 
 // const sectionOption =  {
@@ -83,6 +85,9 @@ const Project = ({ currentProject }) => {
               <img alt='Project image landing page' src={projectSkeleton} />
             </figure>
           </SectionC>
+          <SectionD>
+
+          </SectionD>
         </div>
         <div>
 
